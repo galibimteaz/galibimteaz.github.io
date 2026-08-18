@@ -197,39 +197,47 @@
   /* ===== DOMAIN GRID ===== */
   .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fill, minmax(330px,1fr));
     gap:22px;
   }
   .card{
-    background:var(--bg-card);
+    background:linear-gradient(165deg, var(--bg-card), #131009);
     border:1px solid var(--line);
-    border-radius:12px;
-    padding:26px;
+    border-radius:14px;
+    padding:24px;
     display:flex; flex-direction:column;
-    transition:border-color .2s ease, transform .2s ease;
+    transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
     position:relative;
   }
-  .card:hover{border-color:var(--line-strong); transform:translateY(-3px);}
-  .card-top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
+  .card:hover{border-color:var(--line-strong); transform:translateY(-3px); box-shadow:0 14px 34px rgba(0,0,0,0.35);}
+  .card-top{display:flex; align-items:flex-start; gap:14px;}
+  .card-icon{
+    width:46px; height:46px; flex-shrink:0; border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(201,162,39,0.08);
+    border:1px solid var(--line);
+  }
+  .card-icon svg{width:24px; height:24px; stroke:var(--gold-bright); fill:none; stroke-width:1.5;}
+  .card-headtext{flex:1; min-width:0;}
   .card-name{
     font-family:'Cormorant Garamond', serif;
-    font-size:26px; font-weight:600; color:var(--cream);
+    font-size:24px; font-weight:600; color:var(--cream);
     line-height:1.2;
   }
   .card-name .ext{color:var(--gold-bright);}
   .badge{
-    font-size:10px; letter-spacing:0.08em; text-transform:uppercase;
-    padding:4px 9px; border-radius:5px;
+    font-size:9.5px; letter-spacing:0.08em; text-transform:uppercase;
+    padding:3px 8px; border-radius:5px; display:inline-block; margin-top:6px;
     border:1px solid var(--line-strong);
     color:var(--gold-bright);
     white-space:nowrap;
   }
   .card-tag{
-    font-size:12.5px; color:var(--cream-dim); margin-top:8px; line-height:1.5;
+    font-size:12.5px; color:var(--cream-dim); margin-top:12px; line-height:1.6;
     min-height:38px;
   }
   .card-pills{
-    display:flex; flex-wrap:wrap; gap:6px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;
   }
   .pill{
     font-size:10.5px; color:var(--cream-dim);
@@ -237,40 +245,51 @@
     padding:4px 10px;
   }
   .card-actions{
-    margin-top:18px; display:flex; gap:9px;
+    margin-top:18px; display:flex; flex-direction:column; gap:8px;
   }
+  .card-actions .row2{display:flex; gap:8px;}
   .btn{
-    flex:1; text-align:center; padding:10px 8px;
+    text-align:center; padding:10px 10px;
     border-radius:8px; font-size:12.5px; letter-spacing:0.02em; cursor:pointer;
     border:1px solid var(--line-strong); color:var(--cream);
-    transition:background .15s ease, color .15s ease;
+    transition:background .15s ease, color .15s ease, filter .15s ease;
     background:transparent;
+    display:flex; align-items:center; justify-content:center; gap:6px;
   }
+  .btn svg{width:14px; height:14px; flex-shrink:0;}
+  .btn.feat{width:100%;}
   .btn.feat:hover{background:rgba(201,162,39,0.10);}
+  .btn.dm{flex:1;}
+  .btn.dm:hover{background:rgba(201,162,39,0.10);}
   .btn.buy{
-    background:linear-gradient(135deg,var(--gold-bright),var(--gold));
-    color:#0a0908; font-weight:500; border-color:transparent;
+    flex:1;
+    background:linear-gradient(135deg, #4fae7a, #2e7d55);
+    color:#f4fff0; font-weight:500; border-color:transparent;
   }
-  .btn.buy:hover{filter:brightness(1.08);}
+  .btn.buy:hover{filter:brightness(1.1);}
 
   /* feature detail panel */
   .detail{
     max-height:0; overflow:hidden;
-    transition:max-height .35s ease, margin-top .35s ease, opacity .3s ease;
+    transition:max-height .4s ease, margin-top .4s ease, opacity .3s ease;
     opacity:0;
-    font-size:12.5px; color:var(--cream-dim); line-height:1.7;
+    font-size:12.5px; color:var(--cream-dim); line-height:1.75;
   }
   .card.open .detail{
-    max-height:260px; margin-top:16px; opacity:1;
+    max-height:520px; margin-top:16px; opacity:1;
     border-top:1px solid var(--line); padding-top:14px;
   }
-  .detail ul{list-style:none;}
-  .detail li{
-    display:flex; justify-content:space-between; padding:4px 0;
-    border-bottom:1px dashed rgba(201,162,39,0.14);
+  .detail-row{margin-bottom:11px;}
+  .detail-row:last-of-type{margin-bottom:0;}
+  .detail-label{
+    font-size:10px; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--gold-bright); font-weight:500; margin-bottom:3px;
   }
-  .detail li:last-child{border-bottom:none;}
-  .detail li b{color:var(--gold-bright); font-weight:500;}
+  .detail-note{
+    margin-top:14px; padding-top:12px; border-top:1px dashed rgba(201,162,39,0.25);
+    font-family:'Cormorant Garamond', serif; font-style:italic;
+    color:var(--gold-bright); font-size:14px; line-height:1.5;
+  }
 
   footer{
     border-top:1px solid var(--line);
@@ -304,19 +323,18 @@
         <div class="li-avatar">IC</div>
         <div>
           <div class="li-name">Imteaz (Galib) Chowdhury</div>
-          <div class="li-role">The Domain Guy Who Actually Shows the Math<br>Dhaka, Bangladesh</div>
+          <div class="li-role">The Domain Guy Who Actually Shows the Math</div>
         </div>
       </div>
       <div class="li-meta">
         <div>Trademark-cleared · Competitor-verified</div>
-        <div><span>1,110</span> followers · <span>500+</span> connections</div>
       </div>
       <div class="li-actions">
         <a class="li-btn primary" href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.5A1.5 1.5 0 107 5.5a1.5 1.5 0 000 3zM18.34 18v-4.63c0-2.48-1.32-3.63-3.08-3.63-1.42 0-2.06.78-2.41 1.33V9.6H10.2c.04.75 0 8.4 0 8.4h2.65v-4.69c0-.25.02-.5.1-.68.2-.5.67-1.03 1.46-1.03 1.03 0 1.44.79 1.44 1.94V18h2.49z"/></svg>
           Visit Profile
         </a>
-        <a class="li-btn secondary" href="mailto:galibsjournal@gmail.com">
+        <a class="li-btn secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=galibsjournal@gmail.com&su=Domain%20Portfolio%20Inquiry" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>
           Contact
         </a>
@@ -328,125 +346,164 @@
 <div class="wrap section">
   <div class="section-head">
     <h2>Available Domains</h2>
-    <p>Tap "Details" for search metrics and verification, or go straight to "Buy Now" on the listing marketplace.</p>
+    <p>Tap "Details" for a full breakdown, "DM for Deal" to negotiate directly, or "Buy Now" to go straight to the listing.</p>
   </div>
 
   <div class="grid" id="domainGrid"></div>
 </div>
 
 <footer class="wrap">
-  Portfolio maintained by Imteaz (Galib) Chowdhury · Prices on request unless listed · <a href="mailto:galibsjournal@gmail.com">DM for offers</a>
+  Portfolio maintained by Imteaz (Galib) Chowdhury · Prices on request unless listed · <a href="https://mail.google.com/mail/?view=cm&fs=1&to=galibsjournal@gmail.com&su=Domain%20Portfolio%20Inquiry" target="_blank" rel="noopener">DM for offers</a>
 </footer>
 
 <script>
+// Icon library (stroke-based, matches card-icon styling)
+const ICONS = {
+  briefcase: `<svg viewBox="0 0 24 24"><path d="M3 7h18v12H3z"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><path d="M3 12h18"/></svg>`,
+  spark: `<svg viewBox="0 0 24 24"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z"/></svg>`,
+  scale: `<svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 7l-3 6a3.5 3.5 0 007 0z"/><path d="M19 7l-3 6a3.5 3.5 0 007 0z"/><path d="M5 7h14"/><path d="M8 21h8"/></svg>`,
+  gavel: `<svg viewBox="0 0 24 24"><path d="M14 4l6 6"/><path d="M4 14l6 6"/><path d="M12.5 5.5l6 6"/><path d="M2 22l7-7"/><path d="M17 3l4 4-3 3-4-4z"/></svg>`,
+  grid: `<svg viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M12 16v6"/><path d="M4 12h6"/><path d="M14 12h6"/><circle cx="12" cy="12" r="3"/></svg>`,
+  coin: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M9 9.5c0-1 1-1.8 3-1.8s3 .8 3 1.8-1 1.4-3 1.8-3 .8-3 1.9 1 1.8 3 1.8 3-.8 3-1.8"/></svg>`,
+  diamond: `<svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M9 3l3 6-3 12"/><path d="M15 3l-3 6 3 12"/></svg>`
+};
+
 const domains = [
   {
     name: "interviewtipshub", ext: ".com",
+    icon: "briefcase",
     tag: "Your go-to hub for interview tips, career guidance & job success.",
     market: "Afternic", marketUrl: "https://forsale.godaddy.com/forsale/interviewtipshub.com?",
     badge: "Content Brand",
     pills: ["Simple Name", "Massive Potential", "Brandable"],
-    details: [
-      ["Monthly Searches", "10K–100K"],
-      ["Competition", "Low — easy to rank"],
-      ["Category", "Careers / Jobs"],
-      ["Marketplace", "Afternic (GoDaddy)"]
-    ]
+    whyGood: "Descriptive, keyword-rich name that tells visitors exactly what it does — ranks faster and converts better for career-search traffic.",
+    fitsWhere: "Career coaching platforms, HR-tech blogs, recruitment content hubs, or a podcast/YouTube brand extension.",
+    brandability: "Medium — a strong functional SEO asset rather than an abstract consumer brand.",
+    demand10yr: "Job-search & career content is evergreen; 10K–100K monthly searches hold steady regardless of AI-driven shifts in hiring.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   },
   {
     name: "Mubez", ext: ".com",
+    icon: "spark",
     tag: "One word. Endless possibilities. 5-letter premium .com.",
     market: "Atom.com", marketUrl: "https://www.atom.com/name/Mubez",
     badge: "5-Letter .COM",
     pills: ["Short", "Memorable", "Trademark Clean"],
-    details: [
-      ["Trademark", "Clean — USPTO + EUIPO"],
-      ["History", "Clean"],
-      ["Backlinks", "Zero"],
-      ["Wayback", "Clean"],
-      ["Marketplace", "Atom.com (GoDaddy)"]
-    ]
+    whyGood: "Short, phonetic, and easy to say, spell, and remember across languages — with a fully clean trademark and search history.",
+    fitsWhere: "SaaS products, mobile apps, fintech, or any consumer brand wanting a fresh, unclaimed .com identity.",
+    brandability: "High — an invented word with no built-in meaning, so it can be shaped into any positioning.",
+    demand10yr: "Short, clean .coms are an increasingly scarce resource; this class of name has historically appreciated as inventory dries up.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   },
   {
     name: "juronix", ext: ".com",
+    icon: "scale",
     tag: "Premium LegalTech brand, built for the future of digital justice.",
     market: "Sedo", marketUrl: "https://sedo.com/search/details/?partnerid=324561&language=e&domain=juronix.com",
     badge: "LegalTech",
     pills: ["LegalTech", "Justice", "Premium .COM"],
-    details: [
-      ["Category", "LegalTech"],
-      ["Style", "Invented / brandable"],
-      ["Marketplace", "Sedo"]
-    ]
+    whyGood: "\"Juro\" (the Latin root for law/oath) fused with a tech suffix — signals authority and innovation in one word.",
+    fitsWhere: "Legal SaaS, contract-AI tools, compliance platforms, or digital dispute-resolution startups.",
+    brandability: "High — invented yet semantically anchored, which makes it easy to trademark and own outright.",
+    demand10yr: "LegalTech funding is accelerating with AI adoption; category-fit names like this typically gain value as the space matures.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   },
   {
     name: "LexBold", ext: ".com",
+    icon: "gavel",
     tag: "Where legal authority meets bold innovation.",
     market: "Sedo", marketUrl: "https://sedo.com/search/details/?partnerid=324561&language=e&domain=lexbold.com",
     badge: "LegalTech · AI",
     pills: ["LegalTech", "AI Solutions", "Enterprise Law"],
-    details: [
-      ["Category", "LegalTech / AI"],
-      ["Style", "Lex- prefix, authoritative"],
-      ["Marketplace", "Sedo"]
-    ]
+    whyGood: "\"Lex\" (law) + \"Bold\" pairs trust with confidence — a rare combination for a legal-AI brand.",
+    fitsWhere: "AI-powered contract review, legal-ops platforms, or enterprise law-firm technology brands.",
+    brandability: "High — two real words combined into a distinct, fully ownable identity.",
+    demand10yr: "As legal-AI adoption grows, authoritative-yet-modern names like this become harder to find and more sought after.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   },
   {
     name: "SanaGrid", ext: ".com",
+    icon: "grid",
     tag: "The future of smart energy branding — AI, energy, infrastructure.",
     market: "Sedo", marketUrl: "https://sedo.com/search/details/?partnerid=324561&language=e&domain=sanagrid.com",
     badge: "Energy · AI",
     pills: ["AI", "Energy", "Infrastructure"],
-    details: [
-      ["Category", "Smart Energy / Infrastructure"],
-      ["Style", "Compound, modern"],
-      ["Marketplace", "Sedo"]
-    ]
+    whyGood: "\"Sana\" (clean/health in several languages) + \"Grid\" ties clean-energy meaning directly to infrastructure.",
+    fitsWhere: "Smart-grid startups, renewable-energy platforms, or energy-AI infrastructure companies.",
+    brandability: "High — descriptive yet distinctive, and it reads naturally across global markets.",
+    demand10yr: "Energy infrastructure and climate tech are multi-decade growth categories with rising naming competition.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   },
   {
     name: "SolvaFunds", ext: ".com",
+    icon: "coin",
     tag: "The name behind tomorrow's financial platform.",
     market: "Sedo", marketUrl: "https://sedo.com/search/details/?partnerid=324561&language=e&domain=solvafunds.com",
     badge: "FinTech",
     pills: ["FinTech", "Funding", "Investment"],
-    details: [
-      ["Category", "FinTech / Investment"],
-      ["Style", "Solva- prefix, trustworthy"],
-      ["Marketplace", "Sedo"]
-    ]
+    whyGood: "\"Solva\" (solution/solve) + \"Funds\" instantly communicates trust and financial purpose.",
+    fitsWhere: "Lending platforms, investment apps, or fintech funding marketplaces.",
+    brandability: "High — sounds like an established financial institution from day one.",
+    demand10yr: "FinTech naming remains fiercely competitive; trust-signaling names like this hold long-term value.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   },
   {
     name: "Baluj", ext: ".com",
+    icon: "diamond",
     tag: "One word. Endless possibilities. 5-letter premium .com.",
     market: "Afternic", marketUrl: "https://forsale.godaddy.com/forsale/baluj.com?",
     badge: "5-Letter .COM",
     pills: ["Short", "Memorable", "Brandable"],
-    details: [
-      ["Length", "5 letters"],
-      ["Style", "Short, brandable"],
-      ["Marketplace", "Afternic (GoDaddy)"]
-    ]
+    whyGood: "Short, unique, and globally pronounceable, with zero built-in meaning to restrict how it's used.",
+    fitsWhere: "Any modern consumer or tech brand looking for a blank-canvas identity to build on.",
+    brandability: "High — a pure invented brandable asset, ready for any category.",
+    demand10yr: "Ultra-short .coms are a finite and shrinking resource — demand for names like this only rises over time.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   }
 ];
 
+const DM_EMAIL = "galibsjournal@gmail.com";
 const grid = document.getElementById('domainGrid');
 
 domains.forEach((d, i) => {
   const card = document.createElement('div');
   card.className = 'card';
+  const fullDomain = d.name + d.ext;
+  const dmSubject = encodeURIComponent('Inquiry: ' + fullDomain);
+  const dmBody = encodeURIComponent('Hi Imteaz,\n\nI\'m interested in ' + fullDomain + '. Could we discuss pricing?\n\n');
+  const dmHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${DM_EMAIL}&su=${dmSubject}&body=${dmBody}`;
   card.innerHTML = `
     <div class="card-top">
-      <div class="card-name">${d.name}<span class="ext">${d.ext}</span></div>
-      <div class="badge">${d.badge}</div>
+      <div class="card-icon">${ICONS[d.icon]}</div>
+      <div class="card-headtext">
+        <div class="card-name">${d.name}<span class="ext">${d.ext}</span></div>
+        <div class="badge">${d.badge}</div>
+      </div>
     </div>
     <div class="card-tag">${d.tag}</div>
     <div class="card-pills">${d.pills.map(p => `<span class="pill">${p}</span>`).join('')}</div>
     <div class="card-actions">
-      <div class="btn feat" data-idx="${i}">Details</div>
-      <a class="btn buy" href="${d.marketUrl}" target="_blank" rel="noopener">Buy Now</a>
+      <div class="btn feat" data-idx="${i}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 8v5"/><path d="M12 16h.01"/><circle cx="12" cy="12" r="9"/></svg>
+        Details
+      </div>
+      <div class="row2">
+        <a class="btn dm" href="${dmHref}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          DM for Deal
+        </a>
+        <a class="btn buy" href="${d.marketUrl}" target="_blank" rel="noopener">
+          Buy Now
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+      </div>
     </div>
     <div class="detail">
-      <ul>${d.details.map(row => `<li><span>${row[0]}</span><b>${row[1]}</b></li>`).join('')}</ul>
+      <div class="detail-row"><div class="detail-label">Why It's Good</div>${d.whyGood}</div>
+      <div class="detail-row"><div class="detail-label">Where It Fits</div>${d.fitsWhere}</div>
+      <div class="detail-row"><div class="detail-label">Brandability</div>${d.brandability}</div>
+      <div class="detail-row"><div class="detail-label">Demand in 10 Years</div>${d.demand10yr}</div>
+      <div class="detail-note">"${d.note}"</div>
     </div>
   `;
   grid.appendChild(card);
