@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://galibimteaz.github.io/sitemap.xml
