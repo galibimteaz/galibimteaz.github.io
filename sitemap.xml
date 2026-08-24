@@ -9,6 +9,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://galibimteaz.github.io/about.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://galibimteaz.github.io/case-study-interviewtipshub.html</loc>
     <priority>0.7</priority>
   </url>
