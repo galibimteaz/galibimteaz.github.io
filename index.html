@@ -155,13 +155,20 @@
   }
   .brand-link .accent{color:var(--green-accent); font-style:italic;}
 
-  .site-nav{display:flex; align-items:center; gap:26px;}
-  .site-nav a{font-size:13px; color:var(--cream-dim); transition:filter .15s ease;}
+  .site-nav{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+  .site-nav a{
+    font-size:12.5px; color:var(--cream-dim);
+    padding:8px 16px; border-radius:999px;
+    background:rgba(201,162,39,0.07);
+    border:1px solid var(--line-strong);
+    transition:filter .15s ease, background .15s ease, transform .15s ease, border-color .15s ease;
+  }
   .site-nav a:nth-child(1){color:var(--gold-bright);}
   .site-nav a:nth-child(2){color:var(--teal-accent);}
   .site-nav a:nth-child(3){color:var(--purple-accent);}
-  .site-nav a:nth-child(4){color:var(--coral-accent);}
-  .site-nav a:hover{filter:brightness(1.25);}
+  .site-nav a:nth-child(4){color:#fb923c;}
+  .site-nav a:nth-child(5){color:var(--coral-accent);}
+  .site-nav a:hover{filter:brightness(1.2); background:rgba(201,162,39,0.15); border-color:var(--gold); transform:translateY(-1px);}
 
   .nav-toggle{display:none; background:none; border:none; color:var(--cream); cursor:pointer; padding:4px;}
   .nav-toggle svg{width:22px; height:22px;}
@@ -171,11 +178,11 @@
     .site-nav{
       position:fixed; top:0; right:-260px; height:100vh; width:240px;
       background:#100e0a; border-left:1px solid var(--line-strong);
-      flex-direction:column; align-items:flex-start; gap:0; padding:70px 24px;
+      flex-direction:column; align-items:flex-start; gap:10px; padding:70px 24px;
       transition:right .25s ease; z-index:100;
     }
     .site-nav.open{right:0;}
-    .site-nav a{padding:14px 0; width:100%; border-bottom:1px solid var(--line); font-size:15px;}
+    .site-nav a{padding:13px 18px; width:100%; border-radius:10px; font-size:15px; background:rgba(201,162,39,0.06);}
     .nav-toggle{display:block;}
     .nav-overlay{position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:99;}
     .nav-overlay.open{display:block;}
@@ -271,12 +278,10 @@
   }
   .li-avatar{
     width:56px; height:56px; border-radius:50%;
-    background:linear-gradient(135deg,var(--gold),#7a5f14);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'Cormorant Garamond',serif;
-    font-weight:700; font-size:22px; color:#0a0908;
     flex-shrink:0;
     border:2px solid var(--gold-bright);
+    object-fit:cover;
+    display:block;
   }
   .li-name{
     font-family:'Cormorant Garamond', serif;
@@ -488,6 +493,7 @@
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="index.html#insights">Insights</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -508,7 +514,7 @@
 
     <div class="li-card">
       <div class="li-top">
-        <div class="li-avatar">IC</div>
+        <img class="li-avatar" src="imteaz-photo.jpg" alt="Imteaz (Galib) Chowdhury">
         <div>
           <div class="li-name">Imteaz (Galib) Chowdhury</div>
           <div class="li-role">The Domain Guy Who Actually Shows the Math</div>
@@ -547,6 +553,13 @@
   </div>
 
   <div class="insight-grid">
+    <a class="insight-card" href="blog.html" style="border-top:3px solid #c2680c;">
+      <div class="insight-tag" style="color:#fb923c; border-color:rgba(194,104,12,0.5);">Blog</div>
+      <h3>Notes on Domains, Naming & Brand Strategy</h3>
+      <p>Short reads and LinkedIn newsletter pieces on how names get chosen, priced, and sold.</p>
+      <div class="insight-read" style="color:#fb923c;">Visit Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
     <a class="insight-card" href="about.html">
       <div class="insight-tag">About</div>
       <h3>Why Trust This Portfolio</h3>
