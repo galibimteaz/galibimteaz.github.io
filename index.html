@@ -48,7 +48,7 @@
       "category": "Content Brand",
       "url": "https://galibimteaz.github.io/case-study-interviewtipshub.html",
       "brand": {"@type": "Brand", "name": "Domain Decoded"},
-      "offers": {"@type": "Offer", "url": "https://www.mydomaincontact.com/?domain_name=interviewtipshub.com", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
+      "offers": {"@type": "Offer", "url": "https://interviewtipshub.com/", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
     },
     {
       "@type": "Product",
@@ -58,7 +58,7 @@
       "category": "Brandable",
       "url": "https://galibimteaz.github.io/case-study-mubez.html",
       "brand": {"@type": "Brand", "name": "Domain Decoded"},
-      "offers": {"@type": "Offer", "url": "https://www.mydomaincontact.com/?domain_name=mubez.com", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
+      "offers": {"@type": "Offer", "url": "https://mubez.com/", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
     },
     {
       "@type": "Product",
@@ -78,7 +78,7 @@
       "category": "LegalTech · AI",
       "url": "https://galibimteaz.github.io/case-study-lexbold.html",
       "brand": {"@type": "Brand", "name": "Domain Decoded"},
-      "offers": {"@type": "Offer", "url": "https://www.mydomaincontact.com/?domain_name=lexbold.com", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
+      "offers": {"@type": "Offer", "url": "https://lexbold.com/", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
     },
     {
       "@type": "Product",
@@ -88,7 +88,7 @@
       "category": "Energy · AI",
       "url": "https://galibimteaz.github.io/case-study-sanagrid.html",
       "brand": {"@type": "Brand", "name": "Domain Decoded"},
-      "offers": {"@type": "Offer", "url": "https://www.mydomaincontact.com/?domain_name=sanagrid.com", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
+      "offers": {"@type": "Offer", "url": "https://sanagrid.com/", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
     },
     {
       "@type": "Product",
@@ -98,7 +98,7 @@
       "category": "FinTech",
       "url": "https://galibimteaz.github.io/case-study-solvafunds.html",
       "brand": {"@type": "Brand", "name": "Domain Decoded"},
-      "offers": {"@type": "Offer", "url": "https://www.mydomaincontact.com/?domain_name=solvafunds.com", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
+      "offers": {"@type": "Offer", "url": "https://solvafunds.com/", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
     },
     {
       "@type": "Product",
@@ -108,7 +108,7 @@
       "category": "Brandable",
       "url": "https://galibimteaz.github.io/case-study-baluj.html",
       "brand": {"@type": "Brand", "name": "Domain Decoded"},
-      "offers": {"@type": "Offer", "url": "https://www.mydomaincontact.com/?domain_name=baluj.com", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
+      "offers": {"@type": "Offer", "url": "http://baluj.com/", "availability": "https://schema.org/InStock", "seller": {"@type": "Person", "name": "Imteaz (Galib) Chowdhury"}}
     }
   ]
 }
@@ -135,8 +135,7 @@
     background:
       radial-gradient(ellipse 900px 500px at 85% -10%, rgba(201,162,39,0.10), transparent 60%),
       radial-gradient(ellipse 700px 500px at 0% 20%, rgba(201,162,39,0.06), transparent 60%),
-      repeating-linear-gradient(45deg, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, transparent 1px, transparent 28px),
-      repeating-linear-gradient(-45deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 28px),
+      radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1.5px) 0 0/26px 26px,
       var(--bg);
     color:var(--cream);
     font-family:'Jost', sans-serif;
@@ -149,42 +148,35 @@
 
   /* ===== TOPBAR & NAV ===== */
   .topbar{
-    border-bottom:1px solid var(--line-strong); padding:18px 0;
-    position:sticky; top:0; z-index:200;
-    background:rgba(36,33,27,0.88);
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
+    background:linear-gradient(180deg, rgba(23,20,15,0.92), rgba(23,20,15,0.55));
+    border-bottom:1px solid var(--line-strong);
+    padding:20px 0;
+    position:sticky; top:0; z-index:80;
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
   }
   .topbar .wrap{display:flex; align-items:center; justify-content:space-between;}
   .brand-link{
     font-family:'Cormorant Garamond', serif;
     font-size:20px; font-weight:600; color:var(--green-accent);
-    display:flex; align-items:center; gap:1px;
-    white-space:nowrap;
+    display:flex; align-items:center; gap:8px;
   }
   .brand-link .accent{color:var(--green-accent); font-style:italic;}
-  .tw-cursor{
-    display:inline-block; margin-left:3px; width:2px;
-    color:var(--gold-bright); font-weight:400; opacity:1;
-  }
-  .tw-cursor.tw-blink{animation:tw-blink-anim 0.9s step-end infinite;}
-  @keyframes tw-blink-anim{50%{opacity:0;}}
 
   .site-nav{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
   .site-nav a{
-    font-size:13.5px; font-weight:500; color:var(--cream-dim);
-    padding:9px 18px; border-radius:999px;
-    background:rgba(10,9,8,0.35);
-    border:1.5px solid var(--line-strong);
-    letter-spacing:0.01em;
-    transition:filter .15s ease, background .15s ease, transform .15s ease, border-color .15s ease, color .15s ease;
+    font-size:12.5px; color:var(--cream-dim);
+    padding:8px 16px; border-radius:999px;
+    background:rgba(201,162,39,0.07);
+    border:1px solid var(--line-strong);
+    transition:filter .15s ease, background .15s ease, transform .15s ease, border-color .15s ease;
   }
   .site-nav a:nth-child(1){color:var(--gold-bright);}
-  .site-nav a:nth-child(2){color:#7fd9d1;}
-  .site-nav a:nth-child(3){color:#c9a8ec;}
-  .site-nav a:nth-child(4){color:#fdae6b;}
-  .site-nav a:nth-child(5){color:#ef8a72;}
-  .site-nav a:hover{filter:brightness(1.25); background:rgba(0,0,0,0.5); border-color:var(--gold); transform:translateY(-1px);}
+  .site-nav a:nth-child(2){color:var(--teal-accent);}
+  .site-nav a:nth-child(3){color:var(--purple-accent);}
+  .site-nav a:nth-child(4){color:#fb923c;}
+  .site-nav a:nth-child(5){color:var(--coral-accent);}
+  .site-nav a:hover{filter:brightness(1.2); background:rgba(201,162,39,0.15); border-color:var(--gold); transform:translateY(-1px);}
 
   .nav-toggle{display:none; background:none; border:none; color:var(--cream); cursor:pointer; padding:4px;}
   .nav-toggle svg{width:22px; height:22px;}
@@ -216,19 +208,10 @@
   .whatsapp-fab svg{width:28px; height:28px; fill:#fff;}
 
   /* ===== HERO ===== */
-  @keyframes fadeUpIn{
-    from{opacity:0; transform:translateY(16px);}
-    to{opacity:1; transform:translateY(0);}
-  }
   .hero{
     padding:56px 0 40px;
     border-bottom:1px solid var(--line);
   }
-  .hero .eyebrow{animation:fadeUpIn .7s ease both; animation-delay:.05s;}
-  .hero h1.title{animation:fadeUpIn .7s ease both; animation-delay:.15s;}
-  .hero .hero-sub{animation:fadeUpIn .7s ease both; animation-delay:.3s;}
-  .hero .hero-quote{animation:fadeUpIn .7s ease both; animation-delay:.42s;}
-  .hero .li-card{animation:fadeUpIn .7s ease both; animation-delay:.5s;}
   .hero-grid{
     display:grid;
     grid-template-columns: 1.5fr 1fr;
@@ -494,64 +477,54 @@
   .insight-read svg{width:12px; height:12px;}
 
   /* ===== SITE FOOTER ===== */
-  .site-footer{
+  footer.site-footer{
+    background:var(--bg-raised);
     border-top:1px solid var(--line-strong);
-    margin-top:20px;
-    padding-top:48px;
-    background:linear-gradient(180deg, rgba(58,53,42,0.55), rgba(36,33,27,0.85));
-    position:relative;
+    margin-top:40px;
+    padding-top:44px;
   }
-  .footer-top{
-    display:grid;
-    grid-template-columns:1.4fr 1fr 1fr 1fr;
-    gap:32px;
-    padding-bottom:36px;
+  .footer-grid{
+    display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:30px;
+    padding-bottom:34px;
   }
-  .footer-col h4{
-    font-family:'Jost', sans-serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase;
-    color:var(--gold-bright); font-weight:500; margin-bottom:16px;
-  }
-  .footer-brand-name{
-    font-family:'Cormorant Garamond', serif; font-size:22px; font-weight:600;
-    color:var(--green-accent); margin-bottom:12px;
-  }
-  .footer-brand-name .accent{color:var(--green-accent); font-style:italic;}
-  .footer-about p{
-    font-size:13px; color:var(--cream-dim); line-height:1.7; max-width:280px;
-  }
-  .footer-col a, .footer-col span{
-    display:block; font-size:13px; color:var(--cream-dim);
-    margin-bottom:11px; transition:color .15s ease;
-  }
-  .footer-col a:hover{color:var(--gold-bright);}
-  .footer-social{display:flex; gap:10px; margin-top:2px;}
+  .footer-brand{font-family:'Cormorant Garamond', serif; font-size:19px; font-weight:600; color:var(--cream); margin-bottom:10px;}
+  .footer-brand .accent{color:var(--green-accent); font-style:italic;}
+  .footer-blurb{font-size:12.5px; color:var(--cream-dim); line-height:1.7; max-width:280px; margin-bottom:16px;}
+  .footer-social{display:flex; gap:10px;}
   .footer-social a{
-    width:38px; height:38px; margin:0; border-radius:50%;
-    border:1px solid var(--line-strong);
-    display:flex; align-items:center; justify-content:center;
-    background:rgba(255,255,255,0.04);
-    transition:background .15s ease, transform .15s ease, border-color .15s ease;
+    width:34px; height:34px; border-radius:50%; border:1px solid var(--line-strong);
+    display:flex; align-items:center; justify-content:center; color:var(--cream-dim);
+    transition:background .15s ease, color .15s ease, transform .15s ease;
   }
-  .footer-social a svg{width:16px; height:16px; fill:currentColor;}
-  .footer-social a:hover{transform:translateY(-2px); border-color:var(--gold);}
-  .footer-social a.fs-linkedin{color:#7c9eff;}
-  .footer-social a.fs-whatsapp{color:#25D366;}
-  .footer-social a.fs-mail{color:var(--gold-bright);}
+  .footer-social a:hover{transform:translateY(-2px); color:var(--gold-bright); border-color:var(--gold);}
+  .footer-social svg{width:15px; height:15px;}
+  .footer-col h4{
+    font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold);
+    margin-bottom:14px; font-weight:500;
+  }
+  .footer-col ul{list-style:none;}
+  .footer-col li{margin-bottom:10px;}
+  .footer-col a{font-size:13px; color:var(--cream-dim); transition:color .15s ease;}
+  .footer-col a:hover{color:var(--gold-bright);}
   .footer-bottom{
-    border-top:1px solid var(--line-strong);
-    padding:18px 0 26px;
-    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    border-top:1px solid var(--line); padding:18px 0 26px;
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
     font-size:11.5px; color:var(--cream-dim);
   }
-  .footer-bottom .footer-tag{color:var(--cream-dim); opacity:0.75;}
-
-  @media(max-width:820px){
-    .footer-top{grid-template-columns:1fr 1fr; gap:28px 20px;}
-    .footer-about{grid-column:1/-1;}
-  }
-  @media(max-width:480px){
-    .footer-top{grid-template-columns:1fr;}
+  .footer-bottom a{color:var(--gold-bright);}
+  @media(max-width:640px){
+    .footer-grid{grid-template-columns:1fr; gap:26px;}
     .footer-bottom{flex-direction:column; align-items:flex-start;}
+  }
+
+  /* ===== TYPEWRITER HERO TITLE ===== */
+  .typewriter-cursor{
+    display:inline-block; width:3px; height:0.85em; margin-left:3px;
+    background:var(--gold-bright); vertical-align:text-bottom;
+    animation:tw-blink 0.8s step-end infinite;
+  }
+  @keyframes tw-blink{
+    0%, 100%{opacity:1;} 50%{opacity:0;}
   }
 
   @media(max-width:820px){
@@ -585,7 +558,9 @@
   <div class="hero-grid">
     <div>
       <div class="eyebrow">Domain Investor · Naming Strategist · Brand Builder</div>
-      <h1 class="title">Domain <em>Decoded</em></h1>
+      <h1 class="title" id="heroTitle" aria-label="Domain Decoded">
+        <span class="tw-part" id="twPlain"></span><em><span class="tw-part" id="twAccent"></span></em><span class="typewriter-cursor" id="twCursor">&nbsp;</span>
+      </h1>
       <p class="hero-sub">A curated portfolio of trademark-cleared, comparable-verified premium domains — picked for brandability, not guesswork. Every listing below is checked twice before it's shown once.</p>
       <div class="hero-quote">"Comparable sales first. Pricing second."</div>
     </div>
@@ -715,8 +690,8 @@
       <div class="insight-read" style="color:#c4b5fd;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
-    <a class="insight-card" href="contact.html" style="border:2px solid #ffffff; border-top:4px solid #ff3b30; box-shadow:0 0 24px rgba(255,59,48,0.18);">
-      <div class="insight-tag" style="color:#ff6b5f; border-color:rgba(255,255,255,0.7); background:rgba(255,59,48,0.08);">Get In Touch</div>
+    <a class="insight-card" href="contact.html" style="border:2px solid #ff3b30; border-top:4px solid #ff3b30; box-shadow:0 0 24px rgba(255,59,48,0.14);">
+      <div class="insight-tag" style="color:#c0392b; border-color:rgba(255,59,48,0.4); background:rgba(255,59,48,0.08);">Get In Touch</div>
       <h3>Let's Talk Domains</h3>
       <p>Send a direct message about acquiring, brokering, or naming a domain.</p>
       <div class="insight-read" style="color:#ff6b5f; font-weight:500;">Contact form <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
@@ -725,36 +700,44 @@
 </div>
 
 <footer class="site-footer">
-  <div class="wrap footer-top">
-    <div class="footer-col footer-about">
-      <div class="footer-brand-name">Domain <span class="accent">Decoded</span></div>
-      <p>Trademark-cleared, comparable-verified premium .com domains — curated by Imteaz (Galib) Chowdhury.</p>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-brand">Domain <span class="accent">Decoded</span></div>
+      <p class="footer-blurb">Curated, trademark-cleared premium domains for LegalTech, FinTech, Energy, and brandable ventures — verified before they're ever listed.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.5A1.5 1.5 0 107 5.5a1.5 1.5 0 000 3zM18.34 18v-4.63c0-2.48-1.32-3.63-3.08-3.63-1.42 0-2.06.78-2.41 1.33V9.6H10.2c.04.75 0 8.4 0 8.4h2.65v-4.69c0-.25.02-.5.1-.68.2-.5.67-1.03 1.46-1.03 1.03 0 1.44.79 1.44 1.94V18h2.49z"/></svg>
+        </a>
+        <a href="https://wa.me/8801732773310" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.78 14.13c-.24.68-1.19 1.25-1.96 1.42-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08.99.3.15.5.23.58.36.08.13.08.75-.16 1.43z"/></svg>
+        </a>
+        <a href="mailto:galibsjournal@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>
+        </a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="index.html#insights">Insights</a>
-      <a href="blog.html">Blog</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#insights">Insights</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
     <div class="footer-col">
-      <h4>Get In Touch</h4>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=galibsjournal@gmail.com&su=Domain%20Portfolio%20Inquiry" target="_blank" rel="noopener">galibsjournal@gmail.com</a>
-      <a href="https://wa.me/8801732773310" target="_blank" rel="noopener">+880 1732-773310</a>
-      <span>Dhaka, Bangladesh</span>
-    </div>
-    <div class="footer-col">
-      <h4>Follow</h4>
-      <div class="footer-social">
-        <a class="fs-linkedin" href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.5A1.5 1.5 0 107 5.5a1.5 1.5 0 000 3zM18.34 18v-4.63c0-2.48-1.32-3.63-3.08-3.63-1.42 0-2.06.78-2.41 1.33V9.6H10.2c.04.75 0 8.4 0 8.4h2.65v-4.69c0-.25.02-.5.1-.68.2-.5.67-1.03 1.46-1.03 1.03 0 1.44.79 1.44 1.94V18h2.49z"/></svg></a>
-        <a class="fs-whatsapp" href="https://wa.me/8801732773310?text=Hi%20Imteaz%2C%20I%27m%20interested%20in%20a%20domain%20from%20Domain%20Decoded" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.78 14.13c-.24.68-1.19 1.25-1.96 1.42-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08.99.3.15.5.23.58.36.08.13.08.75-.16 1.43z"/></svg></a>
-        <a class="fs-mail" href="mailto:galibsjournal@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg></a>
-      </div>
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:galibsjournal@gmail.com">galibsjournal@gmail.com</a></li>
+        <li><a href="https://wa.me/8801732773310" target="_blank" rel="noopener">WhatsApp: +880 1732-773310</a></li>
+        <li><a href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+      </ul>
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <span>© 2026 Domain Decoded — Imteaz (Galib) Chowdhury. All rights reserved.</span>
-    <span class="footer-tag">Prices on request unless listed.</span>
+    <span>&copy; 2026 Domain Decoded. All rights reserved.</span>
+    <span>Built &amp; maintained by <a href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener">Imteaz (Galib) Chowdhury</a></span>
   </div>
 </footer>
 
@@ -784,7 +767,7 @@ const domains = [
     icon: "briefcase",
     accent: "content",
     tag: "Your go-to hub for interview tips, career guidance & job success.",
-    market: "Afternic", marketUrl: "https://www.mydomaincontact.com/?domain_name=interviewtipshub.com",
+    market: "Afternic", marketUrl: "https://interviewtipshub.com/",
     badge: "Content Brand",
     pills: ["Simple Name", "Massive Potential", "Brandable"],
     whyGood: "Descriptive, keyword-rich name that tells visitors exactly what it does — ranks faster and converts better for career-search traffic.",
@@ -798,7 +781,7 @@ const domains = [
     icon: "spark",
     accent: "brandable",
     tag: "One word. Endless possibilities. 5-letter premium .com.",
-    market: "Atom.com", marketUrl: "https://www.mydomaincontact.com/?domain_name=mubez.com",
+    market: "Atom.com", marketUrl: "https://mubez.com/",
     badge: "5-Letter .COM",
     pills: ["Short", "Memorable", "Trademark Clean"],
     whyGood: "Short, phonetic, and easy to say, spell, and remember across languages — with a fully clean trademark and search history.",
@@ -826,7 +809,7 @@ const domains = [
     icon: "gavel",
     accent: "legaltech",
     tag: "Where legal authority meets bold innovation.",
-    market: "Sedo", marketUrl: "https://www.mydomaincontact.com/?domain_name=lexbold.com",
+    market: "Sedo", marketUrl: "https://lexbold.com/",
     badge: "LegalTech · AI",
     pills: ["LegalTech", "AI Solutions", "Enterprise Law"],
     whyGood: "\"Lex\" (law) + \"Bold\" pairs trust with confidence — a rare combination for a legal-AI brand.",
@@ -840,7 +823,7 @@ const domains = [
     icon: "grid",
     accent: "energy",
     tag: "The future of smart energy branding — AI, energy, infrastructure.",
-    market: "Sedo", marketUrl: "https://www.mydomaincontact.com/?domain_name=sanagrid.com",
+    market: "Sedo", marketUrl: "https://sanagrid.com/",
     badge: "Energy · AI",
     pills: ["AI", "Energy", "Infrastructure"],
     whyGood: "\"Sana\" (clean/health in several languages) + \"Grid\" ties clean-energy meaning directly to infrastructure.",
@@ -854,7 +837,7 @@ const domains = [
     icon: "coin",
     accent: "fintech",
     tag: "The name behind tomorrow's financial platform.",
-    market: "Sedo", marketUrl: "https://www.mydomaincontact.com/?domain_name=solvafunds.com",
+    market: "Sedo", marketUrl: "https://solvafunds.com/",
     badge: "FinTech",
     pills: ["FinTech", "Funding", "Investment"],
     whyGood: "\"Solva\" (solution/solve) + \"Funds\" instantly communicates trust and financial purpose.",
@@ -868,7 +851,7 @@ const domains = [
     icon: "diamond",
     accent: "brandable",
     tag: "One word. Endless possibilities. 5-letter premium .com.",
-    market: "Afternic", marketUrl: "https://www.mydomaincontact.com/?domain_name=baluj.com",
+    market: "Afternic", marketUrl: "http://baluj.com/",
     badge: "5-Letter .COM",
     pills: ["Short", "Memorable", "Brandable"],
     whyGood: "Short, unique, and globally pronounceable, with zero built-in meaning to restrict how it's used.",
@@ -959,26 +942,38 @@ grid.addEventListener('click', (e) => {
 
 <script>
 (function(){
-  var brand = document.querySelector('.topbar .brand-link');
-  if(!brand) return;
-  var full = "Domain Decoded";
-  var accentStart = 7;
-  brand.innerHTML = '<span class="tw-text"></span><span class="tw-cursor">|</span>';
-  var textEl = brand.querySelector('.tw-text');
-  var cursorEl = brand.querySelector('.tw-cursor');
-  var i = 0;
-  function type(){
-    if(i <= full.length){
-      var plain = full.slice(0, Math.min(i, accentStart));
-      var accent = full.slice(accentStart, i);
-      textEl.innerHTML = plain + (accent ? '<span class="accent">' + accent + '</span>' : '');
+  var plainEl = document.getElementById('twPlain');
+  var accentEl = document.getElementById('twAccent');
+  var cursor = document.getElementById('twCursor');
+  if(!plainEl || !accentEl) return;
+
+  var plainText = "Domain ";
+  var accentText = "Decoded";
+  var i = 0, j = 0;
+  var speed = 85;
+
+  function typePlain(){
+    if(i <= plainText.length){
+      plainEl.textContent = plainText.slice(0, i);
       i++;
-      setTimeout(type, 55);
+      setTimeout(typePlain, speed);
     } else {
-      cursorEl.classList.add('tw-blink');
+      setTimeout(typeAccent, speed);
     }
   }
-  setTimeout(type, 200);
+  function typeAccent(){
+    if(j <= accentText.length){
+      accentEl.textContent = accentText.slice(0, j);
+      j++;
+      setTimeout(typeAccent, speed);
+    } else {
+      setTimeout(function(){
+        if(cursor) cursor.style.animation = 'tw-blink 0.8s step-end 4';
+        setTimeout(function(){ if(cursor) cursor.style.display = 'none'; }, 3400);
+      }, 400);
+    }
+  }
+  setTimeout(typePlain, 300);
 })();
 </script>
 
