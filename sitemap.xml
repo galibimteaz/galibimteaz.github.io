@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://galibimteaz.github.io/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/services.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/about.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/blog.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/blog-post-meaningless-brand-names.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/case-study-interviewtipshub.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/case-study-juronix.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/case-study-sanagrid.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/case-study-lexbold.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/case-study-solvafunds.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/case-study-mubez.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/case-study-baluj.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/why-it-matters.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/workflow.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://galibimteaz.github.io/contact.html</loc>
-    <priority>0.6</priority>
-  </url>
+<url>
+<loc>https://galibimteaz.github.io/</loc>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/services.html</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/about.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/blog.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/blog-post-meaningless-brand-names.html</loc>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/blog-post-juronix-pricing-comps.html</loc>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/case-study-interviewtipshub.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/case-study-juronix.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/case-study-sanagrid.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/case-study-lexbold.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/case-study-solvafunds.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/case-study-mubez.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/case-study-baluj.html</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/why-it-matters.html</loc>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/workflow.html</loc>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://galibimteaz.github.io/contact.html</loc>
+<priority>0.6</priority>
+</url>
 </urlset>
