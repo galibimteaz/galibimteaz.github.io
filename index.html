@@ -132,6 +132,24 @@
       "position": 7,
       "url": "https://galibimteaz.github.io/case-study-baluj.html",
       "name": "Baluj.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://galibimteaz.github.io/case-study-griefplatform.html",
+      "name": "GriefPlatform.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://galibimteaz.github.io/case-study-restinjoy.html",
+      "name": "RestInJoy.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://galibimteaz.github.io/case-study-losswell.html",
+      "name": "Losswell.com"
     }
   ]
 }
@@ -713,6 +731,27 @@
       <div class="insight-read" style="color:#c4b5fd;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
+    <a class="insight-card" href="case-study-griefplatform.html" style="border-top:3px solid #0891b2;">
+      <div class="insight-tag" style="color:#67e8f9; border-color:rgba(8,145,178,0.5);">Naming Decision · Grief-Tech</div>
+      <h3>GriefPlatform.com: A Name for a Category That's Quietly Emerging</h3>
+      <p>Grief-tech funding has crossed $900M — why an exact-match name matters now.</p>
+      <div class="insight-read" style="color:#67e8f9;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
+    <a class="insight-card" href="case-study-restinjoy.html" style="border-top:3px solid #8b5cf6;">
+      <div class="insight-tag" style="color:#c4b5fd; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
+      <h3>RestInJoy.com: A Name That Feels Like a Brand, Not a Domain</h3>
+      <p>A rare 3-word compound that stays warm, clean, and pronounceable.</p>
+      <div class="insight-read" style="color:#c4b5fd;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
+    <a class="insight-card" href="case-study-losswell.html" style="border-top:3px solid #8b5cf6;">
+      <div class="insight-tag" style="color:#c4b5fd; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
+      <h3>Losswell.com: A Short Compound Built for Risk & Recovery Brands</h3>
+      <p>Two plain-English words, a federally clear trademark, and flexible category fit.</p>
+      <div class="insight-read" style="color:#c4b5fd;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
     <a class="insight-card" href="contact.html" style="border:2px solid #ff3b30; border-top:4px solid #ff3b30; box-shadow:0 0 24px rgba(255,59,48,0.14);">
       <div class="insight-tag" style="color:#c0392b; border-color:rgba(255,59,48,0.4); background:rgba(255,59,48,0.08);">Get In Touch</div>
       <h3>Let's Talk Domains</h3>
@@ -773,7 +812,10 @@ const ICONS = {
   gavel: `<svg viewBox="0 0 24 24"><path d="M14 4l6 6"/><path d="M4 14l6 6"/><path d="M12.5 5.5l6 6"/><path d="M2 22l7-7"/><path d="M17 3l4 4-3 3-4-4z"/></svg>`,
   grid: `<svg viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M12 16v6"/><path d="M4 12h6"/><path d="M14 12h6"/><circle cx="12" cy="12" r="3"/></svg>`,
   coin: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M9 9.5c0-1 1-1.8 3-1.8s3 .8 3 1.8-1 1.4-3 1.8-3 .8-3 1.9 1 1.8 3 1.8 3-.8 3-1.8"/></svg>`,
-  diamond: `<svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M9 3l3 6-3 12"/><path d="M15 3l-3 6 3 12"/></svg>`
+  diamond: `<svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M9 3l3 6-3 12"/><path d="M15 3l-3 6 3 12"/></svg>`,
+  heart: `<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.1C.4 8.6 2 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5 18 5 19.6 8.6 22 11.9 19.5 16.4 12 21 12 21z"/></svg>`,
+  leaf: `<svg viewBox="0 0 24 24"><path d="M21 3C11 3 3 11 3 21c10 0 18-8 18-18z"/><path d="M3 21c4-4 9-9 13-13"/></svg>`,
+  shield: `<svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>`
 };
 
 const ACCENTS = {
@@ -781,7 +823,8 @@ const ACCENTS = {
   fintech:   { main: "#1f9d55", bright: "#6fe3a0", line: "rgba(31,157,85,0.25)",  lineStrong: "rgba(31,157,85,0.5)" },
   energy:    { main: "#0f9b8e", bright: "#5eead4", line: "rgba(15,155,142,0.25)", lineStrong: "rgba(15,155,142,0.5)" },
   brandable: { main: "#8b5cf6", bright: "#c4b5fd", line: "rgba(139,92,246,0.25)", lineStrong: "rgba(139,92,246,0.5)" },
-  content:   { main: "#c2680c", bright: "#fb923c", line: "rgba(194,104,12,0.25)", lineStrong: "rgba(194,104,12,0.5)" }
+  content:   { main: "#c2680c", bright: "#fb923c", line: "rgba(194,104,12,0.25)", lineStrong: "rgba(194,104,12,0.5)" },
+  healthtech:{ main: "#0891b2", bright: "#67e8f9", line: "rgba(8,145,178,0.25)",  lineStrong: "rgba(8,145,178,0.5)" }
 };
 
 const domains = [
@@ -881,6 +924,48 @@ const domains = [
     fitsWhere: "Any modern consumer or tech brand looking for a blank-canvas identity to build on.",
     brandability: "High — a pure invented brandable asset, ready for any category.",
     demand10yr: "Ultra-short .coms are a finite and shrinking resource — demand for names like this only rises over time.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
+  },
+  {
+    name: "GriefPlatform", ext: ".com",
+    icon: "heart",
+    accent: "healthtech",
+    tag: "Exact-match .com in the fast-growing grief-tech and digital memorial category.",
+    market: "Afternic", marketUrl: "https://forsale.godaddy.com/forsale/griefplatform.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
+    badge: "Grief-Tech",
+    pills: ["Exact Match", "$900M+ Category", "Trademark Clean"],
+    whyGood: "A short, exact-match two-word .com in a category where funding has crossed $900M and digital memorial usage is up 33% year-over-year.",
+    fitsWhere: "Grief-tech startups, bereavement care platforms, digital memorial services, or nonprofits modernizing memorial support.",
+    brandability: "High — descriptive and self-explanatory, with no rebrand needed as the company grows.",
+    demand10yr: "Grief-tech and digital memorial care are an emerging, fundable category — comparable exact-match names have sold from a few hundred dollars up to $10,000+.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
+  },
+  {
+    name: "RestInJoy", ext: ".com",
+    icon: "leaf",
+    accent: "brandable",
+    tag: "A warm, versatile 3-word compound with no category lock-in.",
+    market: "Afternic", marketUrl: "https://forsale.godaddy.com/forsale/restinjoy.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
+    badge: "Brandable",
+    pills: ["3-Word Compound", "Warm & Memorable", "Trademark Clean"],
+    whyGood: "Reads naturally in one pass, carries genuine warmth, and comparable sales for similar compounds cluster in a healthy, repeatable price range.",
+    fitsWhere: "Wellness apps, mindfulness and meditation platforms, memorial and grief-care brands, or general lifestyle ventures.",
+    brandability: "High — rare for a 3-word compound to stay this clean and pronounceable.",
+    demand10yr: "Wellness and mindfulness naming demand has stayed consistently active across market cycles.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
+  },
+  {
+    name: "Losswell", ext: ".com",
+    icon: "shield",
+    accent: "brandable",
+    tag: "A short, flexible two-word compound built for risk & recovery brands.",
+    market: "Afternic", marketUrl: "https://forsale.godaddy.com/forsale/losswell.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
+    badge: "Brandable",
+    pills: ["Short", "Federal Trademark Clean", "Flexible Fit"],
+    whyGood: "Nine characters, two plain-English words, and a federally clear trademark record, with no single locked-in meaning.",
+    fitsWhere: "Risk-management platforms, insurance or claims-adjacent products, data-loss-prevention tools, or recovery-focused brands.",
+    brandability: "Medium-High — flexible across several B2B categories built around managing or recovering from loss.",
+    demand10yr: "Comparable sales for \"Loss\" and \"Well\" compounds show steady, repeatable demand rather than a one-off spike.",
     note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   }
 ];
