@@ -200,37 +200,39 @@
       "position": 10,
       "url": "https://galibimteaz.github.io/case-study-losswell.html",
       "name": "Losswell.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "url": "https://galibimteaz.github.io/case-study-tldfight.html",
+      "name": "TLDFight.com"
     }
   ]
 }
 </script>
 <style>
   :root{
-    --bg:#0a0908;
-    --bg-raised:#141210;
-    --bg-card:#17140f;
-    --line: rgba(201,162,39,0.22);
-    --line-strong: rgba(201,162,39,0.45);
-    --gold: #c9a227;
-    --gold-bright:#f0d78c;
-    --cream:#efe8d6;
-    --cream-dim:#a8a08c;
-    --green-accent:#8fd0a0;
-    --teal-accent:#5fc9c0;
-    --purple-accent:#b98fe0;
-    --coral-accent:#e0765c;
+    --bg:#ffffff;
+    --bg-raised:#f7f7f5;
+    --bg-card:#ffffff;
+    --line: rgba(17,17,17,0.10);
+    --line-strong: rgba(17,17,17,0.22);
+    --gold:#8a6a00;
+    --gold-bright:#7a5c00;
+    --cream:#111111;
+    --cream-dim:#4b5563;
+    --green-accent:#1f7a45;
+    --teal-accent:#0f766e;
+    --purple-accent:#6d28d9;
+    --coral-accent:#c0392b;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
-    background:
-      radial-gradient(ellipse 900px 500px at 85% -10%, rgba(201,162,39,0.10), transparent 60%),
-      radial-gradient(ellipse 700px 500px at 0% 20%, rgba(201,162,39,0.06), transparent 60%),
-      radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1.5px) 0 0/26px 26px,
-      var(--bg);
+    background:#ffffff;
     color:var(--cream);
     font-family:'Jost', sans-serif;
-    font-weight:300;
+    font-weight:400;
     -webkit-font-smoothing:antialiased;
     min-height:100vh;
   }
@@ -239,7 +241,7 @@
 
   /* ===== TOPBAR & NAV ===== */
   .topbar{
-    background:linear-gradient(180deg, rgba(23,20,15,0.92), rgba(23,20,15,0.55));
+    background:rgba(255,255,255,0.94);
     border-bottom:1px solid var(--line-strong);
     padding:20px 0;
     position:sticky; top:0; z-index:80;
@@ -258,16 +260,17 @@
   .site-nav a{
     font-size:12.5px; color:var(--cream-dim);
     padding:8px 16px; border-radius:999px;
-    background:rgba(201,162,39,0.07);
+    background:rgba(17,17,17,0.03);
     border:1px solid var(--line-strong);
-    transition:filter .15s ease, background .15s ease, transform .15s ease, border-color .15s ease;
+    transition:background .15s ease, transform .15s ease, border-color .15s ease;
   }
   .site-nav a:nth-child(1){color:var(--gold-bright);}
   .site-nav a:nth-child(2){color:var(--teal-accent);}
   .site-nav a:nth-child(3){color:var(--purple-accent);}
-  .site-nav a:nth-child(4){color:#fb923c;}
+  .site-nav a:nth-child(4){color:#c2410c;}
   .site-nav a:nth-child(5){color:var(--coral-accent);}
-  .site-nav a:hover{filter:brightness(1.2); background:rgba(201,162,39,0.15); border-color:var(--gold); transform:translateY(-1px);}
+  .site-nav a:nth-child(6){color:var(--cream);}
+  .site-nav a:hover{background:rgba(17,17,17,0.07); border-color:var(--cream); transform:translateY(-1px);}
 
   .nav-toggle{display:none; background:none; border:none; color:var(--cream); cursor:pointer; padding:4px;}
   .nav-toggle svg{width:22px; height:22px;}
@@ -276,14 +279,15 @@
   @media(max-width:820px){
     .site-nav{
       position:fixed; top:0; right:-260px; height:100vh; width:240px;
-      background:#100e0a; border-left:1px solid var(--line-strong);
+      background:#ffffff; border-left:1px solid var(--line-strong);
       flex-direction:column; align-items:flex-start; gap:10px; padding:70px 24px;
       transition:right .25s ease; z-index:100;
+      box-shadow:-10px 0 30px rgba(0,0,0,0.08);
     }
     .site-nav.open{right:0;}
-    .site-nav a{padding:13px 18px; width:100%; border-radius:10px; font-size:15px; background:rgba(201,162,39,0.06);}
+    .site-nav a{padding:13px 18px; width:100%; border-radius:10px; font-size:15px; background:rgba(17,17,17,0.03);}
     .nav-toggle{display:block;}
-    .nav-overlay{position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:99;}
+    .nav-overlay{position:fixed; inset:0; background:rgba(0,0,0,0.35); z-index:99;}
     .nav-overlay.open{display:block;}
   }
 
@@ -314,6 +318,7 @@
     letter-spacing:0.32em;
     text-transform:uppercase;
     font-size:11px;
+    font-weight:500;
     color:var(--gold);
     margin-bottom:18px;
     display:flex;
@@ -344,6 +349,7 @@
     color:var(--cream-dim);
     max-width:520px;
   }
+  .hero-sub a{text-decoration:underline; text-underline-offset:2px;}
   .hero-quote{
     margin-top:26px;
     display:inline-block;
@@ -358,18 +364,13 @@
 
   /* ===== LINKEDIN CARD ===== */
   .li-card{
-    background:linear-gradient(160deg, var(--bg-raised), var(--bg-card));
+    background:linear-gradient(160deg, #ffffff, var(--bg-raised));
     border:1px solid var(--line);
     border-radius:14px;
     padding:26px;
     position:relative;
     overflow:hidden;
-  }
-  .li-card::before{
-    content:'';
-    position:absolute; top:-40%; right:-30%;
-    width:220px; height:220px;
-    background:radial-gradient(circle, rgba(201,162,39,0.16), transparent 70%);
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
   }
   .li-top{
     display:flex; align-items:center; gap:14px;
@@ -378,7 +379,7 @@
   .li-avatar{
     width:56px; height:56px; border-radius:50%;
     flex-shrink:0;
-    border:2px solid var(--gold-bright);
+    border:2px solid var(--gold);
     object-fit:cover;
     display:block;
   }
@@ -414,16 +415,16 @@
   }
   .li-btn svg{width:15px; height:15px; flex-shrink:0;}
   .li-btn.primary{
-    background:linear-gradient(135deg,var(--gold-bright),var(--gold));
-    color:#0a0908; font-weight:500;
+    background:#111111;
+    color:#ffffff; font-weight:500;
   }
   .li-btn.secondary{
-    background:transparent;
+    background:#ffffff;
     border-color:var(--line-strong);
     color:var(--cream);
   }
   .li-btn:hover{transform:translateY(-2px);}
-  .li-btn.secondary:hover{border-color:var(--gold);}
+  .li-btn.secondary:hover{border-color:var(--cream);}
 
   /* ===== SECTION HEADS ===== */
   .section{padding:60px 0;}
@@ -446,20 +447,21 @@
     gap:22px;
   }
   .card{
-    background:linear-gradient(165deg, var(--bg-card), #131009);
+    background:#ffffff;
     border:1px solid var(--line);
     border-radius:14px;
     padding:24px;
     display:flex; flex-direction:column;
+    box-shadow:0 2px 12px rgba(0,0,0,0.05);
     transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
     position:relative;
   }
-  .card:hover{border-color:var(--line-strong); transform:translateY(-3px); box-shadow:0 14px 34px rgba(0,0,0,0.35);}
+  .card:hover{border-color:var(--line-strong); transform:translateY(-3px); box-shadow:0 14px 34px rgba(0,0,0,0.10);}
   .card-top{display:flex; align-items:flex-start; gap:14px;}
   .card-icon{
     width:46px; height:46px; flex-shrink:0; border-radius:10px;
     display:flex; align-items:center; justify-content:center;
-    background:rgba(201,162,39,0.08);
+    background:var(--bg-raised);
     border:1px solid var(--line);
   }
   .card-icon svg{width:24px; height:24px; stroke:currentColor; fill:none; stroke-width:1.5;}
@@ -471,7 +473,7 @@
   }
   .card-name .ext{color:var(--gold-bright);}
   .badge{
-    font-size:9.5px; letter-spacing:0.08em; text-transform:uppercase;
+    font-size:9.5px; letter-spacing:0.08em; text-transform:uppercase; font-weight:500;
     padding:3px 8px; border-radius:5px; display:inline-block; margin-top:6px;
     border:1px solid var(--line-strong);
     color:var(--gold-bright);
@@ -486,8 +488,8 @@
   }
   .pill{
     font-size:10.5px; color:var(--cream-dim);
-    border:1px solid var(--line); border-radius:999px;
-    padding:4px 10px;
+    border:1px solid var(--line-strong); border-radius:999px;
+    padding:4px 10px; background:#ffffff;
   }
   .card-actions{
     margin-top:18px; display:flex; flex-direction:column; gap:8px;
@@ -498,18 +500,18 @@
     border-radius:8px; font-size:12.5px; letter-spacing:0.02em; cursor:pointer;
     border:1px solid var(--line-strong); color:var(--cream);
     transition:background .15s ease, color .15s ease, filter .15s ease;
-    background:transparent;
+    background:#ffffff;
     display:flex; align-items:center; justify-content:center; gap:6px;
   }
   .btn svg{width:14px; height:14px; flex-shrink:0;}
   .btn.feat{width:100%;}
-  .btn.feat:hover{background:rgba(201,162,39,0.10);}
+  .btn.feat:hover{background:rgba(17,17,17,0.05);}
   .btn.dm{flex:1;}
-  .btn.dm:hover{background:rgba(201,162,39,0.10);}
+  .btn.dm:hover{background:rgba(17,17,17,0.05);}
   .btn.buy{
     flex:1;
-    background:linear-gradient(135deg, #4fae7a, #2e7d55);
-    color:#f4fff0; font-weight:500; border-color:transparent;
+    background:linear-gradient(135deg, #1f8a4f, #176d3d);
+    color:#ffffff; font-weight:500; border-color:transparent;
   }
   .btn.buy:hover{filter:brightness(1.1);}
 
@@ -518,20 +520,20 @@
     max-height:0; overflow:hidden;
     transition:max-height .4s ease, margin-top .4s ease, opacity .3s ease;
     opacity:0;
-    font-size:12.5px; color:var(--cream-dim); line-height:1.75;
+    font-size:12.5px; color:#374151; line-height:1.75;
   }
   .card.open .detail{
-    max-height:520px; margin-top:16px; opacity:1;
+    max-height:620px; margin-top:16px; opacity:1;
     border-top:1px solid var(--line); padding-top:14px;
   }
   .detail-row{margin-bottom:11px;}
   .detail-row:last-of-type{margin-bottom:0;}
   .detail-label{
     font-size:10px; letter-spacing:0.07em; text-transform:uppercase;
-    color:var(--gold-bright); font-weight:500; margin-bottom:3px;
+    color:var(--gold-bright); font-weight:600; margin-bottom:3px;
   }
   .detail-note{
-    margin-top:14px; padding-top:12px; border-top:1px dashed rgba(201,162,39,0.25);
+    margin-top:14px; padding-top:12px; border-top:1px dashed rgba(17,17,17,0.2);
     font-family:'Cormorant Garamond', serif; font-style:italic;
     color:var(--gold-bright); font-size:14px; line-height:1.5;
   }
@@ -542,16 +544,17 @@
   }
   .insight-card{
     display:block;
-    background:linear-gradient(165deg, var(--bg-card), #131009);
+    background:#ffffff;
     border:1px solid var(--line); border-radius:14px; padding:24px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.05);
     transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
   }
   .insight-card:hover{
     border-color:var(--line-strong); transform:translateY(-3px);
-    box-shadow:0 14px 34px rgba(0,0,0,0.35);
+    box-shadow:0 14px 34px rgba(0,0,0,0.10);
   }
   .insight-tag{
-    font-size:9.5px; letter-spacing:0.08em; text-transform:uppercase;
+    font-size:9.5px; letter-spacing:0.08em; text-transform:uppercase; font-weight:500;
     color:var(--gold-bright); border:1px solid var(--line-strong);
     border-radius:5px; padding:3px 8px; display:inline-block; margin-bottom:14px;
   }
@@ -563,7 +566,7 @@
     font-size:12.5px; color:var(--cream-dim); line-height:1.6; margin-bottom:14px;
   }
   .insight-read{
-    font-size:12px; color:var(--gold-bright); display:flex; align-items:center; gap:5px;
+    font-size:12px; color:var(--gold-bright); display:flex; align-items:center; gap:5px; font-weight:500;
   }
   .insight-read svg{width:12px; height:12px;}
 
@@ -581,22 +584,23 @@
   .footer-brand{font-family:'Cormorant Garamond', serif; font-size:19px; font-weight:600; color:var(--cream); margin-bottom:10px;}
   .footer-brand .accent{color:var(--green-accent); font-style:italic;}
   .footer-blurb{font-size:12.5px; color:var(--cream-dim); line-height:1.7; max-width:280px; margin-bottom:16px;}
-  .footer-social{display:flex; gap:10px;}
+  .footer-social{display:flex; gap:10px; flex-wrap:wrap;}
   .footer-social a{
     width:34px; height:34px; border-radius:50%; border:1px solid var(--line-strong);
     display:flex; align-items:center; justify-content:center; color:var(--cream-dim);
+    background:#ffffff;
     transition:background .15s ease, color .15s ease, transform .15s ease;
   }
-  .footer-social a:hover{transform:translateY(-2px); color:var(--gold-bright); border-color:var(--gold);}
+  .footer-social a:hover{transform:translateY(-2px); color:var(--cream); border-color:var(--cream);}
   .footer-social svg{width:15px; height:15px;}
   .footer-col h4{
     font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold);
-    margin-bottom:14px; font-weight:500;
+    margin-bottom:14px; font-weight:600;
   }
   .footer-col ul{list-style:none;}
   .footer-col li{margin-bottom:10px;}
   .footer-col a{font-size:13px; color:var(--cream-dim); transition:color .15s ease;}
-  .footer-col a:hover{color:var(--gold-bright);}
+  .footer-col a:hover{color:var(--cream);}
   .footer-bottom{
     border-top:1px solid var(--line); padding:18px 0 26px;
     display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
@@ -611,7 +615,7 @@
   /* ===== TYPEWRITER HERO TITLE ===== */
   .typewriter-cursor{
     display:inline-block; width:3px; height:0.85em; margin-left:3px;
-    background:var(--gold-bright); vertical-align:text-bottom;
+    background:var(--cream); vertical-align:text-bottom;
     animation:tw-blink 0.8s step-end infinite;
   }
   @keyframes tw-blink{
@@ -629,16 +633,16 @@
   .back-to-top{
     position:fixed; bottom:92px; right:24px; z-index:90;
     width:46px; height:46px; border-radius:50%;
-    background:linear-gradient(135deg,var(--gold-bright,#f0d78c),var(--gold,#c9a227));
+    background:#111111;
     display:flex; align-items:center; justify-content:center;
-    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
     opacity:0; visibility:hidden; transform:translateY(10px) scale(0.9);
     transition:opacity .25s ease, transform .25s ease, visibility .25s, box-shadow .15s ease;
     cursor:pointer; border:none; padding:0;
   }
   .back-to-top.visible{opacity:1; visibility:visible; transform:translateY(0) scale(1);}
   .back-to-top:hover{transform:translateY(-3px) scale(1.05); box-shadow:0 10px 26px rgba(0,0,0,0.38);}
-  .back-to-top svg{width:19px; height:19px; stroke:#0a0908; stroke-width:2.6; fill:none;}
+  .back-to-top svg{width:19px; height:19px; stroke:#ffffff; stroke-width:2.6; fill:none;}
   @media(max-width:640px){
     .back-to-top{bottom:88px; right:18px; width:42px; height:42px;}
     .back-to-top svg{width:17px; height:17px;}
@@ -748,10 +752,31 @@
 
   <div class="insight-grid">
     <a class="insight-card" href="blog.html" style="border-top:3px solid #c2680c;">
-      <div class="insight-tag" style="color:#fb923c; border-color:rgba(194,104,12,0.5);">Blog</div>
+      <div class="insight-tag" style="color:#9a4f00; border-color:rgba(194,104,12,0.5);">Blog</div>
       <h3>Notes on Domains, Naming & Brand Strategy</h3>
       <p>Short reads and LinkedIn newsletter pieces on how names get chosen, priced, and sold.</p>
-      <div class="insight-read" style="color:#fb923c;">Visit Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#9a4f00;">Visit Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
+    <a class="insight-card" href="blog-post-tldfight-linkedin.html" style="border-top:3px solid #e11d48;">
+      <div class="insight-tag" style="color:#be123c; border-color:rgba(225,29,72,0.45);">Newsletter · New gTLDs</div>
+      <h3>TLDFight: Who Wins When 1,615 Applications Collide?</h3>
+      <p>A plain-English look at ICANN's new extension round, and what it means if you buy names.</p>
+      <div class="insight-read" style="color:#be123c;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
+    <a class="insight-card" href="blog-post-tld-fight-circleid.html" style="border-top:3px solid #e11d48;">
+      <div class="insight-tag" style="color:#be123c; border-color:rgba(225,29,72,0.45);">CircleID · New gTLDs</div>
+      <h3>The TLD Fight Is On: 1,615 Applications, and One Question Nobody Is Asking</h3>
+      <p>The longer CircleID version: fights, renewals, and why the name may matter more than the ending.</p>
+      <div class="insight-read" style="color:#be123c;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
+    <a class="insight-card" href="blog-post-grief-market.html" style="border-top:3px solid #0891b2;">
+      <div class="insight-tag" style="color:#0b6f87; border-color:rgba(8,145,178,0.45);">Newsletter · Grief-Tech</div>
+      <h3>The Grief Market Nobody Likes to Talk About</h3>
+      <p>Market numbers, the workplace gap, and three .com domains that fit right into this category.</p>
+      <div class="insight-read" style="color:#0b6f87;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="about.html">
@@ -769,17 +794,17 @@
     </a>
 
     <a class="insight-card" href="case-study-interviewtipshub.html" style="border-top:3px solid #c2680c;">
-      <div class="insight-tag" style="color:#fb923c; border-color:rgba(194,104,12,0.5);">Naming Decision · Content</div>
+      <div class="insight-tag" style="color:#9a4f00; border-color:rgba(194,104,12,0.5);">Naming Decision · Content</div>
       <h3>interviewtipshub.com: Your Go-To Hub for Career Success</h3>
       <p>Why a descriptive, keyword-rich name wins for high-intent search traffic.</p>
-      <div class="insight-read" style="color:#fb923c;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#9a4f00;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-juronix.html" style="border-top:3px solid #3b5bdb;">
-      <div class="insight-tag" style="color:#7c9eff; border-color:rgba(59,91,219,0.5);">Case Study · LegalTech</div>
+      <div class="insight-tag" style="color:#2f46b0; border-color:rgba(59,91,219,0.5);">Case Study · LegalTech</div>
       <h3>Why We Rejected 40+ Names Before Approving Juronix.com</h3>
       <p>The five-stage due-diligence process behind one premium LegalTech domain.</p>
-      <div class="insight-read" style="color:#7c9eff;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#2f46b0;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="workflow.html">
@@ -797,66 +822,73 @@
     </a>
 
     <a class="insight-card" href="case-study-sanagrid.html" style="border-top:3px solid #0f9b8e;">
-      <div class="insight-tag" style="color:#5eead4; border-color:rgba(15,155,142,0.5);">Naming Decision · Energy</div>
+      <div class="insight-tag" style="color:#0b6f66; border-color:rgba(15,155,142,0.5);">Naming Decision · Energy</div>
       <h3>How "SanaGrid" Was Derived, Not Invented</h3>
       <p>Concept mapping, naming exploration, and brand testing behind SanaGrid.com.</p>
-      <div class="insight-read" style="color:#5eead4;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#0b6f66;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-lexbold.html" style="border-top:3px solid #3b5bdb;">
-      <div class="insight-tag" style="color:#7c9eff; border-color:rgba(59,91,219,0.5);">Naming Decision · LegalTech</div>
+      <div class="insight-tag" style="color:#2f46b0; border-color:rgba(59,91,219,0.5);">Naming Decision · LegalTech</div>
       <h3>LexBold.com: Where Legal Authority Meets Bold Innovation</h3>
       <p>How a two-word compound cleared every filter for the LegalTech AI category.</p>
-      <div class="insight-read" style="color:#7c9eff;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#2f46b0;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-solvafunds.html" style="border-top:3px solid #1f9d55;">
-      <div class="insight-tag" style="color:#6fe3a0; border-color:rgba(31,157,85,0.5);">Naming Decision · FinTech</div>
+      <div class="insight-tag" style="color:#15703c; border-color:rgba(31,157,85,0.5);">Naming Decision · FinTech</div>
       <h3>SolvaFunds.com: The Name Behind Tomorrow's Financial Platform</h3>
       <p>Why trust-signaling names matter most in a skeptical FinTech market.</p>
-      <div class="insight-read" style="color:#6fe3a0;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#15703c;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-mubez.html" style="border-top:3px solid #8b5cf6;">
-      <div class="insight-tag" style="color:#c4b5fd; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
+      <div class="insight-tag" style="color:#6d3fd1; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
       <h3>Mubez.com: One Word, Endless Possibilities</h3>
       <p>Why a 5-letter invented word with zero baggage became a premium brandable asset.</p>
-      <div class="insight-read" style="color:#c4b5fd;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#6d3fd1;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-baluj.html" style="border-top:3px solid #8b5cf6;">
-      <div class="insight-tag" style="color:#c4b5fd; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
+      <div class="insight-tag" style="color:#6d3fd1; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
       <h3>Baluj.com: One Word, Endless Possibilities</h3>
       <p>Short, unique, globally pronounceable — a blank canvas for any category.</p>
-      <div class="insight-read" style="color:#c4b5fd;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#6d3fd1;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-griefplatform.html" style="border-top:3px solid #0891b2;">
-      <div class="insight-tag" style="color:#67e8f9; border-color:rgba(8,145,178,0.5);">Naming Decision · Grief-Tech</div>
+      <div class="insight-tag" style="color:#0b6f87; border-color:rgba(8,145,178,0.5);">Naming Decision · Grief-Tech</div>
       <h3>GriefPlatform.com: A Name for a Category That's Quietly Emerging</h3>
       <p>Grief-tech funding has crossed $900M — why an exact-match name matters now.</p>
-      <div class="insight-read" style="color:#67e8f9;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#0b6f87;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-restinjoy.html" style="border-top:3px solid #8b5cf6;">
-      <div class="insight-tag" style="color:#c4b5fd; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
+      <div class="insight-tag" style="color:#6d3fd1; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
       <h3>RestInJoy.com: A Name That Feels Like a Brand, Not a Domain</h3>
       <p>A rare 3-word compound that stays warm, clean, and pronounceable.</p>
-      <div class="insight-read" style="color:#c4b5fd;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#6d3fd1;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-losswell.html" style="border-top:3px solid #8b5cf6;">
-      <div class="insight-tag" style="color:#c4b5fd; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
+      <div class="insight-tag" style="color:#6d3fd1; border-color:rgba(139,92,246,0.5);">Naming Decision · Brandable</div>
       <h3>Losswell.com: A Short Compound Built for Risk & Recovery Brands</h3>
       <p>Two plain-English words, a federally clear trademark, and flexible category fit.</p>
-      <div class="insight-read" style="color:#c4b5fd;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#6d3fd1;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
+    <a class="insight-card" href="case-study-tldfight.html" style="border-top:3px solid #e11d48;">
+      <div class="insight-tag" style="color:#be123c; border-color:rgba(225,29,72,0.45);">Naming Decision · Industry Media</div>
+      <h3>TLDFight.com: A Name That Describes a Debate That's Still Going</h3>
+      <p>Who it fits, why the ICANN timing matters, and where this niche name is limited.</p>
+      <div class="insight-read" style="color:#be123c;">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="contact.html" style="border:2px solid #ff3b30; border-top:4px solid #ff3b30; box-shadow:0 0 24px rgba(255,59,48,0.14);">
       <div class="insight-tag" style="color:#c0392b; border-color:rgba(255,59,48,0.4); background:rgba(255,59,48,0.08);">Get In Touch</div>
       <h3>Let's Talk Domains</h3>
       <p>Send a direct message about acquiring, brokering, or naming a domain.</p>
-      <div class="insight-read" style="color:#ff6b5f; font-weight:500;">Contact form <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <div class="insight-read" style="color:#c0392b; font-weight:500;">Contact form <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
   </div>
 </div>
@@ -937,16 +969,18 @@ const ICONS = {
   diamond: `<svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M9 3l3 6-3 12"/><path d="M15 3l-3 6 3 12"/></svg>`,
   heart: `<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.1C.4 8.6 2 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5 18 5 19.6 8.6 22 11.9 19.5 16.4 12 21 12 21z"/></svg>`,
   leaf: `<svg viewBox="0 0 24 24"><path d="M21 3C11 3 3 11 3 21c10 0 18-8 18-18z"/><path d="M3 21c4-4 9-9 13-13"/></svg>`,
-  shield: `<svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>`
+  shield: `<svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>`,
+  bolt: `<svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>`
 };
 
 const ACCENTS = {
-  legaltech: { main: "#3b5bdb", bright: "#7c9eff", line: "rgba(59,91,219,0.25)", lineStrong: "rgba(59,91,219,0.5)" },
-  fintech:   { main: "#1f9d55", bright: "#6fe3a0", line: "rgba(31,157,85,0.25)",  lineStrong: "rgba(31,157,85,0.5)" },
-  energy:    { main: "#0f9b8e", bright: "#5eead4", line: "rgba(15,155,142,0.25)", lineStrong: "rgba(15,155,142,0.5)" },
-  brandable: { main: "#8b5cf6", bright: "#c4b5fd", line: "rgba(139,92,246,0.25)", lineStrong: "rgba(139,92,246,0.5)" },
-  content:   { main: "#c2680c", bright: "#fb923c", line: "rgba(194,104,12,0.25)", lineStrong: "rgba(194,104,12,0.5)" },
-  healthtech:{ main: "#0891b2", bright: "#67e8f9", line: "rgba(8,145,178,0.25)",  lineStrong: "rgba(8,145,178,0.5)" }
+  legaltech: { main: "#3b5bdb", bright: "#2f46b0", line: "rgba(59,91,219,0.08)", lineStrong: "rgba(59,91,219,0.45)" },
+  fintech:   { main: "#1f9d55", bright: "#15703c", line: "rgba(31,157,85,0.08)",  lineStrong: "rgba(31,157,85,0.45)" },
+  energy:    { main: "#0f9b8e", bright: "#0b6f66", line: "rgba(15,155,142,0.08)", lineStrong: "rgba(15,155,142,0.45)" },
+  brandable: { main: "#8b5cf6", bright: "#6d3fd1", line: "rgba(139,92,246,0.08)", lineStrong: "rgba(139,92,246,0.45)" },
+  content:   { main: "#c2680c", bright: "#9a4f00", line: "rgba(194,104,12,0.08)", lineStrong: "rgba(194,104,12,0.45)" },
+  healthtech:{ main: "#0891b2", bright: "#0b6f87", line: "rgba(8,145,178,0.08)",  lineStrong: "rgba(8,145,178,0.45)" },
+  media:     { main: "#e11d48", bright: "#be123c", line: "rgba(225,29,72,0.08)",  lineStrong: "rgba(225,29,72,0.45)" }
 };
 
 const domains = [
@@ -1088,6 +1122,20 @@ const domains = [
     fitsWhere: "Risk-management platforms, insurance or claims-adjacent products, data-loss-prevention tools, or recovery-focused brands.",
     brandability: "Medium-High — flexible across several B2B categories built around managing or recovering from loss.",
     demand10yr: "Comparable sales for \"Loss\" and \"Well\" compounds show steady, repeatable demand rather than a one-off spike.",
+    note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
+  },
+  {
+    name: "TLDFight", ext: ".com",
+    icon: "bolt",
+    accent: "media",
+    tag: "Domain for TLD news, ICANN dispute coverage, or new gTLD industry media.",
+    market: "Spaceship", marketUrl: "https://tldfight.com/",
+    badge: "Industry Media",
+    pills: ["Exact Phrase", "Newsletter-Ready", "Niche Authority"],
+    whyGood: "A short, punchy phrase that names the contest itself. ICANN's 2026 round has 1,615 applications, with 263 extensions that more than one applicant wants, so the name tells readers exactly what they will find.",
+    fitsWhere: "A domain-industry newsletter, a podcast, a dispute-tracking dashboard, or a media site covering new gTLD auctions and objections.",
+    brandability: "Medium-High — plain words that are easy to say and remember, and it works as a media brand, a tracker, or an event name.",
+    demand10yr: "New-extension contention will keep producing news through the auction and objection phases (the objection period runs to March 16, 2027), and later rounds will bring the topic back.",
     note: "Listing price isn't the final word — DM me and we can likely work out a better deal."
   }
 ];
