@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Imteaz (Galib) Chowdhury">
 <title>Domain Decoded — Imteaz Chowdhury</title>
 
@@ -293,6 +293,7 @@ h1.title em{font-style:normal;background:linear-gradient(90deg,var(--mint),var(-
 .card-headtext{flex:1;min-width:0}
 .card-name{font-family:'Jost',sans-serif;font-size:28px;font-weight:600;color:#fff;line-height:1.2;overflow-wrap:anywhere}
 .card-name .ext{color:var(--mint)}
+.card-name.long{font-size:22px}
 .badge{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;padding:4px 11px;border-radius:6px;display:inline-block;margin-top:6px;border:1px solid rgba(94,234,212,.4);color:var(--mint2);white-space:nowrap}
 .card-tag{font-size:15.5px;color:var(--dim);margin-top:12px;line-height:1.6;min-height:48px}
 .card-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
@@ -385,7 +386,7 @@ svg[fill="#0A66C2"]{fill:#4aa3ff}
   .group-head::after{display:none}
   .card,.insight-card{padding:18px}
   .card-icon{width:46px;height:46px}.card-icon svg{width:24px;height:24px}
-  .card-name{font-size:23px}
+  .card-name{font-size:23px}.card-name.long{font-size:19px}
   .card-tag{min-height:0;font-size:15px}
   .btn{font-size:14px;padding:12px 8px}
   .insight-card h3{font-size:19.5px}
@@ -395,94 +396,6 @@ svg[fill="#0A66C2"]{fill:#4aa3ff}
   .footer-brand{font-size:22px}
   .whatsapp-fab{width:52px;height:52px;bottom:16px;right:14px}.whatsapp-fab svg{width:26px;height:26px}
   .back-to-top{bottom:78px;right:14px;width:42px;height:42px}
-}
-
-/* ===== Refinements: compact type + mobile-first fixes ===== */
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden}
-body{font-size:16px;line-height:1.55}
-:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
-.hero-grid>*,.card,.insight-card,.footer-grid>*{min-width:0}
-.topbar{padding:14px 0}
-.brand-link{font-size:24px;gap:12px}
-.brand-link::before{width:42px;height:42px}
-.site-nav a{font-size:14.5px;padding:8px 17px}
-.hero{padding-top:44px;padding-bottom:36px}
-.hero-grid{gap:36px}
-.eyebrow{font-size:12px;margin-bottom:14px}
-h1.title{font-size:52px}
-.hero-sub{font-size:16.5px;line-height:1.65;margin-top:14px;max-width:520px}
-.hero-quote{margin-top:20px;font-size:15.5px;padding:8px 18px;max-width:100%}
-.li-card{padding:22px}
-.li-avatar{width:56px;height:56px}
-.li-name{font-size:21px}
-.li-role{font-size:14px}
-.li-meta{font-size:13.5px;margin-top:14px;padding-top:14px}
-.li-btn{font-size:14px;padding:11px 8px;min-height:44px}
-.section{padding-top:44px;padding-bottom:44px}
-.section-head{margin-bottom:26px}
-.section-head h2{font-size:32px}
-.section-head p{font-size:14.5px;max-width:380px}
-.group-head h3{font-size:21px}
-.group-head .gcount{font-size:12.5px}
-.grid{gap:18px}
-.card,.insight-card{padding:20px}
-.card-icon{width:46px;height:46px}
-.card-icon svg{width:23px;height:23px}
-.card-name{font-size:24px}
-.badge{white-space:normal;font-size:10.5px}
-.card-tag{font-size:14.5px;min-height:0;margin-top:10px;line-height:1.55}
-.pill{font-size:12.5px;padding:5px 12px}
-.btn{font-size:14px;min-height:44px;padding:10px 8px}
-.btn.feat{user-select:none;-webkit-tap-highlight-color:transparent}
-.card.open .detail{max-height:1800px}
-.detail{font-size:14.5px;line-height:1.65}
-.detail-note{font-size:15px}
-.insight-grid{gap:16px}
-.insight-card h3{font-size:18.5px}
-.insight-card p{font-size:14px;margin-bottom:12px}
-.footer-blurb,.footer-col a{font-size:14.5px;overflow-wrap:anywhere}
-.footer-bottom{font-size:13px}
-.whatsapp-fab{bottom:calc(24px + env(safe-area-inset-bottom))}
-.back-to-top{bottom:calc(96px + env(safe-area-inset-bottom))}
-
-@media(max-width:820px){
-  h1.title{font-size:42px}
-  .section-head h2{font-size:28px}
-  .brand-link{font-size:22px}.brand-link::before{width:40px;height:40px}
-  .site-nav{right:0;width:min(280px,80vw);height:100vh;height:100dvh;overflow-y:auto;transform:translateX(105%);visibility:hidden;transition:transform .25s,visibility .25s}
-  .site-nav.open{transform:none;visibility:visible}
-  .site-nav a{font-size:16px;padding:13px 18px;min-height:46px}
-  .nav-toggle{padding:8px;min-width:44px;min-height:44px}
-}
-@media(max-width:640px){
-  .wrap{padding:0 16px}
-  .topbar{padding:10px 0}
-  .brand-link{font-size:20px;gap:10px}.brand-link::before{width:36px;height:36px}
-  .hero{padding-top:26px;padding-bottom:24px}
-  .eyebrow{font-size:11px;letter-spacing:.1em}
-  h1.title{font-size:36px}
-  .hero-sub{font-size:15.5px}
-  .hero-quote{font-size:14.5px;padding:8px 14px;border-radius:14px}
-  .li-card{padding:16px}
-  .li-btn{font-size:13px;padding:10px 6px;gap:5px}
-  .section{padding-top:30px;padding-bottom:30px}
-  .section-head h2{font-size:25px}
-  .section-head p{font-size:14px}
-  .group-head h3{font-size:19px}
-  .grid,.insight-grid{grid-template-columns:1fr}
-  .card,.insight-card{padding:16px}
-  .card-name{font-size:21px}
-  .card-tag{font-size:14px}
-  .btn{font-size:13.5px}
-  .insight-card h3{font-size:17.5px}
-  .footer-bottom{padding-bottom:84px}
-  .whatsapp-fab{right:14px;bottom:calc(16px + env(safe-area-inset-bottom))}
-  .back-to-top{right:14px;bottom:calc(78px + env(safe-area-inset-bottom))}
-}
-@media(max-width:360px){
-  h1.title{font-size:32px}
-  .li-btn{font-size:12.5px}
-  .brand-link{font-size:18px}
 }
 </style>
 </head>
@@ -509,9 +422,9 @@ h1.title{font-size:52px}
 <div class="wrap hero">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow">Domain Investor · Naming Strategist</div>
+      <div class="eyebrow">Domain Investor · Naming Strategist · Brand Builder</div>
       <h1 class="title" id="heroTitle" aria-label="Domain Decoded"><span class="tw-part" id="twPlain"></span><em><span class="tw-part" id="twAccent"></span></em><span class="typewriter-cursor" id="twCursor">&nbsp;</span></h1>
-      <p class="hero-sub">Trademark-cleared, comparable-verified premium domains — every name screened through <a href="workflow.html">DIOS</a> before it goes live.</p>
+      <p class="hero-sub">A curated portfolio of trademark-cleared, comparable-verified premium domains — screened through <a href="workflow.html">DIOS</a> (Domain Investing Operating System), the gate-and-score framework, before a single listing goes live.</p>
       <div class="hero-quote">"Comparable sales first. Pricing second."</div>
     </div>
 
@@ -525,12 +438,12 @@ h1.title{font-size:52px}
       </div>
       <div class="li-meta">Trademark-cleared · Competitor-verified</div>
       <div class="li-actions">
-        <a class="li-btn primary" href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.5A1.5 1.5 0 107 5.5a1.5 1.5 0 000 3zM18.34 18v-4.63c0-2.48-1.32-3.63-3.08-3.63-1.42 0-2.06.78-2.41 1.33V9.6H10.2c.04.75 0 8.4 0 8.4h2.65v-4.69c0-.25.02-.5.1-.68.2-.5.67-1.03 1.46-1.03 1.03 0 1.44.79 1.44 1.94V18h2.49z"/></svg>LinkedIn</a>
+        <a class="li-btn primary" href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.5A1.5 1.5 0 107 5.5a1.5 1.5 0 000 3zM18.34 18v-4.63c0-2.48-1.32-3.63-3.08-3.63-1.42 0-2.06.78-2.41 1.33V9.6H10.2c.04.75 0 8.4 0 8.4h2.65v-4.69c0-.25.02-.5.1-.68.2-.5.67-1.03 1.46-1.03 1.03 0 1.44.79 1.44 1.94V18h2.49z"/></svg>Visit Profile</a>
         <a class="li-btn secondary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=galibsjournal@gmail.com&amp;su=Domain%20Portfolio%20Inquiry" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>Contact</a>
       </div>
       <div class="li-actions">
-        <a class="li-btn secondary" href="https://x.com/GalibJournal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.6L4.4 22H1.3l8.1-9.3L1 2h7l4.9 6 6-6zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>X (Twitter)</a>
-        <a class="li-btn secondary" href="https://substack.com/@galibimteaz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#FF6719"><path d="M22 6.7H2V5h20v1.7zM2 9.9v10.4l10-5.6 10 5.6V9.9H2zM22 3.3H2V1.6h20v1.7z"/></svg>Substack</a>
+        <a class="li-btn secondary" href="https://x.com/GalibJournal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.6L4.4 22H1.3l8.1-9.3L1 2h7l4.9 6 6-6zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>Follow on X</a>
+        <a class="li-btn secondary" href="https://substack.com/@galibimteaz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#FF6719"><path d="M22 6.7H2V5h20v1.7zM2 9.9v10.4l10-5.6 10 5.6V9.9H2zM22 3.3H2V1.6h20v1.7z"/></svg>Read on Substack</a>
       </div>
       <div class="li-actions">
         <a class="li-btn secondary" href="https://circleid.com/members/9555/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#E4002B"><circle cx="12" cy="12" r="9.5" fill="none" stroke="#E4002B" stroke-width="1.6"/><circle cx="12" cy="12" r="3.5"/></svg>CircleID</a>
@@ -547,7 +460,7 @@ h1.title{font-size:52px}
 <div class="wrap section">
   <div class="section-head">
     <h2>Available Domains</h2>
-    <p>Tap Details for a quick breakdown, or DM / Buy Now to deal directly.</p>
+    <p>Tap "Details" for a full breakdown, "DM for Deal" to negotiate directly, or "Buy Now" to go straight to the listing.</p>
   </div>
 
   <div class="grid" id="domainGrid"></div>
@@ -556,147 +469,147 @@ h1.title{font-size:52px}
 <div class="wrap section" id="insights">
   <div class="section-head">
     <h2>Insights &amp; Case Studies</h2>
-    <p>How names get chosen, rejected, and priced.</p>
+    <p>How names get chosen, rejected, and priced — from inside the due-diligence process.</p>
   </div>
 
   <div class="insight-grid">
     <a class="insight-card" href="blog.html" style="border-top:3px solid #c2680c;">
       <div class="insight-tag">Blog</div>
-      <h3>Domains, Naming &amp; Brand Notes</h3>
-      <p>Short reads on how names get chosen, priced, and sold.</p>
+      <h3>Notes on Domains, Naming &amp; Brand Strategy</h3>
+      <p>Short reads and LinkedIn newsletter pieces on how names get chosen, priced, and sold.</p>
       <div class="insight-read">Visit Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="blog-post-tldfight-linkedin.html" style="border-top:3px solid #e11d48;">
       <div class="insight-tag">Newsletter · New gTLDs</div>
-      <h3>TLDFight: 1,615 Applications Collide</h3>
-      <p>ICANN's new extension round, in plain English.</p>
+      <h3>TLDFight: Who Wins When 1,615 Applications Collide?</h3>
+      <p>A plain-English look at ICANN's new extension round, and what it means if you buy names.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="blog-post-tld-fight-circleid.html" style="border-top:3px solid #e11d48;">
       <div class="insight-tag">CircleID · New gTLDs</div>
-      <h3>The TLD Fight Is On: 1,615 Applications</h3>
-      <p>The longer CircleID version: why the name may matter more than the ending.</p>
+      <h3>The TLD Fight Is On: 1,615 Applications, and One Question Nobody Is Asking</h3>
+      <p>The longer CircleID version: fights, renewals, and why the name may matter more than the ending.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="blog-post-grief-market.html" style="border-top:3px solid #0891b2;">
       <div class="insight-tag">Newsletter · Grief-Tech</div>
       <h3>The Grief Market Nobody Likes to Talk About</h3>
-      <p>Market numbers and three .com domains that fit the category.</p>
+      <p>Market numbers, the workplace gap, and three .com domains that fit right into this category.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="about.html">
       <div class="insight-tag">About</div>
       <h3>Why Trust This Portfolio</h3>
-      <p>The five-stage due-diligence process behind every domain.</p>
+      <p>The five-stage due-diligence process behind every domain — and why it matters before you buy.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="services.html">
       <div class="insight-tag">Rate Card 2026</div>
       <h3>Domain Naming &amp; Brokerage Services</h3>
-      <p>Pricing and process for naming and brokerage.</p>
+      <p>Pricing, engagement process, and current portfolio for LegalTech and FinTech founders.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-interviewtipshub.html" style="border-top:3px solid #c2680c;">
       <div class="insight-tag">Naming Decision · Content</div>
-      <h3>interviewtipshub.com: A Career-Content Hub</h3>
-      <p>Why a descriptive name wins high-intent search traffic.</p>
+      <h3>interviewtipshub.com: Your Go-To Hub for Career Success</h3>
+      <p>Why a descriptive, keyword-rich name wins for high-intent search traffic.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-juronix.html" style="border-top:3px solid #3b5bdb;">
       <div class="insight-tag">Case Study · LegalTech</div>
       <h3>Why We Rejected 40+ Names Before Approving Juronix.com</h3>
-      <p>Five-stage due diligence behind one LegalTech domain.</p>
+      <p>The five-stage due-diligence process behind one premium LegalTech domain.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="workflow.html">
       <div class="insight-tag">Framework</div>
       <h3>My Domain Due-Diligence Workflow</h3>
-      <p>Brainstorming, trademark screening, history audits, validation.</p>
+      <p>Brainstorming, trademark screening, historical audits, and final brand validation.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="why-it-matters.html">
       <div class="insight-tag">For Founders</div>
-      <h3>The Names You Reject Matter Most</h3>
-      <p>How rigorous naming avoids conflicts and guesswork pricing.</p>
+      <h3>The Names You Reject Are Often More Important Than the One You Choose</h3>
+      <p>How rigorous naming avoids trademark conflicts, hidden history, and guesswork pricing.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-sanagrid.html" style="border-top:3px solid #0f9b8e;">
       <div class="insight-tag">Naming Decision · Energy</div>
       <h3>How "SanaGrid" Was Derived, Not Invented</h3>
-      <p>Concept mapping and brand testing behind SanaGrid.com.</p>
+      <p>Concept mapping, naming exploration, and brand testing behind SanaGrid.com.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-lexbold.html" style="border-top:3px solid #3b5bdb;">
       <div class="insight-tag">Naming Decision · LegalTech</div>
-      <h3>LexBold.com: Authority Meets Innovation</h3>
-      <p>How a two-word compound cleared every filter.</p>
+      <h3>LexBold.com: Where Legal Authority Meets Bold Innovation</h3>
+      <p>How a two-word compound cleared every filter for the LegalTech AI category.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-solvafunds.html" style="border-top:3px solid #1f9d55;">
       <div class="insight-tag">Naming Decision · FinTech</div>
-      <h3>SolvaFunds.com: A Trust-Signaling FinTech Name</h3>
-      <p>Why trust matters most in a skeptical FinTech market.</p>
+      <h3>SolvaFunds.com: The Name Behind Tomorrow's Financial Platform</h3>
+      <p>Why trust-signaling names matter most in a skeptical FinTech market.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-mubez.html" style="border-top:3px solid #8b5cf6;">
       <div class="insight-tag">Naming Decision · Brandable</div>
       <h3>Mubez.com: One Word, Endless Possibilities</h3>
-      <p>A 5-letter invented word with zero baggage.</p>
+      <p>Why a 5-letter invented word with zero baggage became a premium brandable asset.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-baluj.html" style="border-top:3px solid #8b5cf6;">
       <div class="insight-tag">Naming Decision · Brandable</div>
       <h3>Baluj.com: One Word, Endless Possibilities</h3>
-      <p>Short, unique, globally pronounceable.</p>
+      <p>Short, unique, globally pronounceable — a blank canvas for any category.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-griefplatform.html" style="border-top:3px solid #0891b2;">
       <div class="insight-tag">Naming Decision · Grief-Tech</div>
-      <h3>GriefPlatform.com: An Emerging Category</h3>
-      <p>Grief-tech funding tops $900M — why exact-match matters.</p>
+      <h3>GriefPlatform.com: A Name for a Category That's Quietly Emerging</h3>
+      <p>Grief-tech funding has crossed $900M — why an exact-match name matters now.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-restinjoy.html" style="border-top:3px solid #8b5cf6;">
       <div class="insight-tag">Naming Decision · Brandable</div>
-      <h3>RestInJoy.com: A Brand, Not Just a Domain</h3>
-      <p>A rare, warm, clean 3-word compound.</p>
+      <h3>RestInJoy.com: A Name That Feels Like a Brand, Not a Domain</h3>
+      <p>A rare 3-word compound that stays warm, clean, and pronounceable.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-losswell.html" style="border-top:3px solid #8b5cf6;">
       <div class="insight-tag">Naming Decision · Brandable</div>
-      <h3>Losswell.com: Built for Risk &amp; Recovery</h3>
-      <p>Two plain words, a federally clear trademark.</p>
+      <h3>Losswell.com: A Short Compound Built for Risk &amp; Recovery Brands</h3>
+      <p>Two plain-English words, a federally clear trademark, and flexible category fit.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card" href="case-study-tldfight.html" style="border-top:3px solid #e11d48;">
       <div class="insight-tag">Naming Decision · Industry Media</div>
-      <h3>TLDFight.com: A Debate That's Still Going</h3>
-      <p>Who it fits and why ICANN timing matters.</p>
+      <h3>TLDFight.com: A Name That Describes a Debate That's Still Going</h3>
+      <p>Who it fits, why the ICANN timing matters, and where this niche name is limited.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
     <a class="insight-card contact-card" href="contact.html">
       <div class="insight-tag">Get In Touch</div>
       <h3>Let's Talk Domains</h3>
-      <p>Message me about buying, brokering, or naming a domain.</p>
+      <p>Send a direct message about acquiring, brokering, or naming a domain.</p>
       <div class="insight-read">Contact form <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
   </div>
@@ -706,7 +619,7 @@ h1.title{font-size:52px}
   <div class="wrap footer-grid">
     <div>
       <div class="footer-brand">Domain <span class="accent">Decoded</span></div>
-      <p class="footer-blurb">Curated, trademark-cleared premium domains — verified before they're listed.</p>
+      <p class="footer-blurb">Curated, trademark-cleared premium domains for LegalTech, FinTech, Energy, and brandable ventures — verified before they're ever listed.</p>
       <div class="footer-social">
         <a href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.5A1.5 1.5 0 107 5.5a1.5 1.5 0 000 3zM18.34 18v-4.63c0-2.48-1.32-3.63-3.08-3.63-1.42 0-2.06.78-2.41 1.33V9.6H10.2c.04.75 0 8.4 0 8.4h2.65v-4.69c0-.25.02-.5.1-.68.2-.5.67-1.03 1.46-1.03 1.03 0 1.44.79 1.44 1.94V18h2.49z"/></svg></a>
         <a href="https://wa.me/8801732773310" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="#25D366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.78 14.13c-.24.68-1.19 1.25-1.96 1.42-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08.99.3.15.5.23.58.36.08.13.08.75-.16 1.43z"/></svg></a>
@@ -756,116 +669,154 @@ h1.title{font-size:52px}
 
 <script>
 (function(){
-var ICONS={briefcase:'<svg viewBox="0 0 24 24"><path d="M3 7h18v12H3z"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><path d="M3 12h18"/></svg>',spark:'<svg viewBox="0 0 24 24"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z"/></svg>',scale:'<svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 7l-3 6a3.5 3.5 0 007 0z"/><path d="M19 7l-3 6a3.5 3.5 0 007 0z"/><path d="M5 7h14"/><path d="M8 21h8"/></svg>',gavel:'<svg viewBox="0 0 24 24"><path d="M14 4l6 6"/><path d="M4 14l6 6"/><path d="M12.5 5.5l6 6"/><path d="M2 22l7-7"/><path d="M17 3l4 4-3 3-4-4z"/></svg>',grid:'<svg viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M12 16v6"/><path d="M4 12h6"/><path d="M14 12h6"/><circle cx="12" cy="12" r="3"/></svg>',coin:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M9 9.5c0-1 1-1.8 3-1.8s3 .8 3 1.8-1 1.4-3 1.8-3 .8-3 1.9 1 1.8 3 1.8 3-.8 3-1.8"/></svg>',diamond:'<svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M9 3l3 6-3 12"/><path d="M15 3l-3 6 3 12"/></svg>',heart:'<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.1C.4 8.6 2 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5 18 5 19.6 8.6 22 11.9 19.5 16.4 12 21 12 21z"/></svg>',leaf:'<svg viewBox="0 0 24 24"><path d="M21 3C11 3 3 11 3 21c10 0 18-8 18-18z"/><path d="M3 21c4-4 9-9 13-13"/></svg>',shield:'<svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>',bolt:'<svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>'};
-var ACCENTS={legaltech:"#3b5bdb",fintech:"#1f9d55",energy:"#0f9b8e",brandable:"#8b5cf6",content:"#c2680c",healthtech:"#0891b2",media:"#e11d48"};
+var ICONS={briefcase:'<svg viewBox="0 0 24 24"><path d="M3 7h18v12H3z"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><path d="M3 12h18"/></svg>',spark:'<svg viewBox="0 0 24 24"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z"/></svg>',scale:'<svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 7l-3 6a3.5 3.5 0 007 0z"/><path d="M19 7l-3 6a3.5 3.5 0 007 0z"/><path d="M5 7h14"/><path d="M8 21h8"/></svg>',gavel:'<svg viewBox="0 0 24 24"><path d="M14 4l6 6"/><path d="M4 14l6 6"/><path d="M12.5 5.5l6 6"/><path d="M2 22l7-7"/><path d="M17 3l4 4-3 3-4-4z"/></svg>',grid:'<svg viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M12 16v6"/><path d="M4 12h6"/><path d="M14 12h6"/><circle cx="12" cy="12" r="3"/></svg>',coin:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M9 9.5c0-1 1-1.8 3-1.8s3 .8 3 1.8-1 1.4-3 1.8-3 .8-3 1.9 1 1.8 3 1.8 3-.8 3-1.8"/></svg>',diamond:'<svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M9 3l3 6-3 12"/><path d="M15 3l-3 6 3 12"/></svg>',heart:'<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.1C.4 8.6 2 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5 18 5 19.6 8.6 22 11.9 19.5 16.4 12 21 12 21z"/></svg>',leaf:'<svg viewBox="0 0 24 24"><path d="M21 3C11 3 3 11 3 21c10 0 18-8 18-18z"/><path d="M3 21c4-4 9-9 13-13"/></svg>',shield:'<svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>',bolt:'<svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>',cap:'<svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v5"/></svg>'};
+var ACCENTS={legaltech:"#3b5bdb",fintech:"#1f9d55",energy:"#0f9b8e",brandable:"#8b5cf6",content:"#c2680c",healthtech:"#0891b2",media:"#e11d48",education:"#f59e0b"};
 var MAIL="galibsjournal@gmail.com";
 var NOTE="Listing price isn't the final word — DM me and we can likely work out a better deal.";
 
 var groups = [
     { title: "⚖️ LegalTech", items: [
       { name:"juronix", ext:".com", icon:"scale", accent:"legaltech",
-        tag:"Premium LegalTech brand for digital justice.",
+        tag:"Premium LegalTech brand, built for the future of digital justice.",
         marketUrl:"https://sedo.com/search/details/?partnerid=324561&language=e&domain=juronix.com",
         badge:"LegalTech", pills:["LegalTech SaaS","Latin Root: Juro","Trademark Clean"],
-        whyGood:"“Juro” (Latin for law/oath) plus a tech suffix signals authority and innovation.",
-        fitsWhere:"Legal SaaS, contract-AI, compliance, or dispute-resolution startups.",
-        brandability:"High — invented yet meaningful, and easy to trademark.",
-        demand10yr:"LegalTech funding is growing with AI; category-fit names tend to gain value." },
+        whyGood:"“Juro” (the Latin root for law/oath) fused with a tech suffix — signals authority and innovation in one word.",
+        fitsWhere:"Legal SaaS, contract-AI tools, compliance platforms, or digital dispute-resolution startups.",
+        brandability:"High — invented yet semantically anchored, which makes it easy to trademark and own outright.",
+        demand10yr:"LegalTech funding is accelerating with AI adoption; category-fit names like this typically gain value as the space matures." },
       { name:"LexBold", ext:".com", icon:"gavel", accent:"legaltech",
         tag:"Where legal authority meets bold innovation.",
         marketUrl:"https://lexbold.com/",
         badge:"LegalTech · AI", pills:["Legal + AI","Two Real Words","Trademark Clean"],
-        whyGood:"“Lex” (law) + “Bold” pairs trust with confidence.",
-        fitsWhere:"AI contract review, legal-ops platforms, or law-firm technology brands.",
-        brandability:"High — two real words forming a distinct, ownable identity.",
-        demand10yr:"As legal-AI grows, authoritative yet modern names get harder to find." }
+        whyGood:"“Lex” (law) + “Bold” pairs trust with confidence — a rare combination for a legal-AI brand.",
+        fitsWhere:"AI-powered contract review, legal-ops platforms, or enterprise law-firm technology brands.",
+        brandability:"High — two real words combined into a distinct, fully ownable identity.",
+        demand10yr:"As legal-AI adoption grows, authoritative-yet-modern names like this become harder to find and more sought after." }
     ]},
     { title: "💰 FinTech", items: [
       { name:"SolvaFunds", ext:".com", icon:"coin", accent:"fintech",
-        tag:"Solva + Funds — a TM-clear .com for FinTech funding.",
+        tag:"Solva + Funds — FinTech’s next funding brand, TM-clear .com.",
         marketUrl:"https://solvafunds.com/",
         badge:"FinTech", pills:["FinTech Funding","Keyword: Funds","Trademark Clean"],
-        whyGood:"“Solva” (solution/solve) + “Funds” communicates trust and financial purpose.",
-        fitsWhere:"Lending platforms, investment apps, or funding marketplaces.",
-        brandability:"High — sounds like an established financial brand from day one.",
-        demand10yr:"FinTech naming stays competitive; trust-signaling names hold value." }
+        whyGood:"“Solva” (solution/solve) + “Funds” instantly communicates trust and financial purpose.",
+        fitsWhere:"Lending platforms, investment apps, or fintech funding marketplaces.",
+        brandability:"High — sounds like an established financial institution from day one.",
+        demand10yr:"FinTech naming remains fiercely competitive; trust-signaling names like this hold long-term value." }
     ]},
     { title: "🕯️ Grief Tech", items: [
       { name:"GriefPlatform", ext:".com", icon:"heart", accent:"healthtech",
-        tag:"Exact-match .com in the fast-growing grief-tech category.",
+        tag:"Exact-match .com in the fast-growing grief-tech and digital memorial category.",
         marketUrl:"https://forsale.godaddy.com/forsale/griefplatform.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
         badge:"Grief-Tech", pills:["Exact Match","$900M+ Category","Trademark Clean"],
-        whyGood:"Exact-match two-word .com in a category with $900M+ in funding and digital memorial usage up 33% year-over-year.",
-        fitsWhere:"Grief-tech startups, bereavement care, digital memorials, or nonprofits.",
-        brandability:"High — self-explanatory, no rebrand needed as the company grows.",
-        demand10yr:"An emerging, fundable category; comparable exact-match names have sold from a few hundred dollars to $10,000+." },
+        whyGood:"A short, exact-match two-word .com in a category where funding has crossed $900M and digital memorial usage is up 33% year-over-year.",
+        fitsWhere:"Grief-tech startups, bereavement care platforms, digital memorial services, or nonprofits modernizing memorial support.",
+        brandability:"High — descriptive and self-explanatory, with no rebrand needed as the company grows.",
+        demand10yr:"Grief-tech and digital memorial care are an emerging, fundable category — comparable exact-match names have sold from a few hundred dollars up to $10,000+." },
       { name:"Losswell", ext:".com", icon:"shield", accent:"healthtech",
-        tag:"From loss to wellness — 8 characters.",
+        tag:"From loss to wellness — 8 chars, grief tech’s perfect brand.",
         marketUrl:"https://forsale.godaddy.com/forsale/losswell.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
         badge:"Grief Wellness", pills:["Loss + Well","8 Letters","Federal TM Clean"],
-        whyGood:"Two plain-English words and a federally clear trademark record — reads as “from loss to wellness.”",
-        fitsWhere:"Grief-support platforms, insurance and risk products, or data-recovery brands.",
-        brandability:"Medium-High — flexible across grief-tech and several B2B categories.",
-        demand10yr:"Comparable “Loss” and “Well” compounds show steady, repeatable demand." },
+        whyGood:"Eight characters, two plain-English words, and a federally clear trademark record — it reads as “from loss to wellness.”",
+        fitsWhere:"Grief-support and recovery platforms, risk-management and insurance products, data-loss-prevention tools, or recovery-focused brands.",
+        brandability:"Medium-High — flexible across grief-tech and several B2B categories built around managing or recovering from loss.",
+        demand10yr:"Comparable sales for “Loss” and “Well” compounds show steady, repeatable demand rather than a one-off spike." },
       { name:"RestInJoy", ext:".com", icon:"leaf", accent:"healthtech",
-        tag:"A warm, versatile 3-word compound.",
+        tag:"A warm, versatile 3-word compound with no category lock-in.",
         marketUrl:"https://forsale.godaddy.com/forsale/restinjoy.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
         badge:"Celebration of Life", pills:["3-Word Compound","Memorial + Wellness","Trademark Clean"],
-        whyGood:"Reads naturally, carries warmth, and similar compounds sell in a healthy, repeatable range.",
-        fitsWhere:"Memorial and grief-care brands, wellness apps, or mindfulness platforms.",
-        brandability:"High — rare for a 3-word compound to stay this clean.",
-        demand10yr:"Wellness naming demand has stayed active across market cycles." }
+        whyGood:"Reads naturally in one pass, carries genuine warmth, and comparable sales for similar compounds cluster in a healthy, repeatable price range.",
+        fitsWhere:"Memorial and grief-care brands, wellness apps, mindfulness and meditation platforms, or general lifestyle ventures.",
+        brandability:"High — rare for a 3-word compound to stay this clean and pronounceable.",
+        demand10yr:"Wellness and mindfulness naming demand has stayed consistently active across market cycles." }
     ]},
     { title: "⚡ Energy / AI", items: [
       { name:"SanaGrid", ext:".com", icon:"grid", accent:"energy",
         tag:"Clean energy meets AI infrastructure — 8-char .com.",
         marketUrl:"https://sanagrid.com/",
         badge:"Energy · AI", pills:["Energy + AI","8 Letters","Trademark Clean"],
-        whyGood:"“Sana” (clean/health in several languages) + “Grid” ties clean energy to infrastructure.",
-        fitsWhere:"Smart-grid startups, renewable platforms, or energy-AI companies.",
-        brandability:"High — descriptive yet distinctive, and reads well globally.",
-        demand10yr:"Energy and climate tech are multi-decade growth categories." }
+        whyGood:"“Sana” (clean/health in several languages) + “Grid” ties clean-energy meaning directly to infrastructure.",
+        fitsWhere:"Smart-grid startups, renewable-energy platforms, or energy-AI infrastructure companies.",
+        brandability:"High — descriptive yet distinctive, and it reads naturally across global markets.",
+        demand10yr:"Energy infrastructure and climate tech are multi-decade growth categories with rising naming competition." }
     ]},
     { title: "🌐 Industry Media", items: [
       { name:"TLDFight", ext:".com", icon:"bolt", accent:"media",
-        tag:"The domain industry's editorial media brand.",
+        tag:"The name already used editorially — domain industry’s media brand.",
         marketUrl:"https://tldfight.com/",
         badge:"Industry Media", pills:["Exact Phrase","Newsletter-Ready","Niche Authority"],
-        whyGood:"A punchy phrase that names the contest itself: ICANN's 2026 round has 1,615 applications, with 263 extensions that more than one applicant wants.",
-        fitsWhere:"A domain newsletter, podcast, dispute tracker, or media site on new gTLD auctions.",
-        brandability:"Medium-High — easy to say and remember; works as a media brand or tracker.",
-        demand10yr:"Contention will keep producing news through the auction and objection phases (objections run to March 16, 2027)." }
+        whyGood:"A short, punchy phrase that names the contest itself. ICANN’s 2026 round has 1,615 applications, with 263 extensions that more than one applicant wants, so the name tells readers exactly what they will find.",
+        fitsWhere:"A domain-industry newsletter, a podcast, a dispute-tracking dashboard, or a media site covering new gTLD auctions and objections.",
+        brandability:"Medium-High — plain words that are easy to say and remember, and it works as a media brand, a tracker, or an event name.",
+        demand10yr:"New-extension contention will keep producing news through the auction and objection phases (the objection period runs to March 16, 2027), and later rounds will bring the topic back." }
     ]},
     { title: "5️⃣ 5-Letter .com", items: [
       { name:"Mubez", ext:".com", icon:"spark", accent:"brandable",
-        tag:"One word. Endless possibilities. 5-letter .com.",
+        tag:"One word. Endless possibilities. 5-letter premium .com.",
         marketUrl:"https://mubez.com/",
         badge:"5-Letter .COM", pills:["5 Letters","Zero Backlinks","Trademark Clean"],
-        whyGood:"Short, phonetic, easy to say and spell, with a clean trademark and search history.",
-        fitsWhere:"SaaS, mobile apps, fintech, or any consumer brand wanting a fresh .com.",
-        brandability:"High — an invented word with no built-in meaning, shapeable to any positioning.",
-        demand10yr:"Short, clean .coms are scarce and have historically appreciated." },
+        whyGood:"Short, phonetic, and easy to say, spell, and remember across languages — with a fully clean trademark and search history.",
+        fitsWhere:"SaaS products, mobile apps, fintech, or any consumer brand wanting a fresh, unclaimed .com identity.",
+        brandability:"High — an invented word with no built-in meaning, so it can be shaped into any positioning.",
+        demand10yr:"Short, clean .coms are an increasingly scarce resource; this class of name has historically appreciated as inventory dries up." },
       { name:"Baluj", ext:".com", icon:"diamond", accent:"brandable",
-        tag:"Polish for ‘Party!’ — 5-letter .com.",
+        tag:"Polish for ‘Party!’ — 5L .com.",
         marketUrl:"http://baluj.com/",
         badge:"5-Letter .COM", pills:["5 Letters","Polish: ‘Party!’","Trademark Clean"],
-        whyGood:"Short and easy to pronounce; in Polish “baluj” means “party!” — great for nightlife and events.",
-        fitsWhere:"Nightlife, events, hospitality, or any energetic consumer or tech brand.",
-        brandability:"High — a clean invented word in English with a lively Polish story.",
-        demand10yr:"Ultra-short .coms are a finite, shrinking resource." }
+        whyGood:"Short and easy to pronounce, with a built-in meaning: in Polish, “baluj” is the command “party!” — a natural fit for nightlife, events and hospitality.",
+        fitsWhere:"Nightlife, events and hospitality brands, or any modern consumer or tech brand that wants a short, energetic name.",
+        brandability:"High — reads as a clean invented word in English, with a lively Polish meaning that gives it a story.",
+        demand10yr:"Ultra-short .coms are a finite and shrinking resource — demand for names like this only rises over time." }
     ]},
     { title: "📚 Content Brand", items: [
       { name:"interviewtipshub", ext:".com", icon:"briefcase", accent:"content",
-        tag:"Interview tips, career guidance & job success.",
+        tag:"Your go-to hub for interview tips, career guidance & job success.",
         marketUrl:"https://interviewtipshub.com/",
         badge:"Content Brand", pills:["10K–100K Searches","Low Competition","Evergreen"],
-        whyGood:"Descriptive, keyword-rich name that ranks faster and converts better for career searches.",
-        fitsWhere:"Career coaching, HR-tech blogs, recruitment content, or a podcast/YouTube brand.",
-        brandability:"Medium — a strong functional SEO asset rather than an abstract brand.",
-        demand10yr:"Career content is evergreen; 10K–100K monthly searches hold steady." }
+        whyGood:"Descriptive, keyword-rich name that tells visitors exactly what it does — ranks faster and converts better for career-search traffic.",
+        fitsWhere:"Career coaching platforms, HR-tech blogs, recruitment content hubs, or a podcast/YouTube brand extension.",
+        brandability:"Medium — a strong functional SEO asset rather than an abstract consumer brand.",
+        demand10yr:"Job-search & career content is evergreen; 10K–100K monthly searches hold steady regardless of AI-driven shifts in hiring." }
     ]}
-  ];
-
+  ,
+    { title: "🎓 Scholarship", items: [
+      { name:"JapanScholarship", ext:".com", icon:"cap", accent:"education",
+        tag:"Exact-match .com for anyone helping students find scholarships in Japan.",
+        marketUrl:"https://forsale.godaddy.com/forsale/japanscholarship.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
+        badge:"Scholarship", pills:["Exact Match","Trademark Clean","No Spam History"],
+        whyGood:"A plain name that says exactly what it is — easy to remember for students who search for Japan scholarships every year.",
+        fitsWhere:"Study-abroad agencies, scholarship guides and newsletters, or student-community sites about studying in Japan.",
+        brandability:"Medium-High — plain words that are easy to say, spell and remember.",
+        demand10yr:"Students look for scholarships every year, so an exact-match name stays useful season after season.",
+        know:"No trademark found for the exact name on USPTO, WIPO, TMview and J-PlatPat (English spelling only, not Japanese script). Wayback Machine: about 30 captures from 2011 to 2024 — parked pages and, for a couple of years, a forward to a news site. No real website, no spam. Ahrefs shows 300+ referring domains, all junk auto-generated pages, so they count as zero. Not affiliated with any government body or scholarship provider. Not legal advice." },
+      { name:"SingaporeScholarship", ext:".com", icon:"cap", accent:"education",
+        tag:"Exact-match .com for Singapore study-funding resources.",
+        marketUrl:"https://forsale.godaddy.com/forsale/singaporescholarship.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
+        badge:"Scholarship", pills:["Exact Match","Trademark Clean","Plain History"],
+        whyGood:"A clear, exact-match name for anyone building a Singapore study-funding resource.",
+        fitsWhere:"Scholarship guides, study-abroad agencies, student communities, or newsletters about studying in Singapore.",
+        brandability:"Medium-High — says exactly what it is, with no explaining needed.",
+        demand10yr:"Study-funding searches come back every year, so an exact-match name keeps its use.",
+        know:"No trademark found for the exact name on USPTO and WIPO; a search for “Singapore Scholarship” on IPOS gave no results. Wayback Machine: 67 captures from 2008 to 2025, some later ones showing a news page from a news aggregator. No real site of its own. Scholarships in Singapore are closely tied to government programmes, so to be clear: this domain has no connection to any government body, university or scholarship provider. Not legal advice." },
+      { name:"FranceScholarship", ext:".com", icon:"cap", accent:"education",
+        tag:"Exact-match .com for anyone writing about studying in France.",
+        marketUrl:"https://forsale.godaddy.com/forsale/francescholarship.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
+        badge:"Scholarship", pills:["Exact Match","Trademark Clean","No Spam History"],
+        whyGood:"A plain, exact-match name — it says what it is the moment you read it.",
+        fitsWhere:"Study-abroad agencies, scholarship guides, student blogs and newsletters about studying in France.",
+        brandability:"Medium-High — plain words that are easy to say and remember.",
+        demand10yr:"Students look for funding every year, so a name that says exactly that stays useful.",
+        know:"No trademark found for the exact name on USPTO and WIPO. Wayback Machine: 40 captures from 2011 to 2024 — 39 are the homepage but only 5 different versions, the same parked page repeated. No real site, no spam. Ahrefs shows around 300 referring domains, all junk, counted as nothing. Not affiliated with any government body or scholarship provider. Not legal advice." },
+      { name:"IrelandScholarship", ext:".com", icon:"cap", accent:"education",
+        tag:"Exact-match .com for Ireland scholarship resources — history fully disclosed.",
+        marketUrl:"https://forsale.godaddy.com/forsale/irelandscholarship.com?utm_source=TDFS_BINNS&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns_base&traffic_type=TDFS_BINNS&traffic_id=binns&",
+        badge:"Scholarship", pills:["Exact Match","US/WIPO/EU TM Clear","History Disclosed"],
+        whyGood:"A plain, exact-match name for anyone building a scholarship resource about Ireland — listed with its past stated up front.",
+        fitsWhere:"Scholarship guides, study-abroad agencies, student communities and newsletters about studying in Ireland.",
+        brandability:"Medium-High — plain words that say exactly what the site is.",
+        demand10yr:"Study-funding searches come back every year, so an exact-match name keeps its use.",
+        know:"This domain has a past: the Wayback Machine shows it once hosted an official programme site run by an Irish organisation (captures from 2012 to 2025). That is not me — no connection to that programme, that organisation, or any government body. Checks: USPTO, WIPO and TMview showed zero results for the exact name; 8 blacklist checks clear; Safe Browsing found nothing unsafe; VirusTotal 0 of 66 (last scan from 2019). Ahrefs shows about 300 referring domains, all junk, counted as zero. I could not search the Irish trademark register by name, so I can’t say nothing is there. Please read the history yourself before deciding. Not legal advice." }
+    ]}
+];
 
 var gridEl=document.getElementById('domainGrid');
 groups.forEach(function(g){
@@ -878,26 +829,24 @@ groups.forEach(function(g){
     var card=document.createElement('div');card.className='card';
     card.style.setProperty('--accent',ACCENTS[d.accent]||'#5eead4');
     card.innerHTML=
-      '<div class="card-top"><div class="card-icon">'+ICONS[d.icon]+'</div><div class="card-headtext"><div class="card-name">'+d.name+'<span class="ext">'+d.ext+'</span></div><div class="badge">'+d.badge+'</div></div></div>'+
+      '<div class="card-top"><div class="card-icon">'+ICONS[d.icon]+'</div><div class="card-headtext"><div class="card-name'+((d.name+d.ext).length>15?' long':'')+'">'+d.name+'<wbr><span class="ext">'+d.ext+'</span></div><div class="badge">'+d.badge+'</div></div></div>'+
       '<div class="card-tag">'+d.tag+'</div>'+
       '<div class="card-pills">'+d.pills.map(function(p){return '<span class="pill">'+p+'</span>';}).join('')+'</div>'+
-      '<div class="card-actions"><div class="btn feat" role="button" tabindex="0" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 8v5"/><path d="M12 16h.01"/><circle cx="12" cy="12" r="9"/></svg><span class="lbl">Details</span></div>'+
+      '<div class="card-actions"><div class="btn feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 8v5"/><path d="M12 16h.01"/><circle cx="12" cy="12" r="9"/></svg>Details</div>'+
       '<div class="row2"><a class="btn dm" href="'+dm+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>DM for Deal</a>'+
       '<a class="btn buy" href="'+d.marketUrl+'" target="_blank" rel="noopener">Buy Now<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a></div></div>'+
-      '<div class="detail"><div class="detail-row"><div class="detail-label">Why It’s Good</div>'+d.whyGood+'</div><div class="detail-row"><div class="detail-label">Where It Fits</div>'+d.fitsWhere+'</div><div class="detail-row"><div class="detail-label">Brandability</div>'+d.brandability+'</div><div class="detail-row"><div class="detail-label">Demand in 10 Years</div>'+d.demand10yr+'</div><div class="detail-note">“'+NOTE+'”</div></div>';
+      '<div class="detail"><div class="detail-row"><div class="detail-label">Why It’s Good</div>'+d.whyGood+'</div><div class="detail-row"><div class="detail-label">Where It Fits</div>'+d.fitsWhere+'</div><div class="detail-row"><div class="detail-label">Brandability</div>'+d.brandability+'</div><div class="detail-row"><div class="detail-label">Demand in 10 Years</div>'+d.demand10yr+'</div>'+(d.know?'<div class="detail-row"><div class="detail-label">Good to Know</div>'+d.know+'</div>':'')+'<div class="detail-note">“'+NOTE+'”</div></div>';
     gridEl.appendChild(card);
   });
 });
-function toggleCard(b){var c=b.closest('.card'),o=c.classList.toggle('open'),l=b.querySelector('.lbl');b.setAttribute('aria-expanded',o?'true':'false');if(l)l.textContent=o?'Hide':'Details';}
-gridEl.addEventListener('click',function(e){var b=e.target.closest('.btn.feat');if(b)toggleCard(b);});
-gridEl.addEventListener('keydown',function(e){var b=e.target.closest('.btn.feat');if(b&&(e.key==='Enter'||e.key===' ')){e.preventDefault();toggleCard(b);}});
+gridEl.addEventListener('click',function(e){var b=e.target.closest('.btn.feat');if(b)b.closest('.card').classList.toggle('open');});
 
 })();
 </script>
 <script>
 
 (function(){var t=document.getElementById('navToggle'),n=document.getElementById('siteNav'),o=document.getElementById('navOverlay');
-if(t&&n&&o){t.addEventListener('click',function(){n.classList.toggle('open');o.classList.toggle('open');});function cl(){n.classList.remove('open');o.classList.remove('open');}o.addEventListener('click',cl);n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',cl);});}})();
+if(t&&n&&o){t.addEventListener('click',function(){n.classList.toggle('open');o.classList.toggle('open');});o.addEventListener('click',function(){n.classList.remove('open');o.classList.remove('open');});}})();
 (function(){var p=document.getElementById('twPlain'),a=document.getElementById('twAccent'),c=document.getElementById('twCursor');if(!p||!a)return;
 var pt="Domain ",at="Decoded",i=0,j=0,s=85;
 function tp(){if(i<=pt.length){p.textContent=pt.slice(0,i);i++;setTimeout(tp,s);}else setTimeout(ta,s);}
