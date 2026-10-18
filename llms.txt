@@ -6,7 +6,7 @@
 DIOS stands for Domain Investing Operating System — Imteaz (Galib) Chowdhury's personal domain valuation and clearance framework, built for Domain Decoded. It runs a binary reject gate (trademark conflict, UDRP history, Wayback Machine history, phonetic collision, portfolio cannibalization, negative semantic load) followed by an 11-factor weighted score, split into Track B (brandable/coined names) and Track D (descriptive/category names). Full explanation: /workflow.html
 
 ## Key pages
-- /index.html — Available domain portfolio (Juronix.com, LexBold.com, SanaGrid.com, SolvaFunds.com, Mubez.com, Baluj.com, GriefPlatform.com, RestInJoy.com, Losswell.com, interviewtipshub.com)
+- /index.html — Available domain portfolio (Juronix.com, LexBold.com, SanaGrid.com, SolvaFunds.com, Mubez.com, Baluj.com, GriefPlatform.com, RestInJoy.com, Losswell.com, interviewtipshub.com, JapanScholarship.com, SingaporeScholarship.com, FranceScholarship.com, IrelandScholarship.com, TLDFight.com)
 - /workflow.html — The DIOS framework and five-stage due-diligence workflow
 - /why-it-matters.html — Why rigorous domain screening matters for founders
 - /faq.html — Answers on trademark clearance, UDRP history, valuation, and buying process
@@ -27,6 +27,7 @@ DIOS stands for Domain Investing Operating System — Imteaz (Galib) Chowdhury's
 - [RestInJoy.com case study](https://galibimteaz.github.io/case-study-restinjoy.html): Warm three-word compound for wellness, mindfulness, and memorial-care brands.
 - [Losswell.com case study](https://galibimteaz.github.io/case-study-losswell.html): Nine-character compound with a clear federal trademark record; suited to risk-management, insurance, and data-protection brands.
 - [InterviewTipsHub.com case study](https://galibimteaz.github.io/case-study-interviewtipshub.html): Keyword-rich content-brand domain for career and HR-tech traffic, with 10K–100K monthly searches and low competition.
+- [Scholarship domains case study](https://galibimteaz.github.io/case-study-scholarship.html): JapanScholarship.com, SingaporeScholarship.com, FranceScholarship.com and IrelandScholarship.com checked the same way: no exact-name trademark found, Wayback history, and ~300 junk backlinks counted as zero. IrelandScholarship.com once hosted an unrelated official programme site, disclosed up front. None is affiliated with any government body or scholarship provider.
 
 ## Articles
 - [TLDFight: Who Wins When 1,615 Applications Collide?](https://galibimteaz.github.io/blog-post-tldfight-linkedin.html): ICANN's 2026 new extension round explained for domain buyers.

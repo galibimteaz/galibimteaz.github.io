@@ -6,7 +6,8 @@
 <meta name="author" content="Imteaz (Galib) Chowdhury">
 <title>Domain Decoded — Imteaz Chowdhury</title>
 
-<meta name="description" content="Trademark-cleared, comparable-verified premium domains for sale — curated by Imteaz (Galib) Chowdhury.">
+<meta name="description" content="Trademark-cleared, comparable-verified premium .com domains for sale: LegalTech, FinTech, Grief-Tech, Scholarship and brandable names, each with a full due-diligence case study.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://galibimteaz.github.io/">
 
 <meta property="og:type" content="website">
@@ -207,6 +208,30 @@
       "position": 11,
       "url": "https://galibimteaz.github.io/case-study-interviewtipshub.html",
       "name": "interviewtipshub.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "url": "https://galibimteaz.github.io/case-study-scholarship.html#japan",
+      "name": "JapanScholarship.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "url": "https://galibimteaz.github.io/case-study-scholarship.html#singapore",
+      "name": "SingaporeScholarship.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "url": "https://galibimteaz.github.io/case-study-scholarship.html#france",
+      "name": "FranceScholarship.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "url": "https://galibimteaz.github.io/case-study-scholarship.html#ireland",
+      "name": "IrelandScholarship.com"
     }
   ]
 }
@@ -397,6 +422,8 @@ svg[fill="#0A66C2"]{fill:#4aa3ff}
   .whatsapp-fab{width:52px;height:52px;bottom:16px;right:14px}.whatsapp-fab svg{width:26px;height:26px}
   .back-to-top{bottom:78px;right:14px;width:42px;height:42px}
 }
+a.pill{transition:border-color .15s,background .15s}a.pill:hover{border-color:var(--mint);background:rgba(94,234,212,.12);color:#fff}
+.detail a{color:var(--mint);text-decoration:underline;text-underline-offset:3px}
 </style>
 </head>
 <body>
@@ -466,6 +493,30 @@ svg[fill="#0A66C2"]{fill:#4aa3ff}
   <div class="grid" id="domainGrid"></div>
 </div>
 
+<div class="wrap section" id="portfolio-index">
+  <div class="section-head">
+    <h2>Portfolio at a Glance</h2>
+    <p>Every domain links to its full due-diligence case study.</p>
+  </div>
+  <div class="card-pills">
+    <a class="pill" href="case-study-juronix.html">juronix.com</a>
+    <a class="pill" href="case-study-lexbold.html">LexBold.com</a>
+    <a class="pill" href="case-study-solvafunds.html">SolvaFunds.com</a>
+    <a class="pill" href="case-study-griefplatform.html">GriefPlatform.com</a>
+    <a class="pill" href="case-study-losswell.html">Losswell.com</a>
+    <a class="pill" href="case-study-restinjoy.html">RestInJoy.com</a>
+    <a class="pill" href="case-study-sanagrid.html">SanaGrid.com</a>
+    <a class="pill" href="case-study-tldfight.html">TLDFight.com</a>
+    <a class="pill" href="case-study-mubez.html">Mubez.com</a>
+    <a class="pill" href="case-study-baluj.html">Baluj.com</a>
+    <a class="pill" href="case-study-interviewtipshub.html">interviewtipshub.com</a>
+    <a class="pill" href="case-study-scholarship.html#japan">JapanScholarship.com</a>
+    <a class="pill" href="case-study-scholarship.html#singapore">SingaporeScholarship.com</a>
+    <a class="pill" href="case-study-scholarship.html#france">FranceScholarship.com</a>
+    <a class="pill" href="case-study-scholarship.html#ireland">IrelandScholarship.com</a>
+  </div>
+</div>
+
 <div class="wrap section" id="insights">
   <div class="section-head">
     <h2>Insights &amp; Case Studies</h2>
@@ -519,6 +570,13 @@ svg[fill="#0A66C2"]{fill:#4aa3ff}
       <div class="insight-tag">Naming Decision · Content</div>
       <h3>interviewtipshub.com: Your Go-To Hub for Career Success</h3>
       <p>Why a descriptive, keyword-rich name wins for high-intent search traffic.</p>
+      <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+    </a>
+
+    <a class="insight-card" href="case-study-scholarship.html" style="border-top:3px solid #f59e0b;">
+      <div class="insight-tag">Case Study · Scholarship</div>
+      <h3>Four Scholarship .COMs, Checked the Same Way</h3>
+      <p>Japan, Singapore, France and Ireland: trademark checks, Wayback history, backlinks, and the one domain with a disclosed past.</p>
       <div class="insight-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
     </a>
 
@@ -825,6 +883,8 @@ groups.forEach(function(g){
   gridEl.appendChild(head);
   g.items.forEach(function(d){
     var full=d.name+d.ext;
+    var low=d.name.toLowerCase();
+    var csUrl=low.indexOf('scholarship')>-1 ? 'case-study-scholarship.html#'+low.replace('scholarship','') : 'case-study-'+low+'.html';
     var dm='https://mail.google.com/mail/?view=cm&fs=1&to='+MAIL+'&su='+encodeURIComponent('Inquiry: '+full)+'&body='+encodeURIComponent("Hi Imteaz,\n\nI'm interested in "+full+". Could we discuss pricing?\n\n");
     var card=document.createElement('div');card.className='card';
     card.style.setProperty('--accent',ACCENTS[d.accent]||'#5eead4');
@@ -835,7 +895,7 @@ groups.forEach(function(g){
       '<div class="card-actions"><div class="btn feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 8v5"/><path d="M12 16h.01"/><circle cx="12" cy="12" r="9"/></svg>Details</div>'+
       '<div class="row2"><a class="btn dm" href="'+dm+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>DM for Deal</a>'+
       '<a class="btn buy" href="'+d.marketUrl+'" target="_blank" rel="noopener">Buy Now<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a></div></div>'+
-      '<div class="detail"><div class="detail-row"><div class="detail-label">Why It’s Good</div>'+d.whyGood+'</div><div class="detail-row"><div class="detail-label">Where It Fits</div>'+d.fitsWhere+'</div><div class="detail-row"><div class="detail-label">Brandability</div>'+d.brandability+'</div><div class="detail-row"><div class="detail-label">Demand in 10 Years</div>'+d.demand10yr+'</div>'+(d.know?'<div class="detail-row"><div class="detail-label">Good to Know</div>'+d.know+'</div>':'')+'<div class="detail-note">“'+NOTE+'”</div></div>';
+      '<div class="detail"><div class="detail-row"><div class="detail-label">Why It’s Good</div>'+d.whyGood+'</div><div class="detail-row"><div class="detail-label">Where It Fits</div>'+d.fitsWhere+'</div><div class="detail-row"><div class="detail-label">Brandability</div>'+d.brandability+'</div><div class="detail-row"><div class="detail-label">Demand in 10 Years</div>'+d.demand10yr+'</div>'+(d.know?'<div class="detail-row"><div class="detail-label">Good to Know</div>'+d.know+'</div>':'')+'<div class="detail-row"><div class="detail-label">Full Case Study</div><a href="'+csUrl+'">Read the case study</a></div>'+'<div class="detail-note">“'+NOTE+'”</div></div>';
     gridEl.appendChild(card);
   });
 });
