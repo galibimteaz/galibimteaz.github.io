@@ -35,7 +35,8 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap"></noscript>
 <link rel="stylesheet" href="article.css">
 <style>
   :root{ --gold: #1f9d55; --gold-bright: #6fe3a0; --line: rgba(31,157,85,0.22); --line-strong: rgba(31,157,85,0.45); }
@@ -102,6 +103,7 @@
   </div>
   <div class="nav-overlay" id="navOverlay"></div>
 </div>
+<main id="main">
 
 <div class="wrap article-header">
   <div class="eyebrow">Naming Decision File</div>
@@ -163,6 +165,7 @@
   </div>
 </div>
 
+</main>
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div>
