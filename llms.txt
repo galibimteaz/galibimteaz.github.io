@@ -12,20 +12,20 @@ DIOS stands for Domain Investing Operating System — Imteaz (Galib) Chowdhury's
 - /faq.html — Answers on trademark clearance, UDRP history, valuation, and buying process
 - /blog.html — Articles on domain naming, pricing, and brand strategy
 - /services.html — Naming consultation, brokerage, and brand-audit pricing
-- /about.html — Background on the due-diligence process and its five stages
+- /about.html — Who runs Domain Decoded, how DIOS screening and comps-based pricing work
 - /contact.html — Direct inquiry form
 
 ## Case studies
 - [TLDFight.com case study](https://galibimteaz.github.io/case-study-tldfight.html): Why the name fits TLD news and ICANN dispute coverage, who it suits, and where it is limited. For sale: https://tldfight.com/
 - [Juronix.com case study](https://galibimteaz.github.io/case-study-juronix.html): LegalTech name approved after 40+ candidates were rejected in screening; comps-based price range of $3,000–$4,500.
 - [LexBold.com case study](https://galibimteaz.github.io/case-study-lexbold.html): LegalTech and AI name combining "Lex" (law) with "Bold"; suited to contract-review and legal-ops platforms.
-- [SanaGrid.com case study](https://galibimteaz.github.io/case-study-sanagrid.html): How "Sana" (healthy) and "Grid" (systems) were combined into a name for health-tech and infrastructure brands.
+- [SanaGrid.com case study](https://galibimteaz.github.io/case-study-sanagrid.html): How "Sana" (clean/health in several languages) and "Grid" were combined into an 8-letter name for smart-grid, clean-energy and energy-AI brands.
 - [SolvaFunds.com case study](https://galibimteaz.github.io/case-study-solvafunds.html): FinTech name that signals trust and financial purpose; fits lending, investment, and funding platforms.
 - [Mubez.com case study](https://galibimteaz.github.io/case-study-mubez.html): Five-letter invented brandable with zero backlinks and clean trademark and Wayback history; fits SaaS, apps, and fintech.
 - [Baluj.com case study](https://galibimteaz.github.io/case-study-baluj.html): Five-letter brandable that looks blank in English but means "party" in Polish; fits any consumer or tech brand.
 - [GriefPlatform.com case study](https://galibimteaz.github.io/case-study-griefplatform.html): Exact-match .com for the growing grief-tech and digital memorial category, which has passed $900M in funding.
 - [RestInJoy.com case study](https://galibimteaz.github.io/case-study-restinjoy.html): Warm three-word compound for wellness, mindfulness, and memorial-care brands.
-- [Losswell.com case study](https://galibimteaz.github.io/case-study-losswell.html): Nine-character compound with a clear federal trademark record; suited to risk-management, insurance, and data-protection brands.
+- [Losswell.com case study](https://galibimteaz.github.io/case-study-losswell.html): Eight-character compound with a clear federal trademark record; suited to risk-management, insurance, and data-protection brands.
 - [InterviewTipsHub.com case study](https://galibimteaz.github.io/case-study-interviewtipshub.html): Keyword-rich content-brand domain for career and HR-tech traffic, with 10K–100K monthly searches and low competition.
 - [Scholarship domains case study](https://galibimteaz.github.io/case-study-scholarship.html): JapanScholarship.com, SingaporeScholarship.com, FranceScholarship.com and IrelandScholarship.com checked the same way: no exact-name trademark found, Wayback history, and ~300 junk backlinks counted as zero. IrelandScholarship.com once hosted an unrelated official programme site, disclosed up front. None is affiliated with any government body or scholarship provider.
 
