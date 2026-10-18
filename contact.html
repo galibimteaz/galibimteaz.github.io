@@ -38,9 +38,7 @@
   gtag('config', 'G-LBK3BEMS0E');
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="jost-latin.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="article.css">
 <style>
   .contact-hero{
@@ -57,7 +55,7 @@
   .form-group input, .form-group textarea{
     width:100%; background:#1c1810; border:1.5px solid var(--line-strong);
     border-radius:9px; padding:13px 15px; color:var(--cream);
-    font-family:'Jost', sans-serif; font-size:16px; font-weight:300;
+    font-family:'Jost','Jost Fallback',sans-serif; font-size:16px; font-weight:300;
     transition:border-color .15s ease, box-shadow .15s ease, background .15s ease;
   }
   .form-group input::placeholder, .form-group textarea::placeholder{color:var(--cream-dim); opacity:0.7;}
@@ -69,7 +67,7 @@
   .submit-btn{
     width:100%; padding:16px; border:none; border-radius:10px; cursor:pointer;
     background:linear-gradient(135deg,#fff2c9,var(--gold-bright) 45%,var(--gold));
-    color:#0a0908; font-weight:600; font-size:15px; font-family:'Jost', sans-serif;
+    color:#0a0908; font-weight:600; font-size:15px; font-family:'Jost','Jost Fallback',sans-serif;
     letter-spacing:0.02em;
     box-shadow:0 8px 24px rgba(240,215,140,0.25);
     transition:filter .15s ease, transform .15s ease, box-shadow .15s ease;
