@@ -406,3 +406,6 @@ svg[fill="#0A66C2"]{fill:#4aa3ff;}
 /* ===== BACK-TO-TOP ===== */
 .back-to-top{background:linear-gradient(135deg,#5eead4,#38bdf8) !important;}
 .back-to-top svg{stroke:#06122b !important;}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;} *{transition:none !important; animation:none !important;}}
