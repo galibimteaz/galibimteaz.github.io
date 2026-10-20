@@ -1,0 +1,287 @@
+/* =====================================================================
+   Domain Decoded: Halloween theme
+   Everything below is scoped to html.halloween, so the normal (dark)
+   site is untouched until a visitor clicks the Halloween button.
+   ===================================================================== */
+
+/* ---------- 1. The toggle button (home page only, built by halloween.js) ---------- */
+.hw-toggle{
+  font-family:'Jost','Jost Fallback',sans-serif;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  flex-shrink:0;cursor:pointer;
+  padding:10px 20px;border-radius:999px;
+  font-size:15.5px;font-weight:600;line-height:1.1;letter-spacing:.01em;
+  color:#fff;border:1px solid #c2410c;
+  background:linear-gradient(135deg,#ff8a1f,#f06a00);
+  box-shadow:0 6px 18px rgba(240,106,0,.38);
+  transition:transform .15s,box-shadow .15s,background .15s,color .15s;
+}
+.hw-toggle:hover{transform:translateY(-1px);box-shadow:0 9px 22px rgba(240,106,0,.5)}
+.hw-toggle:focus-visible{outline:3px solid #111;outline-offset:2px}
+.hw-toggle svg{width:19px;height:19px;flex-shrink:0}
+.hw-toggle .hw-label{white-space:nowrap}
+/* when the theme is ON the button becomes a black "go back" pill */
+html.halloween .hw-toggle{background:#111;color:#ff9a3c;border-color:#ff8a1f;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+html.halloween .hw-toggle:hover{background:#000}
+
+@media(max-width:820px){
+  .hw-toggle{margin-left:auto;padding:9px 15px;font-size:14px}
+  .hw-toggle + .nav-toggle{margin-left:0}
+  .topbar .wrap{gap:10px}
+}
+@media(max-width:480px){
+  .hw-toggle{padding:6px 10px;font-size:10.5px;line-height:1.15;gap:5px;text-align:center}
+  .hw-toggle svg{width:16px;height:16px}
+  .hw-toggle .hw-label{white-space:normal;max-width:56px}
+  .hw-has-toggle .brand-link{font-size:18px;gap:8px}
+  .hw-has-toggle .brand-link::before{width:34px;height:34px}
+}
+@media(max-width:350px){
+  .hw-toggle .hw-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .hw-toggle{width:40px;height:40px;padding:0;border-radius:50%}
+  .hw-toggle svg{width:22px;height:22px}
+}
+
+/* ---------- 2. Colour variables (index.html + article.css both read these) ---------- */
+html.halloween{
+  /* index.html */
+  --line:rgba(0,0,0,.12);--line-strong:rgba(234,88,12,.35);
+  --mint:#c2410c;--mint2:#c2410c;--sky:#ea580c;
+  --text:#111;--dim:#3f3f46;--coral:#f97316;--amber:#fb923c;
+  --cardbg:#fff;
+  /* article.css */
+  --bg:#fff;--bg-raised:#fff;--bg-card:#fff;
+  --gold:#ea580c;--gold-bright:#c2410c;
+  --ink:#111;--cream:#111;--cream-dim:#3f3f46;
+  --red-x:#dc2626;--green-ok:#15803d;
+  --t-accent:#c2410c;--t-gold:#c2410c;
+  color-scheme:light;
+  background:#fff;
+}
+
+/* ---------- 3. Page background: white with orange mixing in ---------- */
+html.halloween body{color:#111}
+html.halloween body::before{
+  background:
+    /* random orange specks (noise, so they never form a grid) */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.3' numOctaves='1' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 .47  0 0 0 0 0  0 0 0 16 -11.4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E") 0 0/420px 420px,
+    /* big soft orange clouds that look like colour swirling into the white */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1100' height='1100'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.0035 .0055' numOctaves='3' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 .52  0 0 0 0 .05  0 0 0 1.1 -.5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E") 0 0/1100px 1100px,
+    radial-gradient(900px 620px at 0% 0%,rgba(255,122,0,.16),transparent 62%),
+    radial-gradient(820px 560px at 100% 16%,rgba(255,166,0,.12),transparent 62%),
+    radial-gradient(900px 620px at 38% 108%,rgba(234,88,12,.12),transparent 62%),
+    #ffffff;
+}
+
+/* room for the hanging decorations so they sit above the first line of text */
+html.halloween main{padding-top:22px}
+
+/* ---------- 4. Top bar + navigation ---------- */
+html.halloween .topbar{background:rgba(255,255,255,.90);border-bottom:2px solid #ff8a1f}
+html.halloween .brand-link{color:#111}
+html.halloween .brand-link .accent{color:#ea580c}
+html.halloween .site-nav a{color:#111;background:#fff;border-color:rgba(0,0,0,.18)}
+html.halloween .site-nav a:hover,html.halloween .site-nav a.active{background:#fff1e0;border-color:#ea580c;color:#111}
+html.halloween .nav-toggle{color:#111}
+html.halloween .back-link{color:#c2410c;border-color:rgba(234,88,12,.4)}
+html.halloween .back-link:hover{background:#fff1e0}
+@media(max-width:820px){
+  html.halloween .topbar{background:rgba(255,255,255,.97)}
+  html.halloween .site-nav{background:#fff;border-left:2px solid #ff8a1f;box-shadow:-10px 0 30px rgba(0,0,0,.18)}
+}
+@media(max-width:700px){
+  html.halloween .topbar{background:rgba(255,255,255,.97)}
+  html.halloween .site-nav{background:#fff;border-left:2px solid #ff8a1f;box-shadow:-10px 0 30px rgba(0,0,0,.18)}
+}
+
+/* ---------- 5. Home page: hero, profile card, sections ---------- */
+html.halloween .eyebrow{color:#c2410c}
+html.halloween .eyebrow::before{background:#ea580c}
+html.halloween h1.title,html.halloween h1{color:#111}
+html.halloween h1.title em{background:linear-gradient(90deg,#f06a00,#b93a00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+html.halloween .hero{border-bottom-color:rgba(234,88,12,.3)}
+html.halloween .hero-sub,html.halloween .article-sub{color:#3f3f46}
+html.halloween .hero-sub a,html.halloween .article-sub a{color:#c2410c}
+html.halloween .hero-quote{border-color:rgba(234,88,12,.5);background:rgba(255,138,31,.12);color:#9a3412}
+html.halloween .typewriter-cursor{background:#ea580c}
+
+html.halloween .li-card{background:#fff;border:1px solid rgba(234,88,12,.35);box-shadow:0 14px 36px rgba(234,88,12,.16)}
+html.halloween .li-avatar{border-color:#ea580c}
+html.halloween .li-name{color:#111}
+html.halloween .li-role,html.halloween .li-meta{color:#3f3f46}
+html.halloween .li-meta{border-top-color:rgba(0,0,0,.12)}
+html.halloween .li-btn.primary{background:linear-gradient(135deg,#f97316,#c2410c);color:#fff;font-weight:600}
+html.halloween .li-btn.secondary{background:#fff;border-color:rgba(0,0,0,.18);color:#111}
+html.halloween .li-btn.secondary:hover{border-color:#ea580c;background:#fff7ed}
+
+html.halloween .section-head h2,html.halloween .section h2,html.halloween .article-body h2{color:#111}
+html.halloween .section-head p{color:#3f3f46}
+html.halloween .group-head h3{color:#111}
+html.halloween .group-head .gcount{color:#3f3f46;border-color:rgba(0,0,0,.2)}
+html.halloween .group-head::after{background:linear-gradient(90deg,rgba(234,88,12,.55),transparent)}
+
+/* ---------- 6. Cards (domain cards, insight cards, blog cards, etc.) ---------- */
+html.halloween .card,
+html.halloween .insight-card,
+html.halloween .benefit-card,
+html.halloween .price-card,
+html.halloween .blog-card,
+html.halloween .author-box,
+html.halloween .branch,
+html.halloween .tree-meta .item,
+html.halloween .screen-results,
+html.halloween .stat,
+html.halloween .related,
+html.halloween .published-on{
+  background:#fff;border-color:rgba(234,88,12,.28);
+  box-shadow:0 10px 28px rgba(234,88,12,.12);
+}
+html.halloween .stat-row{background:rgba(234,88,12,.2);border-color:rgba(234,88,12,.28);box-shadow:0 10px 28px rgba(234,88,12,.12)}
+html.halloween .card:hover,html.halloween .insight-card:hover,html.halloween .blog-card:hover{border-color:#ea580c;box-shadow:0 18px 40px rgba(234,88,12,.25)}
+
+html.halloween .card-icon,html.halloween .benefit-card .icon{color:#c2410c;background:rgba(255,138,31,.14);border-color:rgba(234,88,12,.45)}
+html.halloween .benefit-card .icon svg{stroke:#c2410c}
+html.halloween .card-name,html.halloween .insight-card h3,html.halloween .benefit-card h3,
+html.halloween .price-card h3,html.halloween .blog-card h3,html.halloween .article-body h3,
+html.halloween .related h3,html.halloween .step-title,html.halloween .author-info .name,
+html.halloween .tree-meta .item .v,html.halloween .cta-box h3,html.halloween .footer-brand,
+html.halloween .byline .who,html.halloween .article-body strong{color:#111}
+html.halloween .card-name .ext{color:#c2410c}
+html.halloween .badge,html.halloween .insight-tag{color:#9a3412;border-color:rgba(234,88,12,.5)}
+html.halloween .blog-tag{color:#9a3412;border-color:rgba(234,88,12,.5)}
+html.halloween .card-tag,html.halloween .insight-card p,html.halloween .benefit-card p,
+html.halloween .price-card p,html.halloween .blog-card p,html.halloween .blog-meta,
+html.halloween .author-info .role,html.halloween .step-desc,html.halloween .branch li,
+html.halloween .screen-results li,html.halloween .stat .label,html.halloween .byline,
+html.halloween .source-note,html.halloween .published-on,html.halloween .section p,
+html.halloween .cta-box p,html.halloween .footer-blurb,html.halloween .footer-bottom{color:#3f3f46}
+html.halloween .blog-meta .dot{background:#3f3f46}
+html.halloween .pill,html.halloween .price-card .tag,html.halloween .portfolio-strip a{
+  background:#fff7ed;border-color:#fdba74;color:#7c2d12;
+}
+html.halloween a.pill:hover,html.halloween .portfolio-strip a:hover{background:#ffedd5;border-color:#ea580c;color:#111}
+html.halloween .insight-read,html.halloween .blog-read{color:#c2410c}
+html.halloween .contact-card{border-color:#e11d1d}
+html.halloween .contact-card .insight-tag,html.halloween .contact-card .insight-read{color:#b91c1c;border-color:rgba(220,38,38,.5)}
+html.halloween .contact-card .insight-read{border:0}
+
+html.halloween .btn{background:#fff;border-color:rgba(0,0,0,.2);color:#111}
+html.halloween .btn.feat:hover,html.halloween .btn.dm:hover{background:#fff1e0;border-color:#ea580c}
+html.halloween .btn.buy,html.halloween .btn.primary{background:linear-gradient(135deg,#f97316,#c2410c);color:#fff;border-color:transparent;box-shadow:0 8px 22px rgba(234,88,12,.32)}
+html.halloween .btn.outline{background:#fff;border-color:rgba(0,0,0,.25);color:#111}
+html.halloween .btn.outline:hover{background:#fff1e0;border-color:#ea580c}
+
+html.halloween .detail,html.halloween .detail-row{color:#262626}
+html.halloween .card.open .detail{border-top-color:rgba(0,0,0,.12)}
+html.halloween .detail-label{color:#c2410c}
+html.halloween .detail-note{border-top-color:rgba(234,88,12,.4);color:#9a3412}
+html.halloween .detail a{color:#c2410c}
+
+/* ---------- 7. Article / inner-page content ---------- */
+html.halloween .article-body p,html.halloween .article-body ul,html.halloween .article-body ol{color:#1f1f1f}
+html.halloween .article-body a,html.halloween .published-on a,html.halloween .related a,html.halloween .section p a{color:#c2410c}
+html.halloween .article-body a:hover{color:#7c2d12}
+html.halloween .byline img,html.halloween .author-photo{border-color:#ea580c}
+html.halloween .source-note{border-top-color:rgba(0,0,0,.12)}
+html.halloween .share-row{border-top-color:rgba(0,0,0,.12)}
+html.halloween .share-label{color:#3f3f46}
+html.halloween .share-btn{background:#fff;border-color:rgba(0,0,0,.18)}
+html.halloween .share-btn:hover{background:#fff1e0}
+html.halloween .share-btn.twitter{color:#111}
+html.halloween .quote-block{border-left-color:#ea580c;background:rgba(255,138,31,.1);color:#9a3412}
+html.halloween .root-box{border-color:rgba(234,88,12,.45);background:rgba(255,138,31,.08);color:#9a3412}
+html.halloween .step{border-bottom-color:rgba(0,0,0,.12)}
+html.halloween .step-num{border-color:#ea580c;color:#c2410c;background:rgba(255,138,31,.14)}
+html.halloween .step-result{background:#fff;border-color:rgba(0,0,0,.18)}
+html.halloween .price-card .price,html.halloween .stat .num,html.halloween .final-box .name{color:#c2410c}
+html.halloween .tree-meta .item .k,html.halloween .branch h4{color:#c2410c}
+html.halloween .branch li,html.halloween .screen-results li{border-bottom-color:rgba(0,0,0,.2)}
+html.halloween .screen-results li b{color:#15803d}
+html.halloween .final-box,html.halloween .cta-box{background:linear-gradient(135deg,#fff3e3,#ffe2c2);border-color:rgba(234,88,12,.4);box-shadow:0 14px 36px rgba(234,88,12,.18)}
+html.halloween .final-box .tagline{color:#3f3f46}
+
+/* forms and other things that could live on contact.html / faq.html / services.html */
+html.halloween input,html.halloween textarea,html.halloween select{background:#fff;color:#111;border-color:rgba(0,0,0,.28)}
+html.halloween input::placeholder,html.halloween textarea::placeholder{color:#6b7280}
+html.halloween input:focus,html.halloween textarea:focus,html.halloween select:focus{border-color:#ea580c;outline:2px solid rgba(234,88,12,.35)}
+html.halloween details{background:#fff;border-color:rgba(234,88,12,.3)}
+html.halloween summary{color:#111}
+html.halloween table{color:#111}
+html.halloween th,html.halloween td{border-color:rgba(0,0,0,.15)}
+html.halloween code,html.halloween pre{background:#fff3e3;color:#7c2d12}
+html.halloween hr{border-color:rgba(0,0,0,.15)}
+
+/* ---------- 8. Footer ---------- */
+html.halloween footer.site-footer{
+  position:relative;
+  background:linear-gradient(135deg,#fff3e3 0%,#ffe2c2 55%,#ffd2a1 100%);
+  border-top:3px solid #ff8a1f;
+}
+html.halloween .footer-brand .accent{color:#ea580c}
+html.halloween .footer-col h4{color:#c2410c}
+html.halloween .footer-col a{color:#262626}
+html.halloween .footer-col a:hover,html.halloween .footer-bottom a{color:#c2410c}
+html.halloween .footer-bottom{border-top-color:rgba(0,0,0,.14)}
+html.halloween .footer-social a{background:#fff;border-color:rgba(0,0,0,.18);color:#111}
+html.halloween .footer-social a:hover{color:#111;border-color:#ea580c}
+/* the site already lightens these two icons for the dark theme, so put them back */
+html.halloween svg[fill="#36465D"]{fill:#36465D}
+html.halloween svg[fill="#0A66C2"]{fill:#0A66C2}
+html.halloween .back-to-top{background:linear-gradient(135deg,#f97316,#c2410c) !important}
+html.halloween .back-to-top svg{stroke:#fff !important}
+
+/* ---------- 9. Decorations (added by halloween.js, only while the theme is on) ---------- */
+.hw-hang{position:absolute;left:0;right:0;top:var(--hw-top,84px);height:0;z-index:70;pointer-events:none}
+.hw-hang > *{position:absolute;top:0;transform-origin:50% 0;pointer-events:none}
+.hw-garland{left:0;right:0;height:34px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='34' viewBox='0 0 150 34'%3E%3Cpath d='M0 3 Q75 13 150 3' fill='none' stroke='%23222' stroke-width='1.6'/%3E%3Cpath d='M4 4.5 L26 7.2 L14 30Z' fill='%23ff7a00' stroke='%23222' stroke-width='1'/%3E%3Cpath d='M32 7.6 L54 9.6 L43 30Z' fill='%23111' stroke='%23222' stroke-width='1'/%3E%3Cpath d='M60 9.8 L82 10.4 L71 30Z' fill='%23ffb347' stroke='%23222' stroke-width='1'/%3E%3Cpath d='M88 10.4 L110 9.6 L99 30Z' fill='%23111' stroke='%23222' stroke-width='1'/%3E%3Cpath d='M116 9.6 L138 7.2 L127 30Z' fill='%23ff7a00' stroke='%23222' stroke-width='1'/%3E%3C/svg%3E")
+    repeat-x 0 0/150px 34px;
+}
+.hw-hang .hw-item{width:var(--w,60px)}
+.hw-hang .hw-item svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 4px 5px rgba(0,0,0,.22))}
+.hw-sway{animation:hw-sway var(--d,4.5s) ease-in-out infinite alternate}
+@keyframes hw-sway{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+.hw-drop{animation:hw-drop 7s ease-in-out infinite}
+@keyframes hw-drop{0%,100%{transform:translateY(-34px)}45%,60%{transform:translateY(0)}}
+
+/* spiderweb tucked into the top-left corner under the bar */
+.hw-web{left:0;top:0;width:150px;opacity:.55}
+
+/* bats that cross the screen now and then */
+.hw-bats{position:fixed;inset:0;z-index:60;pointer-events:none;overflow:hidden}
+.hw-bat{position:absolute;left:-90px;width:46px;opacity:0;animation:hw-fly var(--t,26s) linear var(--delay,0s) infinite}
+.hw-bat svg{display:block;width:100%;height:auto;animation:hw-flap .45s ease-in-out infinite alternate;transform-origin:50% 50%}
+@keyframes hw-fly{
+  0%{transform:translate(0,0);opacity:0}
+  3%{opacity:.9}
+  50%{transform:translate(55vw,var(--dy,60px))}
+  97%{opacity:.9}
+  100%{transform:translate(calc(100vw + 140px),calc(var(--dy,60px) * -.5));opacity:0}
+}
+@keyframes hw-flap{from{transform:scaleY(1)}to{transform:scaleY(.55)}}
+
+/* pumpkins, tombstone and friends sitting on top of the footer */
+.hw-ground{position:absolute;left:0;right:0;bottom:100%;height:0;z-index:2;pointer-events:none}
+.hw-ground .hw-item{position:absolute;bottom:-2px;width:var(--w,64px)}
+.hw-ground .hw-item svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 3px 4px rgba(0,0,0,.2))}
+.hw-glow{animation:hw-glow 2.6s ease-in-out infinite alternate}
+@keyframes hw-glow{from{filter:drop-shadow(0 3px 4px rgba(0,0,0,.2))}to{filter:drop-shadow(0 0 10px rgba(255,140,0,.85))}}
+
+/* keep it light on small screens */
+@media(max-width:820px){
+  .hw-hide-sm{display:none}
+  .hw-hang .hw-item{width:calc(var(--w,60px) * .78)}
+  .hw-ground .hw-item{width:calc(var(--w,64px) * .78)}
+  .hw-web{width:110px}
+  .hw-hang .hw-item svg{transform:scale(.62);transform-origin:50% 0}
+  html.halloween main{padding-top:30px}
+}
+@media(max-width:480px){
+  .hw-hide-xs{display:none}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .hw-sway,.hw-drop,.hw-glow,.hw-bat,.hw-bat svg{animation:none !important}
+  .hw-bats{display:none}
+}
