@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Add these <url> entries to your sitemap.xml. Make sure the <urlset> tag includes xmlns:xhtml="http://www.w3.org/1999/xhtml". Replace your existing services.html entry with the first one. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://galibimteaz.github.io/services.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/ar/services.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/zh/services.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/es/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/services.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/ar/services.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/ar/services.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/zh/services.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/es/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/services.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/zh/services.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/ar/services.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/zh/services.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/es/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/services.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/es/services.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/ar/services.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/zh/services.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/es/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/services.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/about.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/privacy-policy.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/disclaimer.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+</urlset>
