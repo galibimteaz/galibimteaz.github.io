@@ -1,128 +1,898 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://galibimteaz.github.io/</loc>
-<priority>1.0</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/services.html</loc>
-<priority>0.8</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/about.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/blog.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/blog-post-meaningless-brand-names.html</loc>
-<priority>0.6</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/blog-post-juronix-pricing-comps.html</loc>
-<priority>0.6</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-interviewtipshub.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-juronix.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-sanagrid.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-lexbold.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-solvafunds.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-mubez.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-baluj.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-griefplatform.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-restinjoy.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-losswell.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/why-it-matters.html</loc>
-<priority>0.6</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/workflow.html</loc>
-<priority>0.6</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/contact.html</loc>
-<priority>0.6</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/faq.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-<loc>https://galibimteaz.github.io/case-study-tldfight.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/blog-post-tldfight-linkedin.html</loc>
-<priority>0.6</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/blog-post-tld-fight-circleid.html</loc>
-<priority>0.6</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/blog-post-grief-market.html</loc>
-<priority>0.6</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
-<url>
-<loc>https://galibimteaz.github.io/case-study-scholarship.html</loc>
-<priority>0.7</priority>
-<lastmod>2026-10-18</lastmod>
-</url>
+    <loc>https://galibimteaz.github.io/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/index-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/index-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/index-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/index-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/index-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/index-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/index-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/index-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/index-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/index-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/index-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/index-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/index-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/index-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/index-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/services.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/services-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/services-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/services-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/services.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/services-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/services-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/services-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/services-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/services.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/services-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/services-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/services-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/services-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/services.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/services-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/services-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/services-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/services-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/services.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/about.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/about-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/about-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/about-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/about.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/about-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/about-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/about-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/about-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/about.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/about-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/about-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/about-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/about-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/about.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/about-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/about-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/about-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/about-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/about.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/faq.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/faq-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/faq-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/faq-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/faq.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/faq-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/faq-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/faq-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/faq-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/faq.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/faq-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/faq-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/faq-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/faq-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/faq.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/faq-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/faq-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/faq-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/faq-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/faq.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/contact.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/contact-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/contact-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/contact-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/contact.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/contact-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/contact-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/contact-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/contact-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/contact.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/contact-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/contact-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/contact-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/contact-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/contact.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/contact-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/contact-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/contact-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/contact-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/contact.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/blog-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/blog-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/blog-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/blog.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/blog-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/blog-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/blog-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/blog.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/blog-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/blog-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/blog-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/blog.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/blog-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/blog-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/blog-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/blog.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/workflow.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/workflow.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/workflow-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/workflow-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/workflow-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/workflow.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/workflow-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/workflow.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/workflow-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/workflow-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/workflow-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/workflow.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/workflow-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/workflow.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/workflow-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/workflow-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/workflow-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/workflow.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/workflow-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/workflow.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/workflow-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/workflow-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/workflow-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/workflow.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/why-it-matters.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/why-it-matters.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/why-it-matters-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/why-it-matters-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/why-it-matters-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/why-it-matters.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/why-it-matters-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/why-it-matters.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/why-it-matters-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/why-it-matters-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/why-it-matters-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/why-it-matters.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/why-it-matters-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/why-it-matters.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/why-it-matters-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/why-it-matters-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/why-it-matters-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/why-it-matters.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/why-it-matters-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/why-it-matters.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/why-it-matters-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/why-it-matters-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/why-it-matters-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/why-it-matters.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/privacy-policy.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/privacy-policy-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/privacy-policy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/privacy-policy-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/privacy-policy.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/privacy-policy-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/privacy-policy-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/privacy-policy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/privacy-policy-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/privacy-policy.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/privacy-policy-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/privacy-policy-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/privacy-policy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/privacy-policy-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/privacy-policy.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/privacy-policy-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/privacy-policy-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/privacy-policy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/privacy-policy-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/privacy-policy.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/disclaimer.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/disclaimer-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/disclaimer-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/disclaimer-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/disclaimer-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/disclaimer-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/disclaimer-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/disclaimer-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/disclaimer-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/disclaimer-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/disclaimer-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/disclaimer-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/disclaimer-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/disclaimer-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/disclaimer-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/disclaimer-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-juronix.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-juronix.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-juronix-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-juronix-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-juronix-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-juronix.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-juronix-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-juronix.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-juronix-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-juronix-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-juronix-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-juronix.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-juronix-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-juronix.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-juronix-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-juronix-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-juronix-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-juronix.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-juronix-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-juronix.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-juronix-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-juronix-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-juronix-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-juronix.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-lexbold.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-lexbold.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-lexbold-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-lexbold-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-lexbold-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-lexbold.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-lexbold-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-lexbold.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-lexbold-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-lexbold-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-lexbold-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-lexbold.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-lexbold-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-lexbold.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-lexbold-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-lexbold-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-lexbold-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-lexbold.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-lexbold-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-lexbold.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-lexbold-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-lexbold-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-lexbold-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-lexbold.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-solvafunds.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-solvafunds.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-solvafunds-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-solvafunds-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-solvafunds-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-solvafunds.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-solvafunds-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-solvafunds.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-solvafunds-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-solvafunds-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-solvafunds-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-solvafunds.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-solvafunds-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-solvafunds.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-solvafunds-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-solvafunds-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-solvafunds-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-solvafunds.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-solvafunds-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-solvafunds.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-solvafunds-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-solvafunds-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-solvafunds-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-solvafunds.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-sanagrid.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-sanagrid.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-sanagrid-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-sanagrid-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-sanagrid-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-sanagrid.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-sanagrid-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-sanagrid.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-sanagrid-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-sanagrid-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-sanagrid-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-sanagrid.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-sanagrid-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-sanagrid.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-sanagrid-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-sanagrid-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-sanagrid-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-sanagrid.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-sanagrid-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-sanagrid.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-sanagrid-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-sanagrid-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-sanagrid-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-sanagrid.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-mubez.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-mubez.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-mubez-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-mubez-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-mubez-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-mubez.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-mubez-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-mubez.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-mubez-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-mubez-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-mubez-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-mubez.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-mubez-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-mubez.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-mubez-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-mubez-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-mubez-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-mubez.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-mubez-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-mubez.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-mubez-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-mubez-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-mubez-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-mubez.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-baluj.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-baluj.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-baluj-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-baluj-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-baluj-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-baluj.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-baluj-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-baluj.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-baluj-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-baluj-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-baluj-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-baluj.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-baluj-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-baluj.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-baluj-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-baluj-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-baluj-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-baluj.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-baluj-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-baluj.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-baluj-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-baluj-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-baluj-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-baluj.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-interviewtipshub.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-interviewtipshub.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-interviewtipshub-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-interviewtipshub-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-interviewtipshub-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-interviewtipshub.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-interviewtipshub-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-interviewtipshub.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-interviewtipshub-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-interviewtipshub-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-interviewtipshub-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-interviewtipshub.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-interviewtipshub-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-interviewtipshub.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-interviewtipshub-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-interviewtipshub-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-interviewtipshub-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-interviewtipshub.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-interviewtipshub-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-interviewtipshub.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-interviewtipshub-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-interviewtipshub-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-interviewtipshub-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-interviewtipshub.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-griefplatform.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-griefplatform.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-griefplatform-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-griefplatform-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-griefplatform-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-griefplatform.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-griefplatform-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-griefplatform.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-griefplatform-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-griefplatform-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-griefplatform-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-griefplatform.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-griefplatform-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-griefplatform.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-griefplatform-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-griefplatform-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-griefplatform-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-griefplatform.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-griefplatform-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-griefplatform.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-griefplatform-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-griefplatform-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-griefplatform-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-griefplatform.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-restinjoy.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-restinjoy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-restinjoy-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-restinjoy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-restinjoy-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-restinjoy.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-restinjoy-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-restinjoy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-restinjoy-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-restinjoy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-restinjoy-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-restinjoy.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-restinjoy-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-restinjoy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-restinjoy-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-restinjoy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-restinjoy-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-restinjoy.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-restinjoy-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-restinjoy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-restinjoy-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-restinjoy-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-restinjoy-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-restinjoy.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-losswell.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-losswell.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-losswell-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-losswell-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-losswell-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-losswell.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-losswell-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-losswell.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-losswell-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-losswell-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-losswell-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-losswell.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-losswell-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-losswell.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-losswell-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-losswell-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-losswell-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-losswell.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-losswell-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-losswell.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-losswell-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-losswell-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-losswell-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-losswell.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-tldfight.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-tldfight.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-tldfight-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-tldfight-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-tldfight-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-tldfight.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-tldfight-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-tldfight.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-tldfight-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-tldfight-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-tldfight-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-tldfight.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-tldfight-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-tldfight.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-tldfight-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-tldfight-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-tldfight-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-tldfight.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-tldfight-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-tldfight.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-tldfight-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-tldfight-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-tldfight-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-tldfight.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-scholarship.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-scholarship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-scholarship-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-scholarship-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-scholarship-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-scholarship.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-scholarship-ar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-scholarship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-scholarship-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-scholarship-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-scholarship-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-scholarship.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-scholarship-zh.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-scholarship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-scholarship-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-scholarship-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-scholarship-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-scholarship.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/case-study-scholarship-es.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galibimteaz.github.io/case-study-scholarship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://galibimteaz.github.io/case-study-scholarship-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://galibimteaz.github.io/case-study-scholarship-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://galibimteaz.github.io/case-study-scholarship-es.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galibimteaz.github.io/case-study-scholarship.html"/>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog-post-meaningless-brand-names.html</loc>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog-post-juronix-pricing-comps.html</loc>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog-post-tldfight-linkedin.html</loc>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog-post-tld-fight-circleid.html</loc>
+  </url>
+  <url>
+    <loc>https://galibimteaz.github.io/blog-post-grief-market.html</loc>
+  </url>
 </urlset>

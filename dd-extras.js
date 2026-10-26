@@ -114,6 +114,26 @@
     setTimeout(function () { if (wrap.parentNode) wrap.parentNode.removeChild(wrap); }, 3500);
   }
 
+
+  /* ---------- ambient motion on every page: twinkling stars, drifting birds, a rare shooting star ---------- */
+  function ambient() {
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!document.body || document.querySelector('.dd-ambient')) return;
+    var box = document.createElement('div'); box.className = 'dd-ambient'; box.setAttribute('aria-hidden', 'true');
+    var h = '', i;
+    for (i = 0; i < 22; i++) {
+      var sz = 1 + Math.random() * 2;
+      h += '<i class="dd-amb-star" style="left:' + (Math.random() * 100).toFixed(1) + '%;top:' + (Math.random() * 100).toFixed(1) + '%;width:' + sz.toFixed(1) + 'px;height:' + sz.toFixed(1) + 'px;--d:' + (3.5 + Math.random() * 5).toFixed(1) + 's;--w:-' + (Math.random() * 6).toFixed(1) + 's"></i>';
+    }
+    var bird = '<svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path class="wl" d="M24 14C19 4 10 3 3 8"/><path class="wr" d="M24 14C29 4 38 3 45 8"/></svg>';
+    h += '<div class="dd-bird" style="top:14%;--fd:48s;--fw:-6s">' + bird + '</div>';
+    h += '<div class="dd-bird" style="top:46%;--fd:63s;--fw:-31s;width:34px">' + bird + '</div>';
+    h += '<div class="dd-bird" style="top:72%;--fd:55s;--fw:-18s;width:40px">' + bird + '</div>';
+    h += '<div class="dd-shoot"></div>';
+    box.innerHTML = h;
+    document.body.appendChild(box);
+  }
+
   function boot() {
     var c = get();
     if (c === 'granted') loadGA();
@@ -121,6 +141,7 @@
     var links = document.querySelectorAll('[data-cookie-settings]');
     for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function (e) { e.preventDefault(); showBar(); });
     wireSwitcher();
+    ambient();
     intro();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
