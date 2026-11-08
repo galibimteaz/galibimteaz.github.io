@@ -121,18 +121,6 @@ html[data-flag] .sec-orange .cta-box,html[data-flag] .sec-green .cta-box{backgro
 .dd-consent .dd-no{background:transparent;color:var(--cream,#f1f5f9);border:1px solid var(--line-strong,rgba(255,255,255,.20))}
 @media(max-width:520px){.dd-consent .dd-btns{width:100%}.dd-consent button{flex:1}}
 
-/* ---------- opening motion: globe spins to Asia, highlights Bangladesh ---------- */
-.dd-globe-intro{position:fixed;inset:0;z-index:9990;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
-  background:radial-gradient(ellipse at 50% 45%,rgba(14,20,52,.92),rgba(5,7,20,.97));cursor:pointer;-webkit-tap-highlight-color:transparent}
-.dd-globe-cv{display:block;filter:drop-shadow(0 0 38px var(--gold-bright,#7ff0dc))}
-.dd-globe-cap{display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0;text-align:center}
-.dd-globe-brand{font:600 22px/1.2 'Jost',system-ui,sans-serif;color:#fff;letter-spacing:.04em}
-.dd-globe-place{font:500 17px/1.3 'Jost','Noto Sans Arabic','Noto Sans SC',system-ui,sans-serif;color:var(--gold-bright,#7ff0dc);opacity:0;letter-spacing:.06em}
-html[lang="ar"] .dd-globe-place{letter-spacing:0}
-.dd-globe-skip{position:absolute;right:16px;bottom:18px;background:none;border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.8);border-radius:999px;padding:8px 16px;font:500 13px/1 'Jost',system-ui,sans-serif;cursor:pointer}
-html[dir="rtl"] .dd-globe-skip{right:auto;left:16px}
-@media(prefers-reduced-motion:reduce){.dd-globe-intro{display:none}}
-
 /* ---------- About / legal page components ---------- */
 .legal-body h2{margin-top:6px}
 .legal-body p,.legal-body li{color:var(--cream-dim,#aeb9cf);font-size:15.5px}
