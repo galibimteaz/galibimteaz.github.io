@@ -309,3 +309,21 @@ html.wd .dd-consent button{font-family:"IBM Plex Sans",system-ui,sans-serif;font
 html.wd .dd-bird{color:var(--teal);opacity:.35}
 html.wd .dd-amb-star{background:var(--teal)}
 html.wd .dd-shoot{background:linear-gradient(90deg,transparent,var(--teal))}
+
+/* ----- white design + translated pages (flag themes, RTL, CJK) ----- */
+html.wd[data-flag] .btn.primary{color:var(--on)}
+html.wd[data-flag] .svc-card.o,html.wd[data-flag] .svc-card.g{background:var(--card);border-color:var(--line);border-top-color:var(--c)}
+html.wd[data-flag] .svc-card.o .k,html.wd[data-flag] .svc-card.o .go,html.wd[data-flag] .svc-card.g .k,html.wd[data-flag] .svc-card.g .go{color:var(--c)}
+html.wd[data-flag] .price-card.recommended{border-color:var(--c)}
+html.wd[data-flag] .quick-links a,html.wd[data-flag] .faq-links a,html.wd[data-flag] .portfolio-strip a{color:var(--mute)}
+html.wd[dir="rtl"] .gw-note{border-right:0;border-left:0;border-inline-start:4px solid var(--c,var(--teal));border-radius:0;border-start-end-radius:10px;border-end-end-radius:10px}
+html.wd[dir="rtl"] .logo{direction:ltr}
+html.wd[lang="ar"] body{font-family:"Noto Sans Arabic","IBM Plex Sans","Segoe UI",Tahoma,sans-serif;line-height:1.9}
+html.wd[lang="ar"] h1,html.wd[lang="ar"] h2,html.wd[lang="ar"] h3,html.wd[lang="ar"] .step-title,html.wd[lang="ar"] .svc-card .t,html.wd[lang="ar"] .gw-group{font-family:"Noto Sans Arabic","Segoe UI",Tahoma,sans-serif;font-weight:700}
+html.wd[lang="ar"] h1{line-height:1.35}
+html.wd[lang="zh-Hans"] body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC","IBM Plex Sans",sans-serif;line-height:1.85}
+html.wd[lang="zh-Hans"] h1,html.wd[lang="zh-Hans"] h2,html.wd[lang="zh-Hans"] h3,html.wd[lang="zh-Hans"] .step-title,html.wd[lang="zh-Hans"] .svc-card .t,html.wd[lang="zh-Hans"] .gw-group{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC",sans-serif;font-weight:700;letter-spacing:0}
+html.wd[lang="zh-Hans"] h1{line-height:1.25}
+html.wd[lang="es"] h1{font-size:clamp(2rem,4.6vw,3.4rem)}
+html.wd h1,html.wd h2{text-wrap:balance}
+html.wd[lang="zh-Hans"] h1{font-size:clamp(2rem,4.2vw,3.2rem)}

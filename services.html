@@ -227,17 +227,17 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
 .updated{font-size:.88rem;color:var(--mute);margin:14px 0 0}
 section.sec{padding:56px 0 8px;scroll-margin-top:16px}
 section.sec.l{--c:var(--blue);--soft:var(--s2)}section.sec.d{--c:var(--teal);--soft:var(--s1)}section.sec.n{--c:var(--teal);--soft:var(--s1)}
-section.sec>h2{border-left:5px solid var(--c);padding-left:14px}
+section.sec>h2{border-inline-start:5px solid var(--c);padding-inline-start:14px}
 .svc-banner{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);margin:4px 0 20px}
 .gw-group{font:600 1.05rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--c,var(--teal));margin:30px 0 14px;letter-spacing:.02em}
 .price-card{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:14px}
 .price-card.recommended{border-color:var(--c);box-shadow:0 0 0 2px var(--soft)}
 .price-card h3{margin:0 0 6px;font-size:1.2rem;font-weight:600}.price-card p{margin:0 0 10px;color:var(--mute);font-size:.97rem}
-.badge{display:inline-block;white-space:nowrap;font-size:.72rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;background:var(--c);color:var(--on);border-radius:99px;padding:3px 10px;margin-left:10px;vertical-align:middle}
+.badge{display:inline-block;white-space:nowrap;font-size:.72rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;background:var(--c);color:var(--on);border-radius:99px;padding:3px 10px;margin-inline-start:10px;vertical-align:middle}
 .tags{display:flex;flex-wrap:wrap;gap:8px}.tag{background:var(--soft,var(--s1));border-radius:99px;padding:5px 12px;font-size:.88rem}
 .price-card .price{background:none;padding:0;border-radius:0}
-.price{font:600 1.55rem "Bricolage Grotesque",system-ui,sans-serif;text-align:right;white-space:nowrap}.price-sub{display:block;font:400 .85rem "IBM Plex Sans",system-ui,sans-serif;color:var(--mute);margin-top:4px}
-.gw-note{border-left:4px solid var(--c,var(--teal));background:var(--soft,var(--s1));padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:.97rem}
+.price{font:600 1.55rem "Bricolage Grotesque",system-ui,sans-serif;text-align:end;white-space:nowrap}.price-sub{display:block;font:400 .85rem "IBM Plex Sans",system-ui,sans-serif;color:var(--mute);margin-top:4px}
+.gw-note{border-inline-start:4px solid var(--c,var(--teal));background:var(--soft,var(--s1));padding:14px 18px;border-start-end-radius:10px;border-end-end-radius:10px;margin:18px 0;font-size:.97rem}
 .gw-terms,.point-list{list-style:none;margin:10px 0 0;padding:0}
 .gw-terms li{color:var(--mute);padding:10px 0;border-bottom:1px dashed var(--line);font-size:.97rem}.gw-terms li:last-child{border:0}
 .point-list li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);color:var(--mute)}.point-list li:last-child{border:0}
@@ -255,9 +255,8 @@ section.sec>h2{border-left:5px solid var(--c);padding-left:14px}
 .faq-links a{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:10px 16px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}.faq-links a:hover{border-color:var(--teal)}
 .portfolio-strip{display:flex;flex-wrap:wrap;gap:8px}
 .portfolio-strip a{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:10px 16px;text-decoration:none;font-size:.93rem;min-height:44px;display:inline-flex;align-items:center}.portfolio-strip a:hover{border-color:var(--teal)}
-.skip-link{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:8px;z-index:50}.skip-link:focus{left:8px}
 @media (max-width:860px){.svc-pick{grid-template-columns:1fr}}
-@media (max-width:620px){.price-card{grid-template-columns:1fr}.price{text-align:left;white-space:normal}.badge{margin-left:0}}
+@media (max-width:620px){.price-card{grid-template-columns:1fr}.price{text-align:start;white-space:normal}.badge{margin-inline-start:0}}
 </style>
 <link rel="stylesheet" href="dd-extras.css">
 <script src="dd-extras.js" defer></script>
