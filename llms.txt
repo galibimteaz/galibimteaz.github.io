@@ -7,12 +7,16 @@ Site languages: English, Arabic (العربية), Mandarin Chinese (中文), Spa
 ## Main pages
 - [Home and portfolio](https://galibimteaz.github.io/): premium .COM domains for sale with trademark, history and comparable-sales checks
 - [Services and pricing](https://galibimteaz.github.io/services.html): LinkedIn ghostwriting plans and domain naming, brokerage and audit pricing, with payment details
-- [About Imteaz (Galib) Chowdhury](https://galibimteaz.github.io/about.html): who runs the site, how the work is done, and how to get in touch
+- [About Imteaz (Galib) Chowdhury](https://galibimteaz.github.io/about.html): who runs the site, how domains are sourced, vetted, named and brokered, the LinkedIn ghostwriting service, his writing for CircleID and the APNIC Blog, and how to get in touch
 - [FAQ](https://galibimteaz.github.io/faq.html): answers on LinkedIn ghostwriting, domain buying, trademark clearance, UDRP history, valuation, brokerage, pricing and payment
 - [DIOS due-diligence workflow](https://galibimteaz.github.io/workflow.html): the five-stage process behind every listing
-- [Why it matters to founders](https://galibimteaz.github.io/why-it-matters.html)
+- [Why it matters to founders](https://galibimteaz.github.io/why-it-matters.html): why the names rejected during due diligence matter more than the one chosen, covering trademark conflicts, hidden domain history, data-backed pricing and global scalability
 - [Blog](https://galibimteaz.github.io/blog.html): articles on domain pricing, trademark screening, naming and new gTLDs
 - [Contact](https://galibimteaz.github.io/contact.html)
+
+## Published writing
+- [CircleID member profile](https://circleid.com/members/9555/): articles on domain names, ICANN, new TLDs, regional registries and multilingualism
+- [APNIC Blog guest post, 5 Nov 2026: The Internet didn't break; we just forgot what it was leaning on](https://blog.apnic.net/2026/11/05/the-internet-didnt-break-we-just-forgot-what-it-was-leaning-on/)
 
 ## Policies
 - [Privacy Policy](https://galibimteaz.github.io/privacy-policy.html): analytics cookies load only after the visitor accepts; visitor data is not sold, shared or used for other purposes
