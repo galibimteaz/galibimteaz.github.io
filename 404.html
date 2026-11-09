@@ -1,147 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="wd">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Page Not Found | Domain Decoded</title>
+<meta name="description" content="This page does not exist or may have moved. Browse the Domain Decoded portfolio, blog or FAQ instead.">
 <meta name="robots" content="noindex,follow">
-<link rel="canonical" href="https://galibimteaz.github.io/404.html">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
-<link rel="preload" href="jost-latin.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="article.css">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
 <style>
-  .error-wrap{
-    min-height:80vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center; padding:40px 28px;
-  }
-  .error-code{
-    font-family:'Cormorant Garamond', serif; font-weight:700; font-size:120px;
-    color:var(--gold-bright); line-height:1; margin-bottom:10px;
-    text-shadow:0 0 40px rgba(240,215,140,0.25);
-  }
-  .error-title{
-    font-family:'Cormorant Garamond', serif; font-size:28px; font-weight:600;
-    color:var(--cream); margin-bottom:14px;
-  }
-  .error-sub{
-    color:var(--cream-dim); font-size:15px; max-width:420px; margin-bottom:32px; line-height:1.7;
-  }
+:root{--bg:#F3F6FA;--ink:#10202F;--mute:#51627A;--card:#FFFFFF;--line:#D8E0EA;--teal:#0B7A75;--blue:#0A66C2;--on:#FFFFFF;--s1:#E3F4F2;--s2:#E4EEF9;--gold:#8A5A00;--or-bg:#FFF0E0;--or-ink:#8A4A0B;--or-line:#F3D3AE;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.logo{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:14px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;text-decoration:none}
+.mark{width:46px;height:46px;flex:none;border-radius:6px;background:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20128%20128'%3E%3Crect%20width='128'%20height='128'%20fill='%230b0b0b'/%3E%3Crect%20x='5'%20y='5'%20width='118'%20height='118'%20fill='none'%20stroke='%23c9a24a'%20stroke-width='3'/%3E%3Crect%20x='10'%20y='10'%20width='108'%20height='108'%20fill='none'%20stroke='%23c9a24a'%20stroke-width='0.8'%20opacity='0.55'/%3E%3Ctext%20x='64'%20y='78'%20text-anchor='middle'%20font-family='Georgia,Times%20New%20Roman,serif'%20font-weight='700'%20font-size='60'%20letter-spacing='-2'%3E%3Ctspan%20fill='%23efe6cf'%3ED%3C/tspan%3E%3Ctspan%20fill='%23d9a93d'%3ED%3C/tspan%3E%3C/text%3E%3Cline%20x1='30'%20y1='90'%20x2='98'%20y2='90'%20stroke='%23c9a24a'%20stroke-width='0.8'%20opacity='0.7'/%3E%3Ctext%20x='64'%20y='105'%20text-anchor='middle'%20font-family='Georgia,Times%20New%20Roman,serif'%20font-size='9.5'%20letter-spacing='1.6'%20fill='%23c9a24a'%20textLength='80'%20lengthAdjust='spacing'%3EDOMAIN%20DECODED%3C/text%3E%3C/svg%3E") center/contain no-repeat;box-shadow:0 6px 18px rgba(201,162,74,.35)}
+.bar nav{display:flex;gap:6px 20px;flex-wrap:wrap}
+.bar nav a{text-decoration:none;color:var(--mute);font-size:.95rem}
+.bar nav a:hover,.bar nav a[aria-current]{color:var(--ink)}
+h1{font-weight:800;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.06;letter-spacing:-.02em;margin:0 0 20px}
+h2{font-weight:800;font-size:clamp(1.6rem,3vw,2.1rem);line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
+.btn{display:inline-block;background:var(--c,var(--teal));color:var(--on);padding:12px 20px;border-radius:10px;font:inherit;font-weight:500;text-decoration:none;border:0;cursor:pointer}
+.btn.or{background:var(--or-bg);color:var(--or-ink);box-shadow:inset 0 0 0 1.5px var(--or-line)}
+.btn.or:hover{box-shadow:inset 0 0 0 1.5px var(--or-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn:focus-visible,.f:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.sub{color:var(--mute);margin:0 0 24px;max-width:42em}
+footer{margin-top:72px;border-top:1px solid var(--line);padding:36px 0 40px;color:var(--mute);font-size:.95rem}
+.fx{margin-top:26px}
+.xp{display:flex;flex-wrap:wrap;gap:10px}
+.xp a{background:var(--s1);border:1px solid var(--line);border-radius:99px;padding:8px 18px;text-decoration:none;font-size:.95rem}
+.xp a:hover{border-color:var(--teal)}
+footer a{color:var(--ink)}
+footer h4{margin:0 0 8px;color:var(--ink);font-weight:500}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.footer-social{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.footer-social a{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;background:var(--card)}
+.footer-social svg{width:18px;height:18px}
+.legal{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;border-top:1px solid var(--line);margin-top:28px;padding-top:18px;font-size:.88rem}
+.legal button{background:none;border:0;color:var(--ink);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.whatsapp-fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;z-index:30}
+.whatsapp-fab svg{width:28px;height:28px;fill:#fff}
+.back-to-top{position:fixed;right:20px;bottom:calc(84px + env(safe-area-inset-bottom,0px));width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);display:none;place-items:center;cursor:pointer;z-index:30}
+.back-to-top.visible{display:grid}
+.back-to-top svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+@media (max-width:620px){.xp{flex-direction:column}.xp a{text-align:center;padding:12px 18px}.legal{flex-direction:column}.wrap{padding:0 20px}}
+.hero{padding:40px 0 4px}
+.eyebrow{display:inline-block;background:var(--s1);color:var(--teal);font-weight:500;font-size:.9rem;padding:5px 14px;border-radius:99px;margin-bottom:16px}
+.hero h1{max-width:19em}
+.lead{color:var(--mute);font-size:1.12rem;max-width:44em;margin:0 0 20px}
+.note{border-inline-start:4px solid var(--gold);background:var(--card);border-start-end-radius:10px;border-end-end-radius:10px;padding:14px 18px;color:var(--mute);font-size:.97rem;max-width:52em;margin:0}
+.note b{color:var(--ink);font-weight:500}
+.note a{color:var(--teal);font-weight:500}
+.cta{background:var(--ink);color:#fff;border-radius:18px;padding:40px;margin-top:8px}
+.cta h3{font-size:1.6rem;font-weight:600;margin:0 0 8px}
+.cta p{color:#B9C6D8;margin:0 0 20px;max-width:40em}
+.cta .row{display:flex;gap:12px;flex-wrap:wrap}
+.cta .btn.gd{background:#E3B34F;color:#2B1A00}
+.cta .btn.ol{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px #5B6E86}
+html[lang=ar] body,html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3,html[lang=ar] .eyebrow{font-family:"IBM Plex Sans Arabic","Noto Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;letter-spacing:0}
+html[lang=zh-Hans] body,html[lang=zh-Hans] h1,html[lang=zh-Hans] h2,html[lang=zh-Hans] h3{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;letter-spacing:0}
+html[lang=zh-Hans] h1{line-height:1.2}
+@media (max-width:620px){.cta{padding:26px}}
+
+.art{max-width:760px;margin:0 auto}
+.hero.art-h{padding:32px 0 0}.art-h h1{font-size:clamp(1.9rem,4.4vw,2.8rem);max-width:none}
+.back{display:inline-flex;align-items:center;gap:6px;color:var(--mute);text-decoration:none;font-size:.93rem;margin-bottom:18px}.back:hover{color:var(--ink)}
+.byline{color:var(--mute);font-size:.95rem;margin:0}.byline b{color:var(--ink);font-weight:500}
+.published-on{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:var(--mute);font-size:.95rem;margin:18px 0 0}
+.prose{padding:22px 0 4px;overflow-wrap:break-word}
+.prose p{margin:0 0 18px;font-size:1.08rem;line-height:1.8}
+.prose h2{font-size:1.65rem;margin:38px 0 12px}.prose h3{font-size:1.2rem;font-weight:600;margin:26px 0 8px}
+.prose ul,.prose ol{margin:0 0 18px;padding-inline-start:24px;font-size:1.08rem;line-height:1.8}.prose li{margin-bottom:8px}
+.prose a,.related a,.published-on a,.note a,.source-note a{color:var(--teal);text-decoration:underline;text-underline-offset:3px}
+.prose strong{font-weight:600}
+.source-note{font-size:.95rem;color:var(--mute);border-top:1px solid var(--line);padding-top:16px;margin-top:30px}
+.quote-block{border-inline-start:4px solid var(--gold);background:var(--card);border-radius:12px;padding:18px 22px;margin:24px 0;font-size:1.15rem;line-height:1.6}
+.figure-box{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:24px 0;background:var(--card)}
+.figure-label{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:6px}
+.figure-caption{font-size:.93rem;color:var(--mute);line-height:1.6;font-style:italic}
+.checklist-box ul{list-style:none;margin:10px 0 0;padding:0}.checklist-box li{padding:8px 0 8px 26px;position:relative;border-bottom:1px dashed var(--line);font-size:1rem}
+.checklist-box li:last-child{border-bottom:0}.checklist-box li::before{content:"\2713";position:absolute;inset-inline-start:0;color:var(--teal);font-weight:700}
+.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
+.benefit-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.benefit-card .icon{width:42px;height:42px;border-radius:10px;background:var(--s1);display:grid;place-items:center;margin-bottom:12px}
+.benefit-card .icon svg{width:22px;height:22px;stroke:var(--teal);fill:none;stroke-width:1.7}
+.benefit-card h3{margin:0 0 6px;font-size:1.05rem}.prose .benefit-card p{font-size:.95rem;line-height:1.6;color:var(--mute);margin:0}
+.hashtag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.hashtag-row span{font-size:.85rem;color:var(--teal);border:1px solid var(--line);border-radius:99px;padding:4px 12px;background:var(--card)}
+.sig{color:var(--gold);font-style:italic}
+.portfolio-strip{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}.portfolio-strip a{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:8px 16px;font-size:.93rem;text-decoration:none!important;color:var(--teal)}
+.share-row{display:flex;align-items:center;gap:10px;margin:28px 0;padding-top:20px;border-top:1px solid var(--line)}
+.share-label{color:var(--mute);font-size:.95rem}
+.share-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.share-btn:hover{border-color:var(--ink)}.share-btn svg{width:20px;height:20px}.share-btn.whatsapp{color:#1B9E52}.share-btn.linkedin{color:var(--blue)}
+.related{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:8px 0 28px}
+.related h3{margin:0 0 10px;font-size:1.2rem}.related ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.cta .row .btn{text-decoration:none}.cta .btn svg{width:18px;height:18px;vertical-align:-3px;margin-inline-end:6px}
+.cta h3{font-size:1.5rem}
+.err{min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 0}
+.err .code{font:800 clamp(4.5rem,18vw,8rem)/1 "Bricolage Grotesque",system-ui,sans-serif;color:var(--teal);margin:0}
+.err h1{font-size:clamp(1.6rem,4vw,2.4rem);max-width:20em;margin:8px 0 14px}.err p{color:var(--mute);max-width:32em;margin:0 0 24px}
+.err .row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.err .btn.ol{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}.err .btn{background:var(--teal)}
+.skip-link{position:absolute;left:-9999px;top:0}.skip-link:focus{left:12px;top:8px;z-index:10001;background:#fff;color:#000;padding:10px 16px;border-radius:8px}
+@media(max-width:700px){.benefit-grid{grid-template-columns:1fr}.prose p,.prose ul,.prose ol{font-size:1.02rem}.prose h2{font-size:1.45rem}.share-row{flex-wrap:wrap}}
+
 </style>
-<link rel="stylesheet" href="dd-extras.css">
-<script src="dd-extras.js" defer></script>
+<link rel="stylesheet" href="/dd-extras.css">
+<script src="/dd-extras.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wrap"><div class="bar"><a class="logo" href="/index.html"><span class="mark" aria-hidden="true"></span>Domain Decoded</a>
+<nav aria-label="Main"><a href="/index.html">Home</a><a href="/services.html">Services</a><a href="/blog.html" >Blog</a><a href="/about.html">About</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a></nav></div>
+<main id="main"><div class="err">
+<p class="code" aria-hidden="true">404</p>
+<h1>This name isn&rsquo;t taken &mdash; the page just isn&rsquo;t.</h1>
+<p>The page you&rsquo;re looking for doesn&rsquo;t exist or may have moved. But the domains are still here.</p>
+<div class="row"><a class="btn" href="/index.html#domains">Browse the portfolio</a><a class="btn ol" href="/blog.html">Read the blog</a><a class="btn ol" href="/contact.html">Contact Imteaz</a></div>
+</div></main></div>
+<footer><div class="wrap"><div class="fbrand"><b style="color:var(--ink);font-size:1.1rem">Domain Decoded</b><p style="margin:6px 0 0;max-width:40em">Premium .COM domains with the proof shown, and LinkedIn ghostwriting in your own voice, for busy founders and domain investors.</p><div class="footer-social">
+<a aria-label="LinkedIn" href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" rel="noopener" target="_blank"><svg fill="#0A66C2" viewbox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.5A1.5 1.5 0 107 5.5a1.5 1.5 0 000 3zM18.34 18v-4.63c0-2.48-1.32-3.63-3.08-3.63-1.42 0-2.06.78-2.41 1.33V9.6H10.2c.04.75 0 8.4 0 8.4h2.65v-4.69c0-.25.02-.5.1-.68.2-.5.67-1.03 1.46-1.03 1.03 0 1.44.79 1.44 1.94V18h2.49z"></path></svg></a>
+<a aria-label="WhatsApp" href="https://wa.me/8801732773310" rel="noopener" target="_blank"><svg fill="#25D366" viewbox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.78 14.13c-.24.68-1.19 1.25-1.96 1.42-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08.99.3.15.5.23.58.36.08.13.08.75-.16 1.43z"></path></svg></a>
+<a aria-label="Email" href="mailto:galibsjournal@gmail.com"><svg fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M4 6l8 7 8-7"></path></svg></a>
+<a aria-label="X (Twitter)" href="https://x.com/GalibJournal" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.6L4.4 22H1.3l8.1-9.3L1 2h7l4.9 6 6-6zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"></path></svg></a>
+<a aria-label="Substack" href="https://substack.com/@galibimteaz" rel="noopener" target="_blank"><svg fill="#FF6719" viewbox="0 0 24 24"><path d="M22 6.7H2V5h20v1.7zM2 9.9v10.4l10-5.6 10 5.6V9.9H2zM22 3.3H2V1.6h20v1.7z"></path></svg></a>
+<a aria-label="CircleID" href="https://circleid.com/members/9555/" rel="noopener" target="_blank"><svg fill="#E4002B" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="9.5" stroke="#E4002B" stroke-width="1.6"></circle><circle cx="12" cy="12" r="3.5"></circle></svg></a>
+<a aria-label="Instagram" href="https://www.instagram.com/galibimteaz/" rel="noopener" target="_blank"><svg fill="#E4405F" viewbox="0 0 24 24"><rect fill="none" height="18" rx="5" stroke="#E4405F" stroke-width="1.8" width="18" x="3" y="3"></rect><circle cx="12" cy="12" fill="none" r="4.2" stroke="#E4405F" stroke-width="1.8"></circle><circle cx="17.2" cy="6.8" r="1.1"></circle></svg></a>
+<a aria-label="NamePros" href="https://www.namepros.com/members/galibs.1097362/" rel="noopener" target="_blank"><svg fill="#F26522" viewbox="0 0 24 24"><path d="M3 3h6l6 12V3h6v18h-6L9 9v12H3V3z"></path></svg></a>
+<a aria-label="Tumblr" href="https://www.tumblr.com/blog/domaindecoded" rel="noopener" target="_blank"><svg fill="#36465D" viewbox="0 0 24 24"><path d="M16.2 20.5c-.9.4-2.1.6-3.1.6-3.4 0-5.6-1.9-5.6-5.4V9.9H5.6V7.4c2.4-.9 3.4-2.9 3.5-5.3h2.9v4.8h3.6v2.9h-3.6v5.4c0 1.5.7 2.2 2 2.2.6 0 1.2-.2 1.7-.4l.5 2.9z"></path></svg></a>
+<a aria-label="Bluesky" href="https://bsky.app/profile/galibimteaz.bsky.social" rel="noopener" target="_blank"><svg fill="#1185FE" viewbox="0 0 24 24"><path d="M12 10.8C10.6 8.2 7.9 5.4 5.5 4c-.9-.5-2 .1-2 1.2v9.4c0 1 .6 1.6 1.4 1.9 3.1 1 4.9 2.4 5.6 3.1.3.3.7.3 1 0 .7-.7 2.5-2.1 5.6-3.1.8-.3 1.4-.9 1.4-1.9V5.2c0-1.1-1.1-1.7-2-1.2-2.4 1.4-5.1 4.2-6.5 6.8z"></path></svg></a>
+</div></div><div class="fx"><h4>Explore</h4><nav class="xp" aria-label="Footer"><a href="/index.html">Home</a><a href="/services.html">Services</a><a href="/blog.html">Blog</a><a href="/about.html">About</a><a href="/faq.html">FAQ</a><a href="/why-it-matters.html">Why it matters</a><a href="/contact.html">Contact</a></nav></div><div class="legal"><span>© 2026 Domain Decoded. All rights reserved.</span><span>
+<a href="/privacy-policy.html">Privacy Policy</a>
+<a href="/disclaimer.html">Disclaimer</a>
+<button data-cookie-settings="" type="button">Cookie settings</button>
+</span></div></div></footer>
 
-<div class="topbar">
-  <div class="wrap">
-    <a class="brand-link" href="index.html">Domain <span class="accent">Decoded</span></a>
-    <nav class="site-nav" id="siteNav" aria-label="Main">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="index.html#insights">Insights</a>
-      <a href="blog.html">Blog</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="top-tools">
-      
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
-  </div>
-  <div class="nav-overlay" id="navOverlay"></div>
-</div>
-
-<main id="main">
-<div class="wrap error-wrap">
-  <div class="error-code">404</div>
-  <h1 class="error-title">This name isn't taken — the page just isn't.</h1>
-  <p class="error-sub">The page you're looking for doesn't exist or may have moved. But the domains are still here.</p>
-  <div class="cta-actions">
-    <a class="btn primary" href="index.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-      Back to Portfolio
-    </a>
-    <a class="btn outline" href="contact.html">Contact Imteaz</a>
-  </div>
-</div>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <div class="footer-brand">Domain <span class="accent">Decoded</span></div>
-      <p class="footer-blurb">Curated, trademark-cleared premium domains for LegalTech, FinTech, Energy, and brandable ventures — verified before they're ever listed.</p>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.5A1.5 1.5 0 107 5.5a1.5 1.5 0 000 3zM18.34 18v-4.63c0-2.48-1.32-3.63-3.08-3.63-1.42 0-2.06.78-2.41 1.33V9.6H10.2c.04.75 0 8.4 0 8.4h2.65v-4.69c0-.25.02-.5.1-.68.2-.5.67-1.03 1.46-1.03 1.03 0 1.44.79 1.44 1.94V18h2.49z"/></svg></a>
-        <a href="https://wa.me/8801732773310" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="#25D366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.78 14.13c-.24.68-1.19 1.25-1.96 1.42-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08.99.3.15.5.23.58.36.08.13.08.75-.16 1.43z"/></svg></a>
-        <a href="mailto:galibsjournal@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg></a>
-        <a href="https://x.com/GalibJournal" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.6L4.4 22H1.3l8.1-9.3L1 2h7l4.9 6 6-6zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg></a>
-        <a href="https://substack.com/@galibimteaz" target="_blank" rel="noopener" aria-label="Substack"><svg viewBox="0 0 24 24" fill="#FF6719"><path d="M22 6.7H2V5h20v1.7zM2 9.9v10.4l10-5.6 10 5.6V9.9H2zM22 3.3H2V1.6h20v1.7z"/></svg></a>
-        <a href="https://circleid.com/members/9555/" target="_blank" rel="noopener" aria-label="CircleID"><svg viewBox="0 0 24 24" fill="#E4002B"><circle cx="12" cy="12" r="9.5" fill="none" stroke="#E4002B" stroke-width="1.6"/><circle cx="12" cy="12" r="3.5"/></svg></a>
-        <a href="https://www.instagram.com/galibimteaz/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="#E4405F"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#E4405F" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="#E4405F" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1"/></svg></a>
-        <a href="https://www.namepros.com/members/galibs.1097362/" target="_blank" rel="noopener" aria-label="NamePros"><svg viewBox="0 0 24 24" fill="#F26522"><path d="M3 3h6l6 12V3h6v18h-6L9 9v12H3V3z"/></svg></a>
-        <a href="https://www.tumblr.com/blog/domaindecoded" target="_blank" rel="noopener" aria-label="Tumblr"><svg viewBox="0 0 24 24" fill="#36465D"><path d="M16.2 20.5c-.9.4-2.1.6-3.1.6-3.4 0-5.6-1.9-5.6-5.4V9.9H5.6V7.4c2.4-.9 3.4-2.9 3.5-5.3h2.9v4.8h3.6v2.9h-3.6v5.4c0 1.5.7 2.2 2 2.2.6 0 1.2-.2 1.7-.4l.5 2.9z"/></svg></a>
-        <a href="https://bsky.app/profile/galibimteaz.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky"><svg viewBox="0 0 24 24" fill="#1185FE"><path d="M12 10.8C10.6 8.2 7.9 5.4 5.5 4c-.9-.5-2 .1-2 1.2v9.4c0 1 .6 1.6 1.4 1.9 3.1 1 4.9 2.4 5.6 3.1.3.3.7.3 1 0 .7-.7 2.5-2.1 5.6-3.1.8-.3 1.4-.9 1.4-1.9V5.2c0-1.1-1.1-1.7-2-1.2-2.4 1.4-5.1 4.2-6.5 6.8z"/></svg></a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html#insights">Insights</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Get in Touch</h4>
-      <ul>
-        <li><a href="mailto:galibsjournal@gmail.com">galibsjournal@gmail.com</a></li>
-        <li><a href="https://wa.me/8801732773310" target="_blank" rel="noopener"><bdi dir="ltr">WhatsApp: +880 1732-773310</bdi></a></li>
-        <li><a href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap footer-bottom">
-    <span>© 2026 Domain Decoded. All rights reserved.</span>
-    <span>Built &amp; maintained by <a href="https://www.linkedin.com/in/imteaz-chowdhurygalib/" target="_blank" rel="noopener">Imteaz (Galib) Chowdhury</a></span>
-    <nav class="footer-legal" aria-label="Legal">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="disclaimer.html">Disclaimer</a>
-      <button type="button" data-cookie-settings>Cookie settings</button>
-    </nav>
-  </div>
-</footer>
-
-<a class="whatsapp-fab" href="https://wa.me/8801732773310?text=Hi%20Imteaz%2C%20I%27m%20interested%20in%20a%20domain%20from%20Domain%20Decoded" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.78 14.13c-.24.68-1.19 1.25-1.96 1.42-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08.99.3.15.5.23.58.36.08.13.08.75-.16 1.43z"/></svg>
+<button aria-label="Back to top" class="back-to-top" id="backToTop">
+<svg viewbox="0 0 24 24"><path d="M12 19V5"></path><path d="M6 11l6-6 6 6"></path></svg>
+</button>
+<a aria-label="Chat on WhatsApp" class="whatsapp-fab" href="https://wa.me/8801732773310?text=Hi%20Imteaz%2C%20I%27m%20interested%20in%20a%20domain%20from%20Domain%20Decoded" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.78 14.13c-.24.68-1.19 1.25-1.96 1.42-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08.99.3.15.5.23.58.36.08.13.08.75-.16 1.43z"></path></svg>
 </a>
-
-<script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var nav = document.getElementById('siteNav');
-  var overlay = document.getElementById('navOverlay');
-  if(toggle && nav && overlay){
-    toggle.addEventListener('click', function(){
-      nav.classList.toggle('open');
-      overlay.classList.toggle('open');
-    });
-    overlay.addEventListener('click', function(){
-      nav.classList.remove('open');
-      overlay.classList.remove('open');
-    });
-  }
-})();
-</script>
-
+<script>(function(){var b=document.getElementById("backToTop");if(!b)return;window.addEventListener("scroll",function(){b.classList.toggle("visible",window.scrollY>480)});b.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})})})();</script>
 </body>
 </html>

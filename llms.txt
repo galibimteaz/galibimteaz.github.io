@@ -18,6 +18,13 @@ Site languages: English, Arabic (العربية), Mandarin Chinese (中文), Spa
 - [CircleID member profile](https://circleid.com/members/9555/): articles on domain names, ICANN, new TLDs, regional registries and multilingualism
 - [APNIC Blog guest post, 5 Nov 2026: The Internet didn't break; we just forgot what it was leaning on](https://blog.apnic.net/2026/11/05/the-internet-didnt-break-we-just-forgot-what-it-was-leaning-on/)
 
+## Blog articles (full text on the site)
+- [Why This Domain Sits at $3,000-$4,500, Not $10,000](https://galibimteaz.github.io/blog-post-juronix-pricing-comps.html): comps-based domain pricing, using Juronix.com as the worked example
+- [Why "Meaningless" Brand Names Built Billion-Dollar Companies](https://galibimteaz.github.io/blog-post-meaningless-brand-names.html): coined names such as Kodak, Xerox and Audi, and why the trick is riskier today
+- [The Grief Market Nobody Likes to Talk About](https://galibimteaz.github.io/blog-post-grief-market.html): market numbers for grief-tech and three matching .com domains
+- [The TLD Fight Is On: 1,615 Applications, and One Question Nobody Is Asking](https://galibimteaz.github.io/blog-post-tld-fight-circleid.html): ICANN's 2026 new-gTLD round (originally on CircleID)
+- [TLDFight: Who Wins When 1,615 Applications Collide?](https://galibimteaz.github.io/blog-post-tldfight-linkedin.html): a shorter plain-English version of the same topic
+
 ## Policies
 - [Privacy Policy](https://galibimteaz.github.io/privacy-policy.html): analytics cookies load only after the visitor accepts; visitor data is not sold, shared or used for other purposes
 - [Disclaimer](https://galibimteaz.github.io/disclaimer.html): what trademark screening, valuations, brokerage and ghostwriting do and do not guarantee

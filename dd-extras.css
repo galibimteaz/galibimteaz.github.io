@@ -175,26 +175,6 @@ html[data-flag="es"]{--cardbg:linear-gradient(160deg,#241b0a,#171006)}
 html[data-flag="sa"] .topbar,html[data-flag="cn"] .topbar,html[data-flag="es"] .topbar{border-bottom-color:var(--line-strong)}
 html[data-flag] .lang-switch summary{border-color:var(--gold-bright);color:var(--gold-bright)}
 
-/* ---------- ambient motion: always on, quiet, on every page ---------- */
-.dd-ambient{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
-.dd-amb-star{position:absolute;border-radius:50%;background:#fff;opacity:.15;animation:dd-amb-tw var(--d,5s) ease-in-out infinite;animation-delay:var(--w,0s)}
-@keyframes dd-amb-tw{0%,100%{opacity:.08;transform:scale(.7)}50%{opacity:.6;transform:scale(1.15)}}
-.dd-bird{position:absolute;left:-90px;width:46px;opacity:.5;color:var(--gold-bright,#7ff0dc);animation:dd-fly var(--fd,46s) linear infinite;animation-delay:var(--fw,0s)}
-.dd-bird svg{width:100%;display:block;overflow:visible}
-.dd-bird .wl,.dd-bird .wr{transform-origin:50% 60%;animation:dd-flap .7s ease-in-out infinite alternate}
-.dd-bird .wr{animation-delay:.05s}
-@keyframes dd-flap{from{transform:scaleY(1)}to{transform:scaleY(.45)}}
-@keyframes dd-fly{0%{transform:translate(0,0)}20%{transform:translate(22vw,-22px)}45%{transform:translate(50vw,16px)}70%{transform:translate(80vw,-18px)}100%{transform:translate(118vw,8px)}}
-.dd-shoot{position:absolute;left:0;top:0;width:120px;height:2px;opacity:0;background:linear-gradient(90deg,transparent,var(--gold-bright,#7ff0dc));border-radius:2px;transform:rotate(28deg);animation:dd-shoot 21s ease-in infinite}
-@keyframes dd-shoot{0%,86%{opacity:0;transform:translate(8vw,6vh) rotate(28deg)}88%{opacity:.9}97%{opacity:0;transform:translate(70vw,52vh) rotate(28deg)}100%{opacity:0;transform:translate(70vw,52vh) rotate(28deg)}}
-html[dir="rtl"] .dd-bird{left:auto;right:-90px;animation-name:dd-fly-rtl}
-html[dir="rtl"] .dd-bird svg{transform:scaleX(-1)}
-@keyframes dd-fly-rtl{0%{transform:translate(0,0)}20%{transform:translate(-22vw,-22px)}45%{transform:translate(-50vw,16px)}70%{transform:translate(-80vw,-18px)}100%{transform:translate(-118vw,8px)}}
-@media(max-width:700px){.dd-bird{width:36px;opacity:.42}.dd-amb-star:nth-child(n+14){display:none}}
-@media(prefers-reduced-motion:reduce){.dd-ambient{display:none}}
-
-
-
 /* header fits on one row on desktop; RTL homepage title keeps its word spacing */
 @media(min-width:701px){
   .topbar .wrap{max-width:1180px}
@@ -306,9 +286,6 @@ html.wd .dd-consent a{color:var(--teal)}
 html.wd .dd-consent .dd-ok{background:var(--teal);color:var(--on)}
 html.wd .dd-consent .dd-no{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
 html.wd .dd-consent button{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:500}
-html.wd .dd-bird{color:var(--teal);opacity:.35}
-html.wd .dd-amb-star{background:var(--teal)}
-html.wd .dd-shoot{background:linear-gradient(90deg,transparent,var(--teal))}
 
 /* ----- white design + translated pages (flag themes, RTL, CJK) ----- */
 html.wd[data-flag] .btn.primary{color:var(--on)}
