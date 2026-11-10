@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://galibimteaz.github.io/sitemap.xml
+Sitemap: https://galibsjournal.com/sitemap.xml

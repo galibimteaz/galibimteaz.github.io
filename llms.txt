@@ -5,43 +5,43 @@
 Site languages: English, Arabic (العربية), Mandarin Chinese (中文), Spanish (Español). Each page has a translated version with the suffix -ar, -zh or -es (for example services-ar.html).
 
 ## Main pages
-- [Home and portfolio](https://galibimteaz.github.io/): premium .COM domains for sale with trademark, history and comparable-sales checks
-- [Services and pricing](https://galibimteaz.github.io/services.html): LinkedIn ghostwriting plans and domain naming, brokerage and audit pricing, with payment details
-- [About Imteaz (Galib) Chowdhury](https://galibimteaz.github.io/about.html): who runs the site, how domains are sourced, vetted, named and brokered, the LinkedIn ghostwriting service, his writing for CircleID and the APNIC Blog, and how to get in touch
-- [FAQ](https://galibimteaz.github.io/faq.html): answers on LinkedIn ghostwriting, domain buying, trademark clearance, UDRP history, valuation, brokerage, pricing and payment
-- [DIOS due-diligence workflow](https://galibimteaz.github.io/workflow.html): the five-stage process behind every listing
-- [Why it matters to founders](https://galibimteaz.github.io/why-it-matters.html): why the names rejected during due diligence matter more than the one chosen, covering trademark conflicts, hidden domain history, data-backed pricing and global scalability
-- [Blog](https://galibimteaz.github.io/blog.html): articles on domain pricing, trademark screening, naming and new gTLDs
-- [Contact](https://galibimteaz.github.io/contact.html)
+- [Home and portfolio](https://galibsjournal.com/): premium .COM domains for sale with trademark, history and comparable-sales checks
+- [Services and pricing](https://galibsjournal.com/services.html): LinkedIn ghostwriting plans and domain naming, brokerage and audit pricing, with payment details
+- [About Imteaz (Galib) Chowdhury](https://galibsjournal.com/about.html): who runs the site, how domains are sourced, vetted, named and brokered, the LinkedIn ghostwriting service, his writing for CircleID and the APNIC Blog, and how to get in touch
+- [FAQ](https://galibsjournal.com/faq.html): answers on LinkedIn ghostwriting, domain buying, trademark clearance, UDRP history, valuation, brokerage, pricing and payment
+- [DIOS due-diligence workflow](https://galibsjournal.com/workflow.html): the five-stage process behind every listing
+- [Why it matters to founders](https://galibsjournal.com/why-it-matters.html): why the names rejected during due diligence matter more than the one chosen, covering trademark conflicts, hidden domain history, data-backed pricing and global scalability
+- [Blog](https://galibsjournal.com/blog.html): articles on domain pricing, trademark screening, naming and new gTLDs
+- [Contact](https://galibsjournal.com/contact.html)
 
 ## Published writing
 - [CircleID member profile](https://circleid.com/members/9555/): articles on domain names, ICANN, new TLDs, regional registries and multilingualism
 - [APNIC Blog guest post, 5 Nov 2026: The Internet didn't break; we just forgot what it was leaning on](https://blog.apnic.net/2026/11/05/the-internet-didnt-break-we-just-forgot-what-it-was-leaning-on/)
 
 ## Blog articles (full text on the site)
-- [Why This Domain Sits at $3,000-$4,500, Not $10,000](https://galibimteaz.github.io/blog-post-juronix-pricing-comps.html): comps-based domain pricing, using Juronix.com as the worked example
-- [Why "Meaningless" Brand Names Built Billion-Dollar Companies](https://galibimteaz.github.io/blog-post-meaningless-brand-names.html): coined names such as Kodak, Xerox and Audi, and why the trick is riskier today
-- [The Grief Market Nobody Likes to Talk About](https://galibimteaz.github.io/blog-post-grief-market.html): market numbers for grief-tech and three matching .com domains
-- [The TLD Fight Is On: 1,615 Applications, and One Question Nobody Is Asking](https://galibimteaz.github.io/blog-post-tld-fight-circleid.html): ICANN's 2026 new-gTLD round (originally on CircleID)
-- [TLDFight: Who Wins When 1,615 Applications Collide?](https://galibimteaz.github.io/blog-post-tldfight-linkedin.html): a shorter plain-English version of the same topic
+- [Why This Domain Sits at $3,000-$4,500, Not $10,000](https://galibsjournal.com/blog-post-juronix-pricing-comps.html): comps-based domain pricing, using Juronix.com as the worked example
+- [Why "Meaningless" Brand Names Built Billion-Dollar Companies](https://galibsjournal.com/blog-post-meaningless-brand-names.html): coined names such as Kodak, Xerox and Audi, and why the trick is riskier today
+- [The Grief Market Nobody Likes to Talk About](https://galibsjournal.com/blog-post-grief-market.html): market numbers for grief-tech and three matching .com domains
+- [The TLD Fight Is On: 1,615 Applications, and One Question Nobody Is Asking](https://galibsjournal.com/blog-post-tld-fight-circleid.html): ICANN's 2026 new-gTLD round (originally on CircleID)
+- [TLDFight: Who Wins When 1,615 Applications Collide?](https://galibsjournal.com/blog-post-tldfight-linkedin.html): a shorter plain-English version of the same topic
 
 ## Policies
-- [Privacy Policy](https://galibimteaz.github.io/privacy-policy.html): analytics cookies load only after the visitor accepts; visitor data is not sold, shared or used for other purposes
-- [Disclaimer](https://galibimteaz.github.io/disclaimer.html): what trademark screening, valuations, brokerage and ghostwriting do and do not guarantee
+- [Privacy Policy](https://galibsjournal.com/privacy-policy.html): analytics cookies load only after the visitor accepts; visitor data is not sold, shared or used for other purposes
+- [Disclaimer](https://galibsjournal.com/disclaimer.html): what trademark screening, valuations, brokerage and ghostwriting do and do not guarantee
 
 ## Portfolio case studies
-- [Juronix.com](https://galibimteaz.github.io/case-study-juronix.html)
-- [LexBold.com](https://galibimteaz.github.io/case-study-lexbold.html)
-- [SolvaFunds.com](https://galibimteaz.github.io/case-study-solvafunds.html)
-- [SanaGrid.com](https://galibimteaz.github.io/case-study-sanagrid.html)
-- [Mubez.com](https://galibimteaz.github.io/case-study-mubez.html)
-- [Baluj.com](https://galibimteaz.github.io/case-study-baluj.html)
-- [interviewtipshub.com](https://galibimteaz.github.io/case-study-interviewtipshub.html)
-- [GriefPlatform.com](https://galibimteaz.github.io/case-study-griefplatform.html)
-- [RestInJoy.com](https://galibimteaz.github.io/case-study-restinjoy.html)
-- [Losswell.com](https://galibimteaz.github.io/case-study-losswell.html)
-- [TLDFight.com](https://galibimteaz.github.io/case-study-tldfight.html)
-- [Scholarship domains (Japan, Singapore, France, Ireland)](https://galibimteaz.github.io/case-study-scholarship.html)
+- [Juronix.com](https://galibsjournal.com/case-study-juronix.html)
+- [LexBold.com](https://galibsjournal.com/case-study-lexbold.html)
+- [SolvaFunds.com](https://galibsjournal.com/case-study-solvafunds.html)
+- [SanaGrid.com](https://galibsjournal.com/case-study-sanagrid.html)
+- [Mubez.com](https://galibsjournal.com/case-study-mubez.html)
+- [Baluj.com](https://galibsjournal.com/case-study-baluj.html)
+- [interviewtipshub.com](https://galibsjournal.com/case-study-interviewtipshub.html)
+- [GriefPlatform.com](https://galibsjournal.com/case-study-griefplatform.html)
+- [RestInJoy.com](https://galibsjournal.com/case-study-restinjoy.html)
+- [Losswell.com](https://galibsjournal.com/case-study-losswell.html)
+- [TLDFight.com](https://galibsjournal.com/case-study-tldfight.html)
+- [Scholarship domains (Japan, Singapore, France, Ireland)](https://galibsjournal.com/case-study-scholarship.html)
 
 ## Contact
 - Email: galibsjournal@gmail.com
