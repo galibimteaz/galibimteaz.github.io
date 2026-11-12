@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://galibsjournal.com/services.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://galibsjournal.com/services.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://galibsjournal.com/services-ar.html"/>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://galibsjournal.com/blog.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://galibsjournal.com/blog.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://galibsjournal.com/blog-ar.html"/>
@@ -902,7 +902,7 @@
   </url>
   <url>
     <loc>https://galibsjournal.com/blog-post-juronix-pricing-comps.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://galibsjournal.com/blog-post-tldfight-linkedin.html</loc>
@@ -915,5 +915,9 @@
   <url>
     <loc>https://galibsjournal.com/blog-post-grief-market.html</loc>
     <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://galibsjournal.com/blog-post-domain-trademark-check.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
 </urlset>
