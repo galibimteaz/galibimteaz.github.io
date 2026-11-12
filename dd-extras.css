@@ -304,3 +304,7 @@ html.wd[lang="zh-Hans"] h1{line-height:1.25}
 html.wd[lang="es"] h1{font-size:clamp(2rem,4.6vw,3.4rem)}
 html.wd h1,html.wd h2{text-wrap:balance}
 html.wd[lang="zh-Hans"] h1{font-size:clamp(2rem,4.2vw,3.2rem)}
+
+/* brand line: "by Galib Imteaz" under the wordmark */
+.logo .bn{display:flex;flex-direction:column;line-height:1.05}
+.logo .bn small{margin-top:3px;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.56em;font-weight:500;letter-spacing:.04em;color:#51627A}
