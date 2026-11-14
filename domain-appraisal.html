@@ -3,25 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://galibsjournal.com/domain-appraisal.html">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<meta property="og:title" content="Domain Score &amp; Sale Advisor">
+<meta property="og:description" content="Score any domain name and get a plan to sell it.">
+<meta property="og:url" content="https://galibsjournal.com/domain-appraisal.html">
+<meta property="og:image" content="https://galibsjournal.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
 <title>Domain Score &amp; Sale Advisor: score any domain and get a selling plan | Galib’s Journal</title>
 <meta name="description" content="Enter a domain name and get a strength score, clear strengths and risks, buy/hold/sell advice, a sales playbook and ready-to-edit listing and outreach copy.">
 <style>
-:root{--bg:#eef3f1;--panel:#fff;--ink:#12302f;--mute:#586d6b;--line:#cfdcd9;--accent:#0b6e69;--gold:#c98a00;--warn:#a4401f;color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#0f1a19;--panel:#162524;--ink:#e3efec;--mute:#93aaa6;--line:#2a3f3d;--accent:#4fc3bb;--gold:#e5b53d;--warn:#e98a68;color-scheme:dark}}
+:root{--bg:#F3F6FA;--panel:#FFFFFF;--ink:#10202F;--mute:#51627A;--line:#D8E0EA;--accent:#0B7A75;--gold:#8A5A00;--warn:#A4401F;color-scheme:light}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
 .wrap{max-width:860px;margin:0 auto;padding:28px 18px 60px}
-h1,h2,.score{font-family:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif}
+h1,h2,.score{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;font-weight:800}
 h1{font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.15;margin:.2em 0 .3em}
 h2{font-size:1.25rem;margin:0 0 .6em}h3{font-size:1rem;margin:1em 0 .3em}
 .lead,.note{color:var(--mute)}.lead{max-width:62ch;margin:0 0 1.2em}.note{font-size:.88rem}
 a{color:var(--accent)}:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .search{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 6px}
-input[type=text]{flex:1 1 240px;font:inherit;font-size:1.1rem;padding:14px 16px;border:2px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
-input[type=text]:focus{border-color:var(--accent)}
+input[type=text],input[type=email]{flex:1 1 240px;font:inherit;font-size:1.1rem;padding:14px 16px;border:2px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
+input[type=text]:focus,input[type=email]:focus{border-color:var(--accent)}
 button{font:inherit;font-weight:600;padding:12px 22px;border:0;border-radius:10px;background:var(--accent);color:#fff;cursor:pointer}
 button.alt{background:transparent;color:var(--accent);border:2px solid var(--accent);padding:6px 14px;font-size:.9rem}
-@media (prefers-color-scheme:dark){button{color:#0b1a19}button.alt{color:var(--accent)}}
 .err{color:var(--warn);font-weight:600;min-height:1.4em;margin:0}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;margin:18px 0}
 [hidden]{display:none!important}
@@ -41,12 +50,16 @@ ul{margin:.3em 0;padding-left:1.2em}li{margin:.25em 0}
 .box{background:var(--bg);border-radius:10px;padding:12px 14px;margin:8px 0}
 textarea{width:100%;min-height:170px;font:inherit;font-size:.92rem;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
 .live li{margin:.35em 0}code{background:var(--bg);padding:1px 6px;border-radius:4px;font-size:.88em}
-.range{font-family:Georgia,serif;font-size:1.3rem}
+.range{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:1.3rem;font-weight:800}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.gate{border:2px solid var(--accent)}
+.chkl{display:flex;gap:8px;align-items:flex-start;font-size:.9rem;flex-basis:100%}.chkl input{margin-top:5px}
+.human{background:var(--ink);color:#fff;border-radius:18px;padding:30px;margin:18px 0}.human h2{color:#fff}.human p{color:#B9C6D8}
+.human .b{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:500;text-decoration:none}.human .gd{background:#E3B34F;color:#2B1A00}.human .ol{color:#fff;box-shadow:inset 0 0 0 1.5px #5B6E86}.human a:not(.b){color:#fff}
 </style>
 </head>
 <body>
 <main class="wrap">
-<p class="note"><a href="blog-post-domain-trademark-check.html">Read first: how to check a domain for trademark risk</a></p>
+<p class="note"><a href="blog.html">← Back to Blog</a> · <a href="blog-post-domain-trademark-check.html">Read first: how to check a domain for trademark risk</a></p>
 <h1>Score a domain. Get a plan to sell it.</h1>
 <p class="lead">Type a domain name. You get a strength score, honest strengths and risks, buy/hold/sell advice, a sales playbook and draft copy you can edit. No sign-up, nothing leaves your browser except optional public lookups.</p>
 
@@ -54,7 +67,20 @@ textarea{width:100%;min-height:170px;font:inherit;font-size:.92rem;padding:10px;
 <input id="q" type="text" inputmode="url" placeholder="example.com" aria-label="Domain name" required>
 <button type="submit">Analyze</button>
 </form>
+<p class="note">Your first analysis is free. A free email sign-up unlocks more.</p>
 <p class="err" id="err" role="alert"></p>
+
+<section class="panel gate" id="gate" hidden>
+<h2>Your free analysis is used</h2>
+<p>Enter your email to keep analyzing domains for free. I will also send you occasional domain insights and newsletters. You can unsubscribe at any time.</p>
+<form id="gf" class="row" autocomplete="on">
+<input id="em" type="email" placeholder="you@example.com" required aria-label="Email address">
+<button type="submit" id="gb">Unlock</button>
+<input type="checkbox" id="bot" tabindex="-1" autocomplete="off" style="display:none">
+<label class="chkl"><input type="checkbox" id="cons" required><span>I agree to receive emails from Galib about domains. See the <a href="privacy-policy.html">privacy policy</a>.</span></label>
+</form>
+<p class="err" id="gerr" role="alert"></p>
+</section>
 
 <section id="result" hidden>
 <div class="panel">
@@ -107,6 +133,11 @@ textarea{width:100%;min-height:170px;font:inherit;font-size:.92rem;padding:10px;
 <div class="box"><b>Outreach email</b> <button class="alt" data-copy="t2" type="button">Copy</button><textarea id="t2"></textarea></div>
 <div id="cta" hidden><a href="#" id="ctal"><button type="button">Get these written for you</button></a></div>
 </div>
+<div class="human"><h2 style="margin-top:0">Want a human to check it and write the opinion?</h2>
+<p>This tool is automatic. If you want a real person’s judgment on a domain you plan to buy or sell, my service is the best option: I review the name myself and give you a written opinion, not a template.</p>
+<p><b>Domain Appraisal Report ($39):</b> a written price range for one domain, based on real comparable sales, with likely buyer types. <b>Domain Risk Check Report ($39):</b> trademark, history and warning signs. <b>Buyer’s Bundle ($59):</b> both for the same domain. Reports arrive within 3 business days of payment.</p>
+<div class="row"><a class="b gd" href="services.html#domain-check-reports">See the reports</a><a class="b ol" href="contact.html">Contact Me</a></div>
+<p class="note" style="margin-bottom:0"><a href="blog-post-juronix-pricing-comps.html">How I price a domain with real sales data</a></p></div>
 </section>
 
 <div class="panel"><h2>How to read this</h2>
@@ -116,7 +147,8 @@ textarea{width:100%;min-height:170px;font:inherit;font-size:.92rem;padding:10px;
 
 <script>
 "use strict";
-var CONTACT_URL = ""; /* optional: put your contact page link here to show the ghostwriting button */
+var CONTACT_URL = "contact.html"; /* shows the ghostwriting button */
+var SIGNUP_URL = "https://formspree.io/f/xppakbpj"; /* your existing Formspree form: sign-ups arrive in the same inbox as contact messages */
 var TLD={com:1,net:.25,org:.25,io:.3,ai:.5,co:.2,app:.2,dev:.15,xyz:.04,online:.05,shop:.06,store:.05,info:.05,bd:.08,"com.bd":.06,"net.bd":.03,"org.bd":.03,"edu.bd":.02};
 var TLDQ={com:"the most trusted extension",net:"a decent second choice",org:"favoured by non-profits and communities",io:"popular with tech startups",ai:"hot with AI companies",co:"a short alternative to .com",app:"good for apps",dev:"good for developers",bd:"local to Bangladesh","com.bd":"local to Bangladesh"};
 var CAT={fin:"finance and fintech companies, brokers, insurers",tech:"software, hosting and IT companies",com:"online shops, marketplaces and retailers",trv:"travel, hotel and ticketing businesses",hlt:"clinics, pharmacies and health-care brands",edu:"schools, coaching centres and e-learning startups",med:"news, media and entertainment creators",loc:"local Bangladeshi businesses and community brands",gen:"small businesses and startups looking for a brand name"};
@@ -221,11 +253,28 @@ function live(dm){
   }).catch(function(){e3.innerHTML='Past versions: lookup unavailable. <a href="https://web.archive.org/web/*/'+esc(dm.full)+'" target="_blank" rel="noopener">Check manually</a>.'});
 }
 
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+var pending=null;
+function smooth(el){el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
+function run(dm){$("gate").hidden=true;$("err").textContent="";render(dm,analyze(dm));smooth($("result"))}
 $("f").addEventListener("submit",function(e){
   e.preventDefault();var dm=splitDomain($("q").value);
   if(!dm){$("err").textContent="Enter a valid domain, for example example.com.";$("result").hidden=true;return}
-  $("err").textContent="";render(dm,analyze(dm));
-  $("result").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});
+  $("err").textContent="";
+  if(ls("dsa_owner")||ls("dsa_ok")){run(dm);return}
+  if(!ls("dsa_used")){ls("dsa_used","1");run(dm);return}
+  pending=dm;$("result").hidden=true;$("gate").hidden=false;smooth($("gate"));$("em").focus();
+});
+$("gf").addEventListener("submit",function(e){
+  e.preventDefault();var em=$("em").value.trim(),g=$("gerr"),b=$("gb");g.textContent="";
+  if($("bot").checked)return;
+  if(!SIGNUP_URL){g.textContent="Sign-up is not available right now. Please email galibsjournal@gmail.com.";return}
+  b.disabled=true;b.textContent="Sending…";
+  var fd=new FormData();fd.append("email",em);fd.append("_subject","New sign-up: Domain Score & Sale Advisor");fd.append("message","Domain tool sign-up. Domain requested: "+(pending?pending.full:"")+". Consent: agreed to receive emails about domains.");
+  fetch(SIGNUP_URL,{method:"POST",body:fd,headers:{Accept:"application/json"}})
+  .then(function(r){
+    if(!r.ok)throw 0;ls("dsa_ok","1");b.disabled=false;b.textContent="Unlock";if(pending)run(pending);
+  }).catch(function(){b.disabled=false;b.textContent="Unlock";g.textContent="Could not send. Check the email address and try again."});
 });
 document.addEventListener("click",function(e){
   var id=e.target.getAttribute&&e.target.getAttribute("data-copy");if(!id)return;
