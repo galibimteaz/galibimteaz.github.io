@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Domain Score &amp; Sale Advisor: score any domain and get a selling plan | Galib’s Journal</title>
+<meta name="description" content="Enter a domain name and get a strength score, clear strengths and risks, buy/hold/sell advice, a sales playbook and ready-to-edit listing and outreach copy.">
+<style>
+:root{--bg:#eef3f1;--panel:#fff;--ink:#12302f;--mute:#586d6b;--line:#cfdcd9;--accent:#0b6e69;--gold:#c98a00;--warn:#a4401f;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1a19;--panel:#162524;--ink:#e3efec;--mute:#93aaa6;--line:#2a3f3d;--accent:#4fc3bb;--gold:#e5b53d;--warn:#e98a68;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+.wrap{max-width:860px;margin:0 auto;padding:28px 18px 60px}
+h1,h2,.score{font-family:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif}
+h1{font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.15;margin:.2em 0 .3em}
+h2{font-size:1.25rem;margin:0 0 .6em}h3{font-size:1rem;margin:1em 0 .3em}
+.lead,.note{color:var(--mute)}.lead{max-width:62ch;margin:0 0 1.2em}.note{font-size:.88rem}
+a{color:var(--accent)}:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.search{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 6px}
+input[type=text]{flex:1 1 240px;font:inherit;font-size:1.1rem;padding:14px 16px;border:2px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
+input[type=text]:focus{border-color:var(--accent)}
+button{font:inherit;font-weight:600;padding:12px 22px;border:0;border-radius:10px;background:var(--accent);color:#fff;cursor:pointer}
+button.alt{background:transparent;color:var(--accent);border:2px solid var(--accent);padding:6px 14px;font-size:.9rem}
+@media (prefers-color-scheme:dark){button{color:#0b1a19}button.alt{color:var(--accent)}}
+.err{color:var(--warn);font-weight:600;min-height:1.4em;margin:0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;margin:18px 0}
+[hidden]{display:none!important}
+.top{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.dial{width:132px;height:132px;border-radius:50%;display:grid;place-items:center;flex:none}
+.dial div{width:100px;height:100px;border-radius:50%;background:var(--panel);display:grid;place-items:center;text-align:center}
+.score{font-size:2.4rem;line-height:1}.dial small{color:var(--mute);display:block;font-size:.75rem}
+.grade{font-size:1.4rem;font-weight:700;margin:0}.dom{color:var(--mute);margin:0}
+.f{display:grid;grid-template-columns:140px 1fr 36px;gap:4px 12px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+.f p{grid-column:1/-1;margin:0;font-size:.9rem;color:var(--mute)}.f .n{text-align:right}
+.bar{height:10px;border-radius:5px;background:var(--line);overflow:hidden}.bar i{display:block;height:100%;background:var(--accent)}
+@media (max-width:520px){.f{grid-template-columns:1fr 36px}.f b{grid-column:1/-1}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media (max-width:640px){.two{grid-template-columns:1fr}}
+ul{margin:.3em 0;padding-left:1.2em}li{margin:.25em 0}
+.good li::marker{color:var(--accent)}.bad li::marker{color:var(--warn)}
+.chk li{list-style:none;margin-left:-1.2em}.chk li::before{content:"☐ "}
+.box{background:var(--bg);border-radius:10px;padding:12px 14px;margin:8px 0}
+textarea{width:100%;min-height:170px;font:inherit;font-size:.92rem;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.live li{margin:.35em 0}code{background:var(--bg);padding:1px 6px;border-radius:4px;font-size:.88em}
+.range{font-family:Georgia,serif;font-size:1.3rem}
+</style>
+</head>
+<body>
+<main class="wrap">
+<p class="note"><a href="blog-post-domain-trademark-check.html">Read first: how to check a domain for trademark risk</a></p>
+<h1>Score a domain. Get a plan to sell it.</h1>
+<p class="lead">Type a domain name. You get a strength score, honest strengths and risks, buy/hold/sell advice, a sales playbook and draft copy you can edit. No sign-up, nothing leaves your browser except optional public lookups.</p>
+
+<form class="search" id="f" autocomplete="off">
+<input id="q" type="text" inputmode="url" placeholder="example.com" aria-label="Domain name" required>
+<button type="submit">Analyze</button>
+</form>
+<p class="err" id="err" role="alert"></p>
+
+<section id="result" hidden>
+<div class="panel">
+<div class="top">
+<div class="dial" id="dial"><div><span><span class="score" id="sc"></span><small>out of 100</small></span></div></div>
+<div><p class="dom" id="rdom"></p><p class="grade" id="grade"></p><p id="verdict" style="margin:.3em 0 0"></p></div>
+</div>
+<div class="box"><b>Indicative value range:</b> <span class="range" id="rng"></span><br><span class="note">A rough guide from the name alone. No sales data was used, and no tool can promise a sale price: a domain sells for what one real buyer will pay.</span></div>
+</div>
+
+<div class="panel"><h2>Score breakdown</h2><div id="factors"></div></div>
+
+<div class="two">
+<div class="panel good"><h2>Strengths</h2><ul id="pros"></ul></div>
+<div class="panel bad"><h2>Risks</h2><ul id="cons"></ul></div>
+</div>
+
+<div class="panel"><h2>Decision advice</h2><div class="two"><div><h3>If you own it</h3><ul id="own"></ul></div><div><h3>If you are thinking of buying it</h3><ul id="buy"></ul></div></div></div>
+
+<div class="panel"><h2>Live checks <span class="note">(free public lookups, best effort)</span></h2><ul class="live" id="live"></ul></div>
+
+<div class="panel"><h2>Selling playbook</h2>
+<p>Listing a domain is only the first step. Most of the work that actually produces a sale happens outside the marketplace.</p>
+<h3>Likely buyers for this name</h3><ul id="buyers"></ul>
+<h3>Core steps</h3>
+<ul class="chk">
+<li><b>Clear the risks first.</b> Run a <a href="blog-post-domain-trademark-check.html">trademark check</a>. A name that clashes with a brand is hard to sell and can be a legal problem.</li>
+<li><b>Set a floor and an asking price.</b> Decide the lowest price you will accept and a higher opening ask. Do not publish a price you would be unhappy to receive.</li>
+<li><b>Build a one-page “for sale” landing page</b> on the domain itself: the name, a short pitch, a price or “make an offer” form, and a contact email.</li>
+<li><b>List it in two or three marketplaces</b> that suit its type, and point each listing to your landing page.</li>
+<li><b>Contact buyers directly.</b> Make a list of 20 to 50 likely end users and send a short, personal email. Outreach finds buyers who were never searching marketplaces.</li>
+<li><b>Show the name in use.</b> A simple mock logo, a social handle and a short brand story make the name easier to imagine.</li>
+<li><b>Use an escrow service</b> for payment and transfer so neither side carries the risk.</li>
+<li><b>Be patient and track results.</b> Many good names take months or longer to sell. Keep a log of who you contacted and when.</li>
+</ul></div>
+
+<div class="panel"><h2>How a ghostwriter helps sell a domain</h2>
+<p>Buyers rarely pay for a name they cannot picture. Good writing turns a string of letters into a business idea. A ghostwriter can produce:</p>
+<ul>
+<li><b>Listing title and description</b> that name the buyer, the benefit and the price logic.</li>
+<li><b>“For sale” landing page copy</b> with a short brand story and a clear call to action.</li>
+<li><b>Outreach email sequence</b> (first email, follow-up, last reminder) written in your voice.</li>
+<li><b>Brand pitch</b> with tagline ideas, use cases and a sample “about us” paragraph.</li>
+<li><b>Negotiation replies</b> for common situations: low offers, “is the price firm?”, “can you hold it for me?”.</li>
+<li><b>Posts and articles</b> (LinkedIn, blog) that attract attention to the name over time.</li>
+</ul>
+<h3>Starter drafts for this domain (edit before use)</h3>
+<p class="note">Template-based text, not AI. Fill the brackets.</p>
+<div class="box"><b>Listing description</b> <button class="alt" data-copy="t1" type="button">Copy</button><textarea id="t1"></textarea></div>
+<div class="box"><b>Outreach email</b> <button class="alt" data-copy="t2" type="button">Copy</button><textarea id="t2"></textarea></div>
+<div id="cta" hidden><a href="#" id="ctal"><button type="button">Get these written for you</button></a></div>
+</div>
+</section>
+
+<div class="panel"><h2>How to read this</h2>
+<p>The score measures how attractive a name tends to be to buyers: length, extension, keywords, pronounceability and cleanliness. It does not know about your market, your buyer or your timing. Treat it as a checklist for decisions, not a price guarantee.</p>
+<p class="note">Automated estimate. Not a professional appraisal, legal advice or financial advice.</p></div>
+</main>
+
+<script>
+"use strict";
+var CONTACT_URL = ""; /* optional: put your contact page link here to show the ghostwriting button */
+var TLD={com:1,net:.25,org:.25,io:.3,ai:.5,co:.2,app:.2,dev:.15,xyz:.04,online:.05,shop:.06,store:.05,info:.05,bd:.08,"com.bd":.06,"net.bd":.03,"org.bd":.03,"edu.bd":.02};
+var TLDQ={com:"the most trusted extension",net:"a decent second choice",org:"favoured by non-profits and communities",io:"popular with tech startups",ai:"hot with AI companies",co:"a short alternative to .com",app:"good for apps",dev:"good for developers",bd:"local to Bangladesh","com.bd":"local to Bangladesh"};
+var CAT={fin:"finance and fintech companies, brokers, insurers",tech:"software, hosting and IT companies",com:"online shops, marketplaces and retailers",trv:"travel, hotel and ticketing businesses",hlt:"clinics, pharmacies and health-care brands",edu:"schools, coaching centres and e-learning startups",med:"news, media and entertainment creators",loc:"local Bangladeshi businesses and community brands",gen:"small businesses and startups looking for a brand name"};
+var KWS="fin:3:loan,insurance,crypto,bank,invest,casino,lawyer,cash,pay,money,forex,credit,wallet,fund,tax,stock,coin|tech:2:cloud,host,hosting,data,soft,tech,web,app,digital,online,design,ai,smart,code,cyber,net,server,domain,dev,bot,robot,saas,labs,lab|com:2:shop,store,market,mart,deal,sale,buy,gift,fashion,cart,trade,bazar,bazaar,rent,car,bike,home,land,gold,food|trv:2:travel,hotel,ticket,tour,trip,bus,flight,visa,resort|hlt:2:health,care,med,pharma,fit,gym,clinic,doctor,dental,herbal|edu:2:learn,edu,school,course,academy,tutor,study,exam,job,jobs,career|med:2:news,game,games,music,video,media,film,tv,radio,blog|loc:1:bangla,dhaka,desh,taka,bd,ctg,sylhet,khulna,bengal,ghor,dokan|gen:1:pro,hub,go,my,best,easy,top,city,fast,star,king,green,blue,book,max,plus,one,first".split("|");
+var KW={};KWS.forEach(function(g){var p=g.split(":");p[2].split(",").forEach(function(w){if(!KW[w])KW[w]={tier:+p[1],cat:p[0]}})});
+var TIERMULT={1:1.35,2:1.9,3:3.2};
+
+function $(id){return document.getElementById(id)}
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function usd(n){return "$"+Math.round(n).toLocaleString("en-US")}
+function nice(n){var m=n<100?5:n<1000?10:n<10000?50:n<100000?500:1000;return Math.max(m,Math.round(n/m)*m)}
+function splitDomain(raw){
+  var s=raw.trim().toLowerCase().replace(/^https?:\/\//,"").replace(/^www\./,"").split(/[\/?#]/)[0];
+  if(!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(s))return null;
+  var p=s.split("."),tld=p[p.length-1],sld=p[p.length-2],q=p[p.length-2];
+  if(p.length>=3&&tld==="bd"&&(q==="com"||q==="net"||q==="org"||q==="edu")){tld=q+".bd";sld=p[p.length-3]}
+  if(!sld||sld.length>63||sld[0]==="-"||sld.slice(-1)==="-")return null;
+  return {full:s,sld:sld,tld:tld};
+}
+function findKw(sld){
+  var found=[],cover=0;
+  Object.keys(KW).sort(function(a,b){return b.length-a.length}).forEach(function(k){
+    if(k.length<2||sld.indexOf(k)<0)return;
+    if(found.some(function(f){return f.k.indexOf(k)>=0}))return;
+    found.push({k:k,tier:KW[k].tier,cat:KW[k].cat});cover+=k.length;
+  });
+  return {list:found,cover:Math.min(1,cover/sld.replace(/-/g,"").length)};
+}
+function pron(w){
+  w=w.replace(/[^a-z]/g,"");if(!w)return 0;
+  var v=(w.match(/[aeiouy]/g)||[]).length/w.length,s=100;
+  if(v<.25||v>.65)s-=35;if(/[^aeiouy]{4,}/.test(w))s-=35;if(/(.)\1\1/.test(w))s-=15;if(w.length>12)s-=10;
+  return Math.max(0,s);
+}
+function lenMult(n){return n<=2?15:n===3?6:n===4?3.5:n===5?2.2:n===6?1.6:n===7?1.2:n===8?1:n<=10?.7:n<=12?.5:.3}
+function lenScore(n){return n<=2?100:n===3?95:n===4?90:n===5?82:n===6?74:n===7?66:n===8?58:n<=10?45:n<=12?30:15}
+
+function analyze(dm){
+  var n=dm.sld.length,kw=findKw(dm.sld),known=TLD.hasOwnProperty(dm.tld),tm=known?TLD[dm.tld]:.03;
+  var hy=dm.sld.indexOf("-")>=0,dg=/\d/.test(dm.sld)&&!/^\d+$/.test(dm.sld),pr=pron(dm.sld);
+  var clean=100-(hy?45:0)-(dg?35:0),best=kw.list.reduce(function(m,x){return Math.max(m,x.tier)},0);
+  var S={len:lenScore(n),tld:Math.round(Math.min(100,Math.sqrt(tm)*100)),kw:best?Math.round(40+best*20*(.5+.5*kw.cover)):15,brand:Math.round(pr*.6+lenScore(n)*.25+clean*.15),clean:clean};
+  var score=Math.round(S.len*.25+S.tld*.2+S.kw*.25+S.brand*.2+S.clean*.1);
+  var mult=(best?TIERMULT[best]*(.6+.4*kw.cover):1)*(hy?.4:1)*(dg?.5:1)*(pr<60?.6:1);
+  var mid=Math.min(250000,Math.max(10,150*tm*lenMult(n)*mult));
+  var cat=kw.list.length?kw.list.slice().sort(function(a,b){return b.tier-a.tier})[0].cat:"gen";
+  return {n:n,kw:kw,S:S,score:score,known:known,hy:hy,dg:dg,pr:pr,lo:nice(mid*.45),hi:nice(mid*2.2),cat:cat,tm:tm};
+}
+function grade(s){return s>=75?["Strong","Appeals to many buyers. Worth active selling."]:s>=60?["Good","Solid name with clear appeal. A targeted effort should work."]:s>=45?["Average","Sellable, but to a narrow set of buyers. Expect a long, patient sale."]:s>=30?["Weak","Limited appeal. Sell cheaply, hold only if renewal is cheap, or skip buying it."]:["Very weak","Hard to sell. Buying is risky; owners should avoid spending much on it."]}
+
+function render(dm,r){
+  var g=grade(r.score);
+  $("sc").textContent=r.score;$("rdom").textContent=dm.full;$("grade").textContent=g[0];$("verdict").textContent=g[1];
+  $("dial").style.background="conic-gradient(var(--accent) "+r.score*3.6+"deg,var(--line) 0)";
+  $("rng").textContent=usd(r.lo)+" – "+usd(r.hi);
+  var F=[["Length",r.S.len,"The name part has "+r.n+" characters. Short names are scarcer and easier to remember."],
+   ["Extension (."+dm.tld+")",r.S.tld,r.known?"."+dm.tld+" is "+(TLDQ[dm.tld]||"a recognised extension")+". Buyers pay most for .com.":"This extension is not in the tool’s table, so it gets a low default weight."],
+   ["Keywords",r.S.kw,r.kw.list.length?"Commercial terms found: "+r.kw.list.map(function(x){return esc(x.k)}).join(", ")+".":"No known commercial keyword found. It may still work as a brand."],
+   ["Brandability",r.S.brand,"Pronounceability (vowel balance, long consonant runs), length and cleanliness."],
+   ["Cleanliness",r.S.clean,r.hy||r.dg?"Reduced by "+[r.hy&&"a hyphen",r.dg&&"digits mixed with letters"].filter(Boolean).join(" and ")+".":"No hyphens or mixed digits."]];
+  $("factors").innerHTML=F.map(function(x){return '<div class="f"><b>'+esc(x[0])+'</b><div class="bar"><i style="width:'+x[1]+'%"></i></div><span class="n">'+x[1]+'</span><p>'+x[2]+'</p></div>'}).join("");
+  var pros=[],cons=[];
+  if(r.n<=6)pros.push("Short and easy to remember ("+r.n+" characters).");else if(r.n>=11)cons.push("Long ("+r.n+" characters): harder to type, say and remember.");
+  if(dm.tld==="com")pros.push(".com is the most trusted extension and the easiest to resell.");else if(r.tm<.1)cons.push("."+dm.tld+" has a small buyer pool, so the sale will probably take longer and fetch less.");
+  if(r.kw.list.length)pros.push("Contains a recognisable keyword ("+r.kw.list.map(function(x){return x.k}).join(", ")+"), which helps buyers see the use.");else cons.push("No clear keyword. The value depends on the name working as a brand.");
+  if(r.pr>=70)pros.push("Easy to pronounce and spell.");else if(r.pr<60)cons.push("Hard to pronounce, so word-of-mouth and radio-style recall will suffer.");
+  if(r.hy)cons.push("The hyphen lowers value and is easy to forget when spoken.");
+  if(r.dg)cons.push("Digits mixed with letters confuse buyers (“is it 2 or two?”).");
+  cons.push("Always check for trademark conflicts before buying or listing.");
+  $("pros").innerHTML=(pros.length?pros:["No standout strengths found from the name alone."]).map(function(x){return "<li>"+esc(x)+"</li>"}).join("");
+  $("cons").innerHTML=cons.map(function(x){return "<li>"+esc(x)+"</li>"}).join("");
+  var s=r.score,own=s>=60?["List it and actively market it; a higher ask is reasonable.","Renewal cost is easy to justify: keep it.","Consider a short brand story to raise the price."]:s>=45?["List it at a moderate price and run outreach to a narrow buyer group.","Keep it only while renewal is cheap.","Consider building a small page on it to show intent."]:["Price low and aim for a quick sale, or let it expire if renewal costs more than you expect to make.","Do not spend on promotion."],
+  buy=s>=70?["Worth considering if the price fits your plan. Verify trademark and history first.","Decide your resale price before you buy."]:s>=50?["Only buy if you have a specific use or a named buyer in mind.","Offer low; the name is sellable but not rare."]:["Skip unless it is extremely cheap or you have a clear personal use.","A weak name rarely pays back through resale."];
+  $("own").innerHTML=own.map(function(x){return "<li>"+esc(x)+"</li>"}).join("");
+  $("buy").innerHTML=buy.map(function(x){return "<li>"+esc(x)+"</li>"}).join("");
+  var cats={};cats[r.cat]=1;if(r.cat!=="gen")cats.gen=1;
+  $("buyers").innerHTML=Object.keys(cats).map(function(c){return "<li>"+esc(CAT[c].charAt(0).toUpperCase()+CAT[c].slice(1))+"</li>"}).join("");
+  var nm=dm.sld.replace(/-/g," "),who=CAT[r.cat];
+  $("t1").value=dm.full+" is available for acquisition.\n\n"+dm.full+" is a "+r.n+"-character "+(dm.tld==="com"?".com":"."+dm.tld)+" name that is short, clear and easy to say. It suits "+who+".\n\nWhy it works: [add one specific reason, e.g. matches what customers search for / easy to spell / strong brand feel].\n\nPrice: [your asking price or \"make an offer\"].\nPayment and transfer through escrow.\nContact: [your email]";
+  $("t2").value="Subject: "+dm.full+" for your brand\n\nHi [name],\n\nI came across [their company] and noticed you use [their current domain]. I own "+dm.full+", which could be a strong fit for [what they do]: it is short and easy to remember.\n\nIf a better domain is on your list, I would be glad to share the price and details. A transfer through escrow takes only a few days.\n\nBest,\n[your name]\n[your email]";
+  if(CONTACT_URL){$("cta").hidden=false;$("ctal").href=CONTACT_URL}
+  $("result").hidden=false;live(dm);
+}
+
+function tf(u,ms){var c=new AbortController(),t=setTimeout(function(){c.abort()},ms||6000);return fetch(u,{signal:c.signal}).then(function(r){clearTimeout(t);return r.json()})}
+function li(html){var e=document.createElement("li");e.innerHTML=html;$("live").appendChild(e);return e}
+function live(dm){
+  $("live").innerHTML="";var d=encodeURIComponent(dm.full);
+  var e1=li("Registration: checking…"),e2=li("DNS and website: checking…"),e3=li("Past versions (Wayback Machine): checking…");
+  tf("https://rdap.org/domain/"+d,8000).then(function(j){
+    var ev={};(j.events||[]).forEach(function(x){ev[x.eventAction]=(x.eventDate||"").slice(0,10)});
+    var age=ev.registration?((Date.now()-new Date(ev.registration))/31557600000).toFixed(1):null;
+    e1.innerHTML="Registration: "+(ev.registration?"registered "+esc(ev.registration)+" (about "+age+" years old)":"date not published")+(ev.expiration?", expires "+esc(ev.expiration):"")+".";
+  }).catch(function(){e1.innerHTML="Registration: could not be retrieved for this extension (the registry may block browser lookups)."});
+  Promise.all(["A","MX","NS"].map(function(t){return tf("https://dns.google/resolve?name="+d+"&type="+t)})).then(function(a){
+    if(a[0].Status===3){e2.innerHTML="DNS: this name does not resolve. It may be <b>unregistered</b>. Check availability at a registrar.";return}
+    e2.innerHTML="DNS: "+(a[0].Answer?"points to a server (a website or parking page is likely)":"no website record")+"; "+(a[1].Answer?"email is set up":"no email set up")+". A domain in use is easier to sell as a ready brand; an unused one is easier to buy cheaply."
+  }).catch(function(){e2.innerHTML="DNS: lookup unavailable right now."});
+  tf("https://archive.org/wayback/available?url="+d).then(function(j){
+    var c=j.archived_snapshots&&j.archived_snapshots.closest;
+    e3.innerHTML=c?'Past versions: archived as early as the Wayback Machine shows. <a href="https://web.archive.org/web/*/'+esc(dm.full)+'" target="_blank" rel="noopener">Review the history</a> for spam or a bad past.':'Past versions: none found. <a href="https://web.archive.org/web/*/'+esc(dm.full)+'" target="_blank" rel="noopener">Check manually</a>.'
+  }).catch(function(){e3.innerHTML='Past versions: lookup unavailable. <a href="https://web.archive.org/web/*/'+esc(dm.full)+'" target="_blank" rel="noopener">Check manually</a>.'});
+}
+
+$("f").addEventListener("submit",function(e){
+  e.preventDefault();var dm=splitDomain($("q").value);
+  if(!dm){$("err").textContent="Enter a valid domain, for example example.com.";$("result").hidden=true;return}
+  $("err").textContent="";render(dm,analyze(dm));
+  $("result").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});
+});
+document.addEventListener("click",function(e){
+  var id=e.target.getAttribute&&e.target.getAttribute("data-copy");if(!id)return;
+  var t=$(id);t.select();try{navigator.clipboard.writeText(t.value);e.target.textContent="Copied"}catch(x){document.execCommand("copy")}
+  setTimeout(function(){e.target.textContent="Copy"},1500);
+});
+</script>
+</body>
+</html>
