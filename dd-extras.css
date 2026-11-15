@@ -358,3 +358,12 @@ html.wd[lang="zh-Hans"] h1{font-size:clamp(2rem,4.2vw,3.2rem)}
 .dd-o-note{margin:12px 0 0;font-size:.86rem;color:#51627A;line-height:1.5}
 .dd-o-note a{color:var(--ink,#10202F)}
 @media (max-width:640px){.dd-order{padding:22px 18px}.dd-o-grid{grid-template-columns:1fr}}
+
+/* ---------- client quotes ---------- */
+.dd-quotes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0 0}
+.dd-quote{margin:0;padding:22px 24px;background:#fff;border:1px solid var(--line,#D8E0EA);border-left:4px solid #0A66C2;border-radius:12px;color:var(--ink,#10202F)}
+.dd-quote blockquote{margin:0 0 14px;padding:0;border:0}
+.dd-quote blockquote p{margin:0;font-size:1rem;line-height:1.65}
+.dd-quote figcaption b{display:block;font-weight:600}
+.dd-quote figcaption span{display:block;font-size:.9rem;color:#51627A;margin-top:2px}
+@media (max-width:760px){.dd-quotes{grid-template-columns:1fr}.dd-quote{padding:18px 18px}}
