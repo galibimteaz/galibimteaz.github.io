@@ -55,6 +55,11 @@ ul{margin:.3em 0;padding-left:1.2em}li{margin:.25em 0}
 .box{background:var(--bg);border-radius:10px;padding:12px 14px;margin:8px 0}
 textarea{width:100%;min-height:170px;font:inherit;font-size:.92rem;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
 .live li{margin:.35em 0}code{background:var(--bg);padding:1px 6px;border-radius:4px;font-size:.88em}
+.sbwrap{padding-bottom:0}.sb{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px 20px}
+.sb-logo{font:800 1.15rem/1.1 "Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);text-decoration:none}.sb-logo small{display:block;font:400 .75rem "IBM Plex Sans",system-ui,sans-serif;color:var(--mute);margin-top:2px}
+.sb nav{display:flex;flex-wrap:wrap;gap:8px 18px}.sb nav a{color:var(--mute);text-decoration:none;font-size:.95rem}.sb nav a[aria-current]{color:var(--ink)}
+.sb nav a.nav-tool{background:#FFF3E2;color:#8A4A0B;border:1px solid #F3D3AE;border-radius:99px;padding:3px 12px;font-weight:500}
+@media (max-width:640px){.sb nav{gap:8px;width:100%}.sb nav a{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border:1px solid var(--line);border-radius:99px;background:var(--panel);font-size:.92rem}.sb nav a.nav-tool{background:#FFF3E2;border-color:#F3D3AE}.wrap{padding-left:16px;padding-right:16px}}
 .pbar{height:10px;border-radius:5px;background:var(--line);overflow:hidden;margin:14px 0}.pbar i{display:block;height:100%;width:0;background:var(--accent)}
 .steps{list-style:none;padding:0;margin:0}.steps li{padding:4px 0;color:var(--mute);opacity:.4;transition:opacity .4s}.steps li.on{opacity:1;color:var(--ink)}.steps li.on::before{content:"✓ ";color:var(--accent);font-weight:700}
 .spin{display:inline-block;width:18px;height:18px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:sp .8s linear infinite;vertical-align:-3px;margin-right:8px}@keyframes sp{to{transform:rotate(360deg)}}
@@ -68,7 +73,9 @@ details{border-top:1px solid var(--line);padding:10px 0}summary{cursor:pointer;f
 </style>
 </head>
 <body>
-<main class="wrap">
+<div class="wrap sbwrap"><header class="sb"><a class="sb-logo" href="index.html">Domain Decoded<small>by Galib Imteaz</small></a>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a class="nav-tool" href="domain-appraisal.html" aria-current="page">Domain Appraisal Tool</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav></header></div>
+<main class="wrap" style="padding-top:14px">
 <p class="note"><a href="index.html">Home</a> › Domain Appraisal Tool · <a href="blog.html">Blog</a> · <a href="blog-post-domain-trademark-check.html">Read first: how to check a domain for trademark risk</a></p>
 <h1>Free Domain Appraisal Tool: Score a Domain and Get a Plan to Sell It</h1>
 <p class="lead">Type a domain name. You get a strength score, honest strengths and risks, buy/hold/sell advice, a sales playbook and draft copy you can edit. No sign-up, nothing leaves your browser except optional public lookups.</p>
@@ -182,7 +189,7 @@ details{border-top:1px solid var(--line);padding:10px 0}summary{cursor:pointer;f
 <details><summary>What happens to the domains I enter?</summary><p>The analysis runs in your browser. To show live checks, your browser sends the domain name to public services (the registry’s RDAP service, Google Public DNS and the Internet Archive). See the <a href="privacy-policy.html">privacy policy</a>.</p></details>
 <p class="note">Built by <a href="about.html">Imteaz (Galib) Chowdhury</a>, domain broker and founder of Domain Decoded.</p>
 </article>
-<nav class="note" aria-label="Site links" style="margin-top:18px"><a href="index.html">Home</a> · <a href="services.html">Services</a> · <a href="blog.html">Blog</a> · <a href="contact.html">Contact</a> · <a href="privacy-policy.html">Privacy Policy</a></nav>
+<nav class="note" aria-label="Site links" style="margin-top:18px"><a href="index.html">Home</a> · <a href="services.html">Services</a> · <a href="blog.html">Blog</a> · <a href="about.html">About</a> · <a href="faq.html">FAQ</a> · <a href="contact.html">Contact</a> · <a href="privacy-policy.html">Privacy Policy</a></nav>
 </main>
 
 <script>
