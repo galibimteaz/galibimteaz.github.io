@@ -75,9 +75,10 @@
   /* ---------- email sign-up form (same Formspree form as the contact page) ---------- */
   function wireSignup() {
     var forms = document.querySelectorAll('.dd-su-form');
-    var okMsg = 'Thanks, you are on the list. I will email you when something new goes up.';
-    var errMsg = 'Something went wrong. Please try again, or email galibsjournal@gmail.com.';
+    var defOk = 'Thanks, you are on the list. I will email you when something new goes up.';
+    var defErr = 'Something went wrong. Please try again, or email galibsjournal@gmail.com.';
     Array.prototype.forEach.call(forms, function (f) {
+      var okMsg = f.getAttribute('data-ok') || defOk, errMsg = f.getAttribute('data-err') || defErr;
       var src = f.querySelector('[name="source_page"]');
       if (src) src.value = location.pathname || '/';
       f.addEventListener('submit', function (e) {

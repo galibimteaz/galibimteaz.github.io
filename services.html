@@ -404,7 +404,7 @@ section.sec .tool-box a.tool-btn:hover{background:#92400E}
     <h3>Get your free sample post</h3>
     <p>Send me a few lines about your work. I'll write one post and send it back before you pay for anything. Questions first? See the <a href="faq.html#faq-ghostwriting">ghostwriting FAQ</a>.</p>
     <div class="cta-actions">
-      <a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=galibsjournal@gmail.com&su=Free%20LinkedIn%20Sample%20Post" target="_blank" rel="noopener">
+      <a class="btn primary" href="contact.html#linkedin">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>
         Request a free sample
       </a>
@@ -512,12 +512,42 @@ section.sec .tool-box a.tool-btn:hover{background:#92400E}
     <div class="price"><bdi dir="ltr">$59</bdi></div>
   </div>
   <p>Reports are delivered within 3 business days of payment. They are informational, not legal advice or a guaranteed valuation. See the <a href="disclaimer.html">disclaimer</a>.</p>
-  <div class="cta-actions">
-    <a class="btn primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=galibsjournal@gmail.com&amp;su=Domain%20Check%20Report%20Request" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>
-      Request a report
-    </a>
-  </div>
+<div class="dd-order" id="order-report">
+  <h3>Order a report</h3>
+  <p class="dd-o-lead">Fill in three things and I will reply within 24 hours with payment details. I accept Payoneer and bank transfer, and reports are delivered within 3 business days of payment.</p>
+  <form class="dd-su-form" action="https://formspree.io/f/xppakbpj" method="POST" data-ok="Thanks, your request is in. I will reply within 24 hours with payment details." data-err="Something went wrong. Please try again, or email galibsjournal@gmail.com.">
+    <input type="hidden" name="form_type" value="Report order">
+    <input type="hidden" name="_subject" value="New report order - Domain Decoded">
+    <input type="hidden" name="source_page" value="">
+    <div class="dd-o-field">
+      <label for="ddOrdReport">Which report?</label>
+      <select id="ddOrdReport" name="report" required>
+        <option value="">Choose one</option>
+        <option value="Domain Appraisal Report ($39)">Domain Appraisal Report - $39</option>
+        <option value="Domain Risk Check Report ($39)">Domain Risk Check Report - $39</option>
+        <option value="Buyer's Bundle: both reports ($59)">Buyer's Bundle (both reports) - $59</option>
+      </select>
+    </div>
+    <div class="dd-o-grid">
+      <div class="dd-o-field">
+        <label for="ddOrdDomain">Domain name</label>
+        <input type="text" id="ddOrdDomain" name="domain" placeholder="example.com" required autocomplete="off" autocapitalize="none" spellcheck="false">
+      </div>
+      <div class="dd-o-field">
+        <label for="ddOrdEmail">Your email</label>
+        <input type="email" id="ddOrdEmail" name="email" placeholder="you@example.com" required autocomplete="email">
+      </div>
+    </div>
+    <div class="dd-o-field">
+      <label for="ddOrdNote">Anything I should know? <span class="dd-o-opt">(optional)</span></label>
+      <textarea id="ddOrdNote" name="note" rows="3" placeholder="For example: I am thinking of buying it, or I own it and want to sell."></textarea>
+    </div>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+    <button type="submit" class="dd-su-btn dd-o-btn">Send my order request</button>
+    <p class="dd-o-note">No payment is taken on this page. Reports are informational, not legal advice or a guaranteed valuation. See the <a href="disclaimer.html">disclaimer</a>.</p>
+    <div class="dd-su-status" role="status" aria-live="polite"></div>
+  </form>
+</div>
 
   <h3 class="gw-group">How it works</h3>
   <div class="step">

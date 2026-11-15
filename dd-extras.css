@@ -342,3 +342,19 @@ html.wd[lang="zh-Hans"] h1{font-size:clamp(2rem,4.2vw,3.2rem)}
 .dd-su-status.err{padding:10px 14px;background:#FDECEC;color:#8A1C1C}
 .dd-signup button:focus-visible,.dd-signup a:focus-visible{outline:3px solid var(--ink,#10202F);outline-offset:3px}
 @media (max-width:760px){.dd-signup{grid-template-columns:1fr;padding:22px 18px}.dd-su-row{flex-direction:column}.dd-su-btn{width:100%;padding:14px 20px}}
+
+/* ---------- report order form ---------- */
+.dd-order{margin:26px 0 8px;padding:26px 28px;background:#fff;border:1.5px solid #9CC3EE;border-radius:14px;box-shadow:0 6px 20px rgba(10,102,194,.10);color:var(--ink,#10202F);scroll-margin-top:20px}
+.dd-order h3{margin:0 0 6px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.35rem;line-height:1.2}
+.dd-o-lead{margin:0 0 18px;color:#3E5370;font-size:.98rem;line-height:1.55}
+.dd-o-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.dd-o-field{margin-bottom:16px}
+.dd-o-field label{display:block;font-weight:500;margin-bottom:6px;font-size:.96rem}
+.dd-o-opt{font-weight:400;color:#51627A}
+.dd-o-field input,.dd-o-field select,.dd-o-field textarea{width:100%;font:inherit;color:var(--ink,#10202F);background:#F7FAFE;border:1.5px solid var(--line,#D8E0EA);border-radius:10px;padding:12px 14px}
+.dd-o-field textarea{resize:vertical;min-height:84px}
+.dd-o-field input:focus,.dd-o-field select:focus,.dd-o-field textarea:focus{outline:none;border-color:#0A66C2;box-shadow:0 0 0 3px rgba(10,102,194,.22)}
+.dd-o-btn{width:100%;padding:14px 20px;font-size:1.02rem}
+.dd-o-note{margin:12px 0 0;font-size:.86rem;color:#51627A;line-height:1.5}
+.dd-o-note a{color:var(--ink,#10202F)}
+@media (max-width:640px){.dd-order{padding:22px 18px}.dd-o-grid{grid-template-columns:1fr}}
