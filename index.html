@@ -594,9 +594,9 @@ function clean(t){return t.replace(/^[^A-Za-z0-9]+/,"")}
 function url(d){var l=d.name.toLowerCase();return l.indexOf("scholarship")>-1?"case-study-scholarship.html#"+l.replace("scholarship",""):"case-study-"+l+".html"}
 var all=[];groups.forEach(function(g){g.items.forEach(function(d){d._g=clean(g.title);all.push(d)})});
 function card(d){
- var full=d.name+d.ext,dm="https://mail.google.com/mail/?view=cm&fs=1&to="+MAIL+"&su="+encodeURIComponent("Inquiry: "+full)+"&body="+encodeURIComponent("Hi Imteaz,\n\nI'm interested in "+full+". Could we discuss pricing?\n\n");
+ var full=d.name+d.ext,dm="contact.html?domain="+encodeURIComponent(full);
  var more='<b>Why it’s good</b>'+d.whyGood+'<b>Where it fits</b>'+d.fitsWhere+'<b>Brandability</b>'+d.brandability+'<b>Demand in 10 years</b>'+d.demand10yr+(d.know?'<b>Good to know</b>'+d.know:'');
- return '<article class="card"><span class="cat">'+d.badge+'</span><h3>'+full+'</h3><p>'+d.tag+'</p><ul class="ck">'+d.pills.map(function(p){return "<li>"+p+"</li>"}).join("")+'</ul><div class="acts"><button type="button" class="tg" aria-expanded="false">Details</button><a class="btn or" href="'+url(d)+'">Case study</a><a class="btn" href="'+dm+'" target="_blank" rel="noopener">DM for deal</a><a class="btn" style="--c:var(--blue)" href="'+d.marketUrl+'" target="_blank" rel="noopener">Buy now</a></div><div class="more">'+more+'</div></article>';
+ return '<article class="card"><span class="cat">'+d.badge+'</span><h3>'+full+'</h3><p>'+d.tag+'</p><ul class="ck">'+d.pills.map(function(p){return "<li>"+p+"</li>"}).join("")+'</ul><div class="acts"><button type="button" class="tg" aria-expanded="false">Details</button><a class="btn or" href="'+url(d)+'">Case study</a><a class="btn" href="'+dm+'">DM for deal</a><a class="btn" style="--c:var(--blue)" href="'+d.marketUrl+'" target="_blank" rel="noopener">Buy now</a></div><div class="more">'+more+'</div></article>';
 }
 function show(c){
  Array.prototype.forEach.call(F.children,function(b){b.setAttribute("aria-pressed",b.textContent===c)});
