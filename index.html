@@ -390,6 +390,21 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
 <p style="margin-top:20px"><a href="blog.html" style="color:var(--teal);font-weight:500">Read all posts</a> · <a href="about.html" style="color:var(--teal);font-weight:500">Why trust this portfolio</a></p>
 <h3 style="margin:34px 0 4px;font-weight:600">Portfolio at a glance</h3><p class="sub" style="margin-bottom:8px">Every domain links to its full due-diligence case study.</p>
 <div class="glance" id="glance"></div></section>
+<div class="wrap">
+<section class="dd-signup" aria-labelledby="ddSignupH">
+<div class="dd-su-text"><h3 id="ddSignupH">Get new domain insights by email</h3><p>One short email when a new article or case study goes up. No spam, and you can unsubscribe at any time.</p></div>
+<form class="dd-su-form" action="https://formspree.io/f/xppakbpj" method="POST">
+<input type="hidden" name="form_type" value="Email signup">
+<input type="hidden" name="_subject" value="New email signup - Domain Decoded">
+<input type="hidden" name="source_page" value="">
+<label class="dd-su-label" for="ddSuEmail">Email address</label>
+<div class="dd-su-row"><input type="email" id="ddSuEmail" name="email" placeholder="you@example.com" required autocomplete="email"><button type="submit" class="dd-su-btn">Subscribe</button></div>
+<label class="dd-su-consent"><input type="checkbox" name="consent" value="Yes" required><span>I agree to receive occasional emails from Domain Decoded about domain insights. I can unsubscribe at any time. <a href="/privacy-policy.html">Privacy Policy</a></span></label>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+<div class="dd-su-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div>
 </div>
 
 <footer><div class="wrap">

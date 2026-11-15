@@ -322,3 +322,23 @@ html.wd[lang="zh-Hans"] h1{font-size:clamp(2rem,4.2vw,3.2rem)}
   .bar nav a[aria-current]{border-color:var(--ink);color:var(--ink)}
   .bar nav a.nav-tool{background:#FFF3E2;border-color:#F3D3AE;color:#8A4A0B}
 }
+
+/* ---------- email sign-up box ---------- */
+.dd-signup{display:grid;grid-template-columns:1fr 1.1fr;gap:20px 32px;align-items:start;margin:40px 0;padding:26px 28px;background:var(--s1,#E3F4F2);border:1px solid var(--line,#D8E0EA);border-radius:14px;color:var(--ink,#10202F)}
+.dd-signup h3{margin:0 0 6px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.3rem;line-height:1.2}
+.dd-signup p{margin:0;color:var(--mute,#51627A);font-size:.98rem;line-height:1.55}
+.dd-su-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dd-su-row{display:flex;gap:10px}
+.dd-su-row input[type=email]{flex:1 1 auto;min-width:0;font:inherit;color:var(--ink,#10202F);background:#fff;border:1.5px solid var(--line,#D8E0EA);border-radius:10px;padding:12px 14px}
+.dd-su-row input[type=email]:focus{outline:none;border-color:var(--teal,#0B7A75);box-shadow:0 0 0 3px rgba(11,122,117,.18)}
+.dd-su-btn{flex:0 0 auto;background:var(--teal,#0B7A75);color:#fff;border:0;border-radius:10px;padding:12px 22px;font:inherit;font-weight:500;cursor:pointer}
+.dd-su-btn:hover{filter:brightness(1.08)}
+.dd-su-btn:disabled{opacity:.6;cursor:wait}
+.dd-su-consent{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:.88rem;line-height:1.5;color:var(--mute,#51627A);cursor:pointer}
+.dd-su-consent input{flex:0 0 auto;width:18px;height:18px;margin:2px 0 0;accent-color:var(--teal,#0B7A75)}
+.dd-su-consent a{color:var(--ink,#10202F)}
+.dd-su-status{margin-top:10px;font-size:.95rem;border-radius:10px}
+.dd-su-status.ok{padding:10px 14px;background:#fff;color:#065F46}
+.dd-su-status.err{padding:10px 14px;background:#FDECEC;color:#8A1C1C}
+.dd-signup button:focus-visible,.dd-signup a:focus-visible{outline:3px solid var(--ink,#10202F);outline-offset:3px}
+@media (max-width:760px){.dd-signup{grid-template-columns:1fr;padding:22px 18px}.dd-su-row{flex-direction:column}.dd-su-btn{width:100%;padding:14px 20px}}

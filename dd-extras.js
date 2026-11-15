@@ -71,6 +71,30 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && sw.open) { sw.open = false; var s = sw.querySelector('summary'); if (s) s.focus(); } });
   }
 
+
+  /* ---------- email sign-up form (same Formspree form as the contact page) ---------- */
+  function wireSignup() {
+    var forms = document.querySelectorAll('.dd-su-form');
+    var okMsg = 'Thanks, you are on the list. I will email you when something new goes up.';
+    var errMsg = 'Something went wrong. Please try again, or email galibsjournal@gmail.com.';
+    Array.prototype.forEach.call(forms, function (f) {
+      var src = f.querySelector('[name="source_page"]');
+      if (src) src.value = location.pathname || '/';
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var s = f.querySelector('.dd-su-status'), b = f.querySelector('.dd-su-btn');
+        b.disabled = true;
+        fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
+          .then(function (r) {
+            if (r.ok) { s.textContent = okMsg; s.className = 'dd-su-status ok'; f.reset(); if (src) src.value = location.pathname || '/'; }
+            else { s.textContent = errMsg; s.className = 'dd-su-status err'; }
+            b.disabled = false;
+          })
+          .catch(function () { s.textContent = errMsg; s.className = 'dd-su-status err'; b.disabled = false; });
+      });
+    });
+  }
+
   /* The site now opens directly (no opening animation). */
   function intro(after) { if (after) after(); }
 
@@ -80,6 +104,7 @@
     var links = document.querySelectorAll('[data-cookie-settings]');
     for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function (e) { e.preventDefault(); showBar(); });
     wireSwitcher();
+    wireSignup();
     // the cookie notice waits until the opening globe has finished
     intro(function () { if (c !== 'granted' && c !== 'denied') showBar(); });
   }
