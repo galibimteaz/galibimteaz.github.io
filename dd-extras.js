@@ -72,6 +72,16 @@
   }
 
 
+
+  /* ---------- analytics events (sent only when the visitor accepted cookies, because gtag exists only then) ---------- */
+  function track(name, params) { try { if (window.gtag) window.gtag('event', name, params || {}); } catch (e) {} }
+  function wireTracking() {
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest ? e.target.closest('[data-track]') : null;
+      if (el) track('cta_click', { cta: el.getAttribute('data-track'), page_path: location.pathname });
+    });
+  }
+
   /* ---------- email sign-up form (same Formspree form as the contact page) ---------- */
   function wireSignup() {
     var forms = document.querySelectorAll('.dd-su-form');
@@ -87,7 +97,12 @@
         b.disabled = true;
         fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
           .then(function (r) {
-            if (r.ok) { s.textContent = okMsg; s.className = 'dd-su-status ok'; f.reset(); if (src) src.value = location.pathname || '/'; }
+            if (r.ok) {
+              var ft = f.querySelector('[name="form_type"]'), rp = f.querySelector('[name="report"]');
+              if (ft && ft.value === 'Report order') track('report_order', { report: rp ? rp.value : '', page_path: location.pathname });
+              else track('newsletter_signup', { page_path: location.pathname });
+              s.textContent = okMsg; s.className = 'dd-su-status ok'; f.reset(); if (src) src.value = location.pathname || '/';
+            }
             else { s.textContent = errMsg; s.className = 'dd-su-status err'; }
             b.disabled = false;
           })
@@ -106,6 +121,7 @@
     for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function (e) { e.preventDefault(); showBar(); });
     wireSwitcher();
     wireSignup();
+    wireTracking();
     // the cookie notice waits until the opening globe has finished
     intro(function () { if (c !== 'granted' && c !== 'denied') showBar(); });
   }

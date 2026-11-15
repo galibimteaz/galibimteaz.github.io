@@ -367,3 +367,14 @@ html.wd[lang="zh-Hans"] h1{font-size:clamp(2rem,4.2vw,3.2rem)}
 .dd-quote figcaption b{display:block;font-weight:600}
 .dd-quote figcaption span{display:block;font-size:.9rem;color:#51627A;margin-top:2px}
 @media (max-width:760px){.dd-quotes{grid-template-columns:1fr}.dd-quote{padding:18px 18px}}
+
+/* ---------- "next step" box on blog posts ---------- */
+.dd-next{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;margin:36px 0 0;padding:20px 24px;background:#fff;border:1px solid var(--line,#D8E0EA);border-left:4px solid #0A66C2;border-radius:12px;color:var(--ink,#10202F)}
+.dd-next h3{margin:0 0 4px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.15rem;line-height:1.25}
+.dd-next p{margin:0;color:#3E5370;font-size:.96rem;line-height:1.5}
+.dd-next-btns{display:flex;flex-wrap:wrap;gap:10px}
+.dd-next-btns a{display:inline-block;padding:11px 18px;border-radius:10px;font-weight:500;text-decoration:none;font-size:.95rem}
+.dd-next-btns .pri{background:#0A66C2;color:#fff}
+.dd-next-btns .sec{background:#fff;color:#0A66C2;border:1.5px solid #0A66C2}
+.dd-next-btns a:hover{filter:brightness(1.07)}
+@media (max-width:640px){.dd-next{padding:18px}.dd-next-btns{width:100%}.dd-next-btns a{flex:1 1 100%;text-align:center}}
