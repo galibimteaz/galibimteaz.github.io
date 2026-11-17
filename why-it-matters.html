@@ -196,6 +196,23 @@ html.wd[lang="ar"][dir="rtl"] body,html.wd[lang="ar"][dir="rtl"] h1,html.wd[lang
 html.wd[lang="ar"] body{line-height:1.8}
 html.wd[lang="zh-Hans"] h1,html.wd[lang="zh-Hans"] h2,html.wd[lang="zh-Hans"] h3{letter-spacing:0}
 [dir=rtl] .lang-menu{right:auto;left:0}[dir=rtl] .whatsapp-fab{right:auto;left:16px}[dir=rtl] .back-to-top{right:auto;left:20px}
+
+/* --- Blog dropdown + affiliate disclosure (added) --- */
+.nav-dd{position:relative}
+.nav-dd summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:4px;color:var(--mute);font-size:.95rem}
+.nav-dd summary::-webkit-details-marker{display:none}
+.nav-dd summary:hover,.nav-dd[open] summary,.nav-dd.cur summary{color:var(--ink)}
+.nav-dd summary svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .15s}
+.nav-dd[open] summary svg{transform:rotate(180deg)}
+.nav-dd summary:focus-visible{outline:2px solid var(--teal);outline-offset:4px;border-radius:4px}
+.nav-dd-menu{position:absolute;left:-12px;top:calc(100% + 10px);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px;min-width:250px;z-index:20;display:grid;box-shadow:0 8px 24px rgba(16,32,47,.08)}
+.bar nav .nav-dd-menu a{display:block;padding:9px 12px;border-radius:8px;color:var(--ink);font-size:.95rem;line-height:1.3}
+.bar nav .nav-dd-menu a small{display:block;color:var(--mute);font-size:.8rem;margin-top:2px}
+.bar nav .nav-dd-menu a:hover{background:var(--s1)}
+@media (max-width:620px){.nav-dd[open]{flex-basis:100%}.nav-dd-menu{position:static;box-shadow:none;margin-top:8px;min-width:0}}
+.dd-aff{border:1px solid var(--line);background:var(--s1);border-radius:10px;padding:10px 14px;font-size:.9rem;line-height:1.5;color:var(--mute);margin:0 0 20px;max-width:52em}
+.dd-aff b{color:var(--ink);font-weight:600}.dd-aff a{color:var(--teal)}
+/* --- end added --- */
 </style>
 <link rel="stylesheet" href="dd-extras.css">
 <script src="dd-extras.js" defer></script>
@@ -205,7 +222,7 @@ html.wd[lang="zh-Hans"] h1,html.wd[lang="zh-Hans"] h2,html.wd[lang="zh-Hans"] h3
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="wrap">
 <div class="bar"><a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span><span class="bn">Domain Decoded<small>by Galib Imteaz</small></span></a>
-<nav aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a class="nav-tool" href="domain-appraisal.html" lang="en">Domain Appraisal Tool</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><details class="nav-dd"><summary>Blog<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-dd-menu"><a href="blog.html">All posts</a><a href="blog.html#playbooks">Playbooks<small>Step-by-step guides</small></a><a href="blog.html#price-check">Price Check<small>What things really cost</small></a><!-- Add when your first review is live: <a href="blog.html#worth-it">Worth It?<small>Honest tool &amp; book reviews</small></a> --><a href="blog.html#stories">Stories &amp; Analysis<small>Notes and newsletter articles</small></a></div></details><a class="nav-tool" href="domain-appraisal.html" lang="en">Domain Appraisal Tool</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
 <details class="lang-switch"><summary aria-label="Language" title="Language"><svg aria-hidden="true" class="globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9.5"></circle><path d="M2.5 12h19M12 2.5c3 3 4.5 6 4.5 9.5s-1.5 6.5-4.5 9.5c-3-3-4.5-6-4.5-9.5S9 5.5 12 2.5z"></path></svg><span class="lang-code">EN</span><svg aria-hidden="true" class="chev" viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></summary><div class="lang-menu"><a aria-current="true" href="why-it-matters.html" hreflang="en" lang="en"><span aria-hidden="true" class="en-badge">EN</span><span>English</span></a><a href="why-it-matters-ar.html" hreflang="ar" lang="ar"><svg aria-hidden="true" class="flag" viewbox="0 0 30 21"><rect fill="#006c35" height="21" width="30"></rect><rect fill="#fff" height="2.4" rx="1.1" width="16" x="7" y="6"></rect><rect fill="#fff" height="1.6" rx=".8" width="12" x="9" y="9.6"></rect><rect fill="#fff" height="1.3" rx=".6" width="16" x="7" y="14.4"></rect></svg><span>العربية</span></a><a href="why-it-matters-zh.html" hreflang="zh-Hans" lang="zh-Hans"><svg aria-hidden="true" class="flag" viewbox="0 0 30 21"><rect fill="#de2910" height="21" width="30"></rect><polygon fill="#ffde00" points="5.00,1.90 5.78,4.13 8.14,4.18 6.26,5.61 6.94,7.87 5.00,6.52 3.06,7.87 3.74,5.61 1.86,4.18 4.22,4.13"></polygon><polygon fill="#ffde00" points="10.00,0.90 10.26,1.64 11.05,1.66 10.42,2.14 10.65,2.89 10.00,2.44 9.35,2.89 9.58,2.14 8.95,1.66 9.74,1.64"></polygon><polygon fill="#ffde00" points="12.00,3.20 12.26,3.94 13.05,3.96 12.42,4.44 12.65,5.19 12.00,4.74 11.35,5.19 11.58,4.44 10.95,3.96 11.74,3.94"></polygon><polygon fill="#ffde00" points="12.00,6.30 12.26,7.04 13.05,7.06 12.42,7.54 12.65,8.29 12.00,7.84 11.35,8.29 11.58,7.54 10.95,7.06 11.74,7.04"></polygon><polygon fill="#ffde00" points="10.00,8.40 10.26,9.14 11.05,9.16 10.42,9.64 10.65,10.39 10.00,9.94 9.35,10.39 9.58,9.64 8.95,9.16 9.74,9.14"></polygon></svg><span>中文（普通话）</span></a><a href="why-it-matters-es.html" hreflang="es" lang="es"><svg aria-hidden="true" class="flag" viewbox="0 0 30 21"><rect fill="#aa151b" height="21" width="30"></rect><rect fill="#f1bf00" height="10.5" width="30" y="5.25"></rect></svg><span>Español</span></a></div></details></div>
 <main id="main">
 <header class="hero"><span class="eyebrow">Why This Matters To You</span><h1>The Names You Reject Are Often More Important Than the One You Choose</h1><p class="pq">"Quality compounds. Quantity rarely does. One exceptional domain will always outperform a portfolio filled with average names."</p></header>
@@ -229,6 +246,7 @@ html.wd[lang="zh-Hans"] h1,html.wd[lang="zh-Hans"] h2,html.wd[lang="zh-Hans"] h3
 </div></div><div class="fx"><h4>Explore</h4><nav class="xp" aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="domain-appraisal.html" lang="en">Domain Appraisal Tool</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="why-it-matters.html">Why it matters</a><a href="contact.html">Contact</a></nav></div><div class="legal"><span>© 2026 Domain Decoded. All rights reserved.</span><span>
 <a href="privacy-policy.html">Privacy Policy</a>
 <a href="disclaimer.html">Disclaimer</a>
+<a href="affiliate-disclosure.html">Affiliate Disclosure</a>
 <button data-cookie-settings="" type="button">Cookie settings</button>
 </span></div></div></footer>
 <button aria-label="Back to top" class="back-to-top" id="backToTop">
@@ -238,5 +256,6 @@ html.wd[lang="zh-Hans"] h1,html.wd[lang="zh-Hans"] h2,html.wd[lang="zh-Hans"] h3
 <svg viewbox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.78 14.13c-.24.68-1.19 1.25-1.96 1.42-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.52.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08.99.3.15.5.23.58.36.08.13.08.75-.16 1.43z"></path></svg>
 </a>
 <script>(function(){var b=document.getElementById("backToTop");if(!b)return;window.addEventListener("scroll",function(){b.classList.toggle("visible",window.scrollY>480)});b.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})})})();</script>
+<script>(function(){var d=document.querySelectorAll(".nav-dd");if(!d.length)return;document.addEventListener("click",function(e){d.forEach(function(x){if(!x.contains(e.target))x.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")d.forEach(function(x){x.removeAttribute("open")})})})();</script>
 </body>
 </html>

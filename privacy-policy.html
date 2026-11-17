@@ -177,6 +177,23 @@ section.sec.legal>h2{border:0;padding:0;font-size:1.4rem;margin:0 0 12px}
 .table-wrap th{background:var(--s1);color:var(--ink);font-weight:500}.table-wrap tr:last-child td{border-bottom:0}
 .legal code{background:var(--s1);padding:1px 6px;border-radius:6px;font-size:.88em;direction:ltr;unicode-bidi:embed;color:var(--ink)}
 @media (max-width:700px){.legal-toc ol{column-count:1}}
+
+/* --- Blog dropdown + affiliate disclosure (added) --- */
+.nav-dd{position:relative}
+.nav-dd summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:4px;color:var(--mute);font-size:.95rem}
+.nav-dd summary::-webkit-details-marker{display:none}
+.nav-dd summary:hover,.nav-dd[open] summary,.nav-dd.cur summary{color:var(--ink)}
+.nav-dd summary svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .15s}
+.nav-dd[open] summary svg{transform:rotate(180deg)}
+.nav-dd summary:focus-visible{outline:2px solid var(--teal);outline-offset:4px;border-radius:4px}
+.nav-dd-menu{position:absolute;left:-12px;top:calc(100% + 10px);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px;min-width:250px;z-index:20;display:grid;box-shadow:0 8px 24px rgba(16,32,47,.08)}
+.bar nav .nav-dd-menu a{display:block;padding:9px 12px;border-radius:8px;color:var(--ink);font-size:.95rem;line-height:1.3}
+.bar nav .nav-dd-menu a small{display:block;color:var(--mute);font-size:.8rem;margin-top:2px}
+.bar nav .nav-dd-menu a:hover{background:var(--s1)}
+@media (max-width:620px){.nav-dd[open]{flex-basis:100%}.nav-dd-menu{position:static;box-shadow:none;margin-top:8px;min-width:0}}
+.dd-aff{border:1px solid var(--line);background:var(--s1);border-radius:10px;padding:10px 14px;font-size:.9rem;line-height:1.5;color:var(--mute);margin:0 0 20px;max-width:52em}
+.dd-aff b{color:var(--ink);font-weight:600}.dd-aff a{color:var(--teal)}
+/* --- end added --- */
 </style>
 <link rel="stylesheet" href="dd-extras.css">
 <script src="dd-extras.js" defer></script>
@@ -185,13 +202,13 @@ section.sec.legal>h2{border:0;padding:0;font-size:1.4rem;margin:0 0 12px}
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="wrap">
 <div class="bar"><a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span><span class="bn">Domain Decoded<small>by Galib Imteaz</small></span></a>
-<nav aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a class="nav-tool" href="domain-appraisal.html" lang="en">Domain Appraisal Tool</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><details class="nav-dd"><summary>Blog<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-dd-menu"><a href="blog.html">All posts</a><a href="blog.html#playbooks">Playbooks<small>Step-by-step guides</small></a><a href="blog.html#price-check">Price Check<small>What things really cost</small></a><!-- Add when your first review is live: <a href="blog.html#worth-it">Worth It?<small>Honest tool &amp; book reviews</small></a> --><a href="blog.html#stories">Stories &amp; Analysis<small>Notes and newsletter articles</small></a></div></details><a class="nav-tool" href="domain-appraisal.html" lang="en">Domain Appraisal Tool</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
 <details class="lang-switch"><summary aria-label="Language" title="Language"><svg class="globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3 4.5 6 4.5 9.5s-1.5 6.5-4.5 9.5c-3-3-4.5-6-4.5-9.5S9 5.5 12 2.5z"/></svg><span class="lang-code">EN</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="lang-menu"><a href="privacy-policy.html" lang="en" hreflang="en" aria-current="true"><span class="en-badge" aria-hidden="true">EN</span><span>English</span></a><a href="privacy-policy-ar.html" lang="ar" hreflang="ar"><svg class="flag" viewBox="0 0 30 21" aria-hidden="true"><rect width="30" height="21" fill="#006c35"/><rect x="7" y="6" width="16" height="2.4" rx="1.1" fill="#fff"/><rect x="9" y="9.6" width="12" height="1.6" rx=".8" fill="#fff"/><rect x="7" y="14.4" width="16" height="1.3" rx=".6" fill="#fff"/></svg><span>العربية</span></a><a href="privacy-policy-zh.html" lang="zh-Hans" hreflang="zh-Hans"><svg class="flag" viewBox="0 0 30 21" aria-hidden="true"><rect width="30" height="21" fill="#de2910"/><polygon fill="#ffde00" points="5.00,1.90 5.78,4.13 8.14,4.18 6.26,5.61 6.94,7.87 5.00,6.52 3.06,7.87 3.74,5.61 1.86,4.18 4.22,4.13"/><polygon fill="#ffde00" points="10.00,0.90 10.26,1.64 11.05,1.66 10.42,2.14 10.65,2.89 10.00,2.44 9.35,2.89 9.58,2.14 8.95,1.66 9.74,1.64"/><polygon fill="#ffde00" points="12.00,3.20 12.26,3.94 13.05,3.96 12.42,4.44 12.65,5.19 12.00,4.74 11.35,5.19 11.58,4.44 10.95,3.96 11.74,3.94"/><polygon fill="#ffde00" points="12.00,6.30 12.26,7.04 13.05,7.06 12.42,7.54 12.65,8.29 12.00,7.84 11.35,8.29 11.58,7.54 10.95,7.06 11.74,7.04"/><polygon fill="#ffde00" points="10.00,8.40 10.26,9.14 11.05,9.16 10.42,9.64 10.65,10.39 10.00,9.94 9.35,10.39 9.58,9.64 8.95,9.16 9.74,9.14"/></svg><span>中文（普通话）</span></a><a href="privacy-policy-es.html" lang="es" hreflang="es"><svg class="flag" viewBox="0 0 30 21" aria-hidden="true"><rect width="30" height="21" fill="#aa151b"/><rect y="5.25" width="30" height="10.5" fill="#f1bf00"/></svg><span>Español</span></a></div></details></div>
 </div>
 <main id="main"><div class="wrap"><header class="page-head">
 <p class="eyebrow">Legal · Your data</p>
 <h1>Privacy Policy</h1>
-<p>How Domain Decoded handles your information, what the cookies do, and the promise that your data is never sold, shared or used for anything else. Last updated November 15, 2026.</p>
+<p>How Domain Decoded handles your information, what the cookies do, and the promise that your data is never sold, shared or used for anything else. Last updated November 17, 2026.</p>
 </header></div>
 
 <div class="wrap"><section class="sec n legal">
@@ -218,7 +235,7 @@ section.sec.legal>h2{border:0;padding:0;font-size:1.4rem;margin:0 0 12px}
 <li>I collect very little: what you send me, your email if you choose to sign up for emails or for the Domain Score Tool, the details you give if you order a report, and (only if you accept) anonymous visit statistics.</li><li>Fonts load from Google Fonts when a page opens, so Google sees your IP address. No cookies are involved.</li>
 <li>I don't sell, rent or trade your information, and I don't share it with anyone for their own purposes.</li>
 <li>I use your information only for the reasons listed below. Nothing else.</li>
-<li>There are no ads, no advertising cookies and no profiling on this site.</li>
+<li>There are no ads, no advertising cookies and no profiling on this site. Some links are affiliate links: if you click one, the company you go to may set its own cookies so that I can be credited (see section 11).</li>
 <li>Google Analytics cookies are set only after you click Accept. You can change your mind any time with the <em>Cookie settings</em> link in the footer.</li>
 </ul>
 </div>
@@ -255,7 +272,7 @@ section.sec.legal>h2{border:0;padding:0;font-size:1.4rem;margin:0 0 12px}
 </tbody>
 </table></div>
 <p><strong>Changing your mind.</strong> Click <em>Cookie settings</em> in the footer of any page to accept or decline again. Declining also removes any Google Analytics cookies this site set earlier. You can also delete cookies at any time in your browser settings.</p>
-<p><strong>No other use.</strong> I do not use cookies for advertising, tracking you across other websites or building profiles about you.</p>
+<p><strong>No other use.</strong> I do not use cookies for advertising, tracking you across other websites or building profiles about you. The one thing outside my control is affiliate links: after you click one, the company or affiliate network you land on may set its own cookies (see section 11).</p>
 
 </section></div>
 
@@ -335,12 +352,13 @@ section.sec.legal>h2{border:0;padding:0;font-size:1.4rem;margin:0 0 12px}
 <div class="wrap"><section class="sec n legal" id="links">
 <h2>11. Links to other sites</h2>
 <p>This site links to other websites such as LinkedIn, X, Substack, CircleID, Instagram, NamePros, Tumblr, Bluesky and domain marketplaces. I'm not responsible for their content or privacy practices, so please read their policies.</p>
+<p><strong>Affiliate links.</strong> Some links on this site are affiliate links, for example through affiliate networks such as impact.com or programs such as Amazon Associates. When you click one, your browser goes to the company's site (sometimes through the network's tracking address). That company or network may set its own cookies or use similar technology to record that you came from this site, so that I can be credited if you buy. Those cookies are set by them, not by this site, and their own privacy policies apply. I receive reports about clicks, orders and commission. I do not receive your name, email address or payment details. If you prefer not to be tracked this way, you can go to the company's website directly, or block cookies in your browser. See also the <a href="affiliate-disclosure.html">Affiliate Disclosure</a>.</p>
 
 </section></div>
 
 <div class="wrap"><section class="sec n legal" id="changes">
 <h2>12. Changes to this policy</h2>
-<p>If I change how I handle information, I will update this page and the date below. <strong>Last updated: November 15, 2026.</strong></p>
+<p>If I change how I handle information, I will update this page and the date below. <strong>Last updated: November 17, 2026.</strong></p>
 
 </section></div>
 
@@ -366,7 +384,8 @@ section.sec.legal>h2{border:0;padding:0;font-size:1.4rem;margin:0 0 12px}
       </div></div>
 <div class="fx"><h4>Explore</h4><nav class="xp" aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="domain-appraisal.html" lang="en">Domain Appraisal Tool</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="why-it-matters.html">Why it matters</a><a href="contact.html">Contact</a></nav></div>
 <div class="legal"><span>© 2026 Domain Decoded. All rights reserved.</span>
-<span><a href="privacy-policy.html">Privacy Policy</a> · <a href="disclaimer.html">Disclaimer</a> · <button type="button" data-cookie-settings>Cookie settings</button></span></div>
+<span><a href="privacy-policy.html">Privacy Policy</a> · <a href="disclaimer.html">Disclaimer</a>
+<a href="affiliate-disclosure.html">Affiliate Disclosure</a> · <button type="button" data-cookie-settings>Cookie settings</button></span></div>
 </div></footer>
 <button class="back-to-top" id="backToTop" aria-label="Back to top">
   <svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg>
@@ -377,5 +396,6 @@ section.sec.legal>h2{border:0;padding:0;font-size:1.4rem;margin:0 0 12px}
 <script>
 (function(){var b=document.getElementById("backToTop");if(!b)return;window.addEventListener("scroll",function(){b.classList.toggle("visible",window.scrollY>480)});b.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})})})();
 </script>
+<script>(function(){var d=document.querySelectorAll(".nav-dd");if(!d.length)return;document.addEventListener("click",function(e){d.forEach(function(x){if(!x.contains(e.target))x.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")d.forEach(function(x){x.removeAttribute("open")})})})();</script>
 </body>
 </html>
