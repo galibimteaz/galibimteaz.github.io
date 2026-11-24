@@ -195,6 +195,16 @@ html[lang=zh-Hans] h1{line-height:1.2}
 .bk-act{margin-top:6px}.bk-act .btn{padding:10px 16px;font-size:.95rem}
 @media (max-width:620px){.bk{grid-template-columns:1fr;gap:18px}.cover{width:130px}}
 /* --- end book review layout --- */
+/* --- affiliate card --- */
+.aff-card{display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:34px 0}
+.aff-card .aff-txt{flex:1 1 260px;min-width:0}
+.aff-card h3{margin:0 0 6px;font-weight:600;font-size:1.2rem;line-height:1.25}
+.aff-card p{margin:0;color:var(--mute);font-size:.95rem}
+.aff-card .aff-note{margin-top:10px;font-size:.82rem}.aff-card .aff-note a{color:var(--teal)}
+.aff-card .aff-ad{flex:0 0 auto;max-width:100%;line-height:0}
+.aff-card .aff-ad img{display:block;max-width:100%;height:auto;border-radius:8px}
+@media (max-width:620px){.aff-card{padding:18px}.aff-card .aff-ad{margin:0 auto}}
+/* --- end affiliate card --- */
 </style>
 <style>
 .art figure{margin:24px 0}.art figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px}
@@ -309,6 +319,13 @@ html[lang=zh-Hans] h1{line-height:1.2}
 <p>If I were naming a real startup, I'd do it in this order:</p>
 <ol><li>Write a few ideas on my own first.</li><li>Ask ChatGPT for other directions.</li><li>Run Namelix for a bigger pool.</li><li>Keep only the names I truly like.</li><li>Check businesses, domains and trademarks before choosing.</li></ol>
 <p>Distinct names help, but they still need to be clear and easy to remember. I made a similar point in my CircleID piece on <a href="https://circleid.com/posts/how-ai-answer-engines-are-quietly-rewriting-what-makes-a-domain-brandable" target="_blank" rel="noopener">what makes a domain brandable as AI answer engines change discovery</a>. For a more structured process, see my list of the <a href="blog-post-best-books-on-naming-a-business.html">best books on naming a business</a>.</p>
+
+<aside class="aff-card" aria-label="Sponsored: Namecheap domain search">
+<div class="aff-txt"><h3>Picked a name? Check if the .com is free.</h3>
+<p>Search the domain you want and see the real price in the cart, not just the first number on the results page.</p>
+<p class="aff-note">If you sign up through this link, I may earn a commission at no extra cost to you. <a href="affiliate-disclosure.html">Affiliate Disclosure</a></p></div>
+<div class="aff-ad"><a rel="sponsored noopener" href="https://namecheap.pxf.io/c/2791829/1183670/5618" target="_blank" id="1183670"><img src="https://a.impactradius-go.com/display-ad/5618-1183670" border="0" alt="Search and buy domains from Namecheap" width="300" height="250" loading="lazy"></a><img height="0" width="0" src="https://namecheap.pxf.io/i/2791829/1183670/5618" style="position:absolute;visibility:hidden" border="0" alt=""></div>
+</aside>
 
 <h2 id="check">What no name generator will tell you</h2>
 <p>No tool can tell you whether a name is safe to use. Check for existing businesses, domain availability and trademarks before you get attached to a name. My guide on <a href="blog-post-domain-trademark-check.html">how to check if a domain is trademarked before you buy</a> shows the free check I'd run first. For a quick first look at a domain, try my free <a href="domain-appraisal.html">Domain Appraisal Tool</a>.</p>
