@@ -194,6 +194,15 @@ html[lang=zh-Hans] h1{line-height:1.2}
 @media (max-width:620px){.bk{grid-template-columns:1fr;gap:18px}.cover{width:130px}}
 /* --- end book review layout --- */
 .tbl table{background:#eaf3fd;color:#14202e}.tbl thead th{background:#cfe3f8;color:#0f2a47}.tbl th,.tbl td{border-color:#bcd4ee}.tbl tbody th{background:#dcebfb;color:#14202e}.tbl tbody tr:nth-child(even) td{background:#e2eefb}
+.aff-card{display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:28px 0}
+.aff-card .aff-txt{flex:1 1 260px;min-width:0}
+.aff-card h3{margin:0 0 6px;font-weight:600;font-size:1.2rem;line-height:1.25}
+.aff-card p{margin:0;color:var(--mute);font-size:.95rem}
+.aff-card .aff-note{margin-top:10px;font-size:.82rem}
+.aff-card .aff-note a{color:var(--teal)}
+.aff-card .aff-ad{flex:0 1 336px;max-width:100%;line-height:0}
+.aff-card .aff-ad img{display:block;width:100%;height:auto;border-radius:8px}
+@media (max-width:620px){.aff-card{padding:18px}}
 </style>
 <link rel="stylesheet" href="dd-extras.css">
 <script src="dd-extras.js" defer></script>
@@ -211,7 +220,7 @@ html[lang=zh-Hans] h1{line-height:1.2}
 <h1 class="art-h1">Best Trademark Books for Founders Who Can’t Afford a Lawyer Yet</h1>
 </header>
 
-<p class="dd-aff"><b>Affiliate disclosure:</b> Some links on this page are Amazon affiliate links. If you buy through them, I may earn a small commission at no extra cost to you. <a href="affiliate-disclosure.html">How this works</a>. This page is general education, not legal advice. See my <a href="disclaimer.html">Disclaimer</a>.</p>
+<p class="dd-aff"><b>Affiliate disclosure:</b> Some links on this page are Amazon and Namecheap affiliate links. If you buy through them, I may earn a small commission at no extra cost to you. <a href="affiliate-disclosure.html">How this works</a>. This page is general education, not legal advice. See my <a href="disclaimer.html">Disclaimer</a>.</p>
 
 <p class="lead">Filing a US trademark costs at least $350 per class in government fees, and that is before a lawyer charges anything. If your name later collides with someone else’s, the bigger cost is a rebrand: a new domain, a new logo, and customers who have to learn your name again.</p>
 
@@ -359,6 +368,12 @@ html[lang=zh-Hans] h1{line-height:1.2}
 <li><b>Check the domain and the handles.</b> A free name on paper is not much use if the .com is gone. Here is <a href="blog-post-domain-trademark-check.html">how to check if a domain is trademarked before you buy</a>.</li>
 <li><b>Decide whether to file now.</b> The base USPTO application fee is $350 per class. The USPTO adds $100 per class for insufficient information and $200 per class if you use free-form text instead of its Trademark ID Manual. Check the <a href="https://www.uspto.gov/trademarks/trademark-fee-information" target="_blank" rel="noopener">USPTO fee page</a> before you file.</li>
 </ol>
+<aside class="aff-card" aria-label="Sponsored: Namecheap">
+<div class="aff-txt"><h3>Name cleared? Check the .com before someone else registers it.</h3>
+<p>Once your name passes the trademark search, see whether the domain is still available. Namecheap lets you search it in a few seconds.</p>
+<p class="aff-note">If you buy through this link, I may earn a commission at no extra cost to you. <a href="affiliate-disclosure.html">Affiliate Disclosure</a></p></div>
+<div class="aff-ad"><a rel="sponsored noopener" href="https://namecheap.pxf.io/c/2791829/1183672/5618" target="_blank" id="1183672"><img src="https://a.impactradius-go.com/display-ad/5618-1183672" border="0" alt="Search and buy domains from Namecheap" width="336" height="280" loading="lazy"></a><img height="0" width="0" src="https://namecheap.pxf.io/i/2791829/1183672/5618" style="position:absolute;visibility:hidden" border="0" alt=""></div>
+</aside>
 <p>This is the same logic I use with domains. Before I list a name for sale I run trademark checks, and for one LegalTech name we rejected more than 40 candidates before approving one. The <a href="case-study-juronix.html">Juronix.com case study</a> shows how that process works. I learned why it matters the hard way, which I wrote about in <a href="blog-post-domain-investing-mistakes.html">7 Domain Investing Mistakes I Made</a>.</p>
 
 <h2 id="more">When a book is not enough</h2>
