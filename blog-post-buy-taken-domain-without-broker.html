@@ -175,6 +175,17 @@ html[lang=zh-Hans] h1{line-height:1.2}
 .dd-aff{border:1px solid var(--line);background:var(--s1);border-radius:10px;padding:10px 14px;font-size:.9rem;line-height:1.5;color:var(--mute);margin:0 0 20px;max-width:52em}
 .dd-aff b{color:var(--ink);font-weight:600}.dd-aff a{color:var(--teal)}
 /* --- end added --- */
+/* --- affiliate card --- */
+.aff-top{font-size:.88rem;color:var(--mute);margin:0 0 18px}.aff-top a{color:var(--teal)}
+.aff-card{display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:34px 0}
+.aff-card .aff-txt{flex:1 1 260px;min-width:0}
+.aff-card h3{margin:0 0 6px;font-weight:600;font-size:1.2rem;line-height:1.25}
+.aff-card p{margin:0;color:var(--mute);font-size:.95rem}
+.aff-card .aff-note{margin-top:10px;font-size:.82rem}.aff-card .aff-note a{color:var(--teal)}
+.aff-card .aff-ad{flex:0 1 420px;max-width:100%;line-height:0}
+.aff-card .aff-ad img{display:block;width:100%;height:auto;border-radius:8px}
+@media (max-width:620px){.aff-card{padding:18px}}
+/* --- end affiliate card --- */
 </style>
 <link rel="stylesheet" href="dd-extras.css">
 <script src="dd-extras.js" defer></script>
@@ -280,6 +291,13 @@ html[lang=zh-Hans] h1{line-height:1.2}
 <p><b>Get the details in writing.</b> Confirm the domain name, the price and how the transfer will work, in an email or a short agreement.</p>
 <p><b>Check for trademark trouble.</b> If a name copies someone’s registered brand, the brand owner can start a dispute, and you could end up having to give the domain up. GoDaddy lists trademark conflicts as a reason to walk away. Search the name in the <a href="https://tmsearch.uspto.gov" target="_blank" rel="noopener">USPTO trademark database</a> (or your own country’s database) before you pay. I explain the whole check in plain English in <a href="blog-post-domain-trademark-check.html">How to Check If a Domain Is Trademarked Before You Buy</a>.</p>
 <p><b>Confirm the transfer.</b> After the transfer, check that the domain is in your account, turn on privacy protection if you want it, and switch on two-factor login.</p>
+
+<aside class="aff-card" aria-label="Sponsored: Spaceship Spacemail">
+<div class="aff-txt"><h3>Got the domain? Give it a proper email.</h3>
+<p>Spacemail is Spaceship&rsquo;s email service for your own domain, so you can use you@yourname.com instead of a free address.</p>
+<p class="aff-note">If you sign up through this link, I may earn a commission at no extra cost to you. <a href="affiliate-disclosure.html">Affiliate Disclosure</a></p></div>
+<div class="aff-ad"><a rel="sponsored noopener" href="https://spaceship.sjv.io/c/2791829/3832098/21274" target="_blank" id="3832098"><img src="https://a.impactradius-go.com/display-ad/21274-3832098" border="0" alt="Spaceship Spacemail: premium email for your domains" width="1200" height="600" loading="lazy"></a><img height="0" width="0" src="https://imp.pxf.io/i/2791829/3832098/21274" style="position:absolute;visibility:hidden" border="0" alt=""></div>
+</aside>
 
 <h2 id="math">The math: doing it yourself vs. hiring a broker</h2>
 <p>Here is an example with round numbers, only to show the idea. Real prices and fees vary.</p>
